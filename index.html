@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>CRM Instaladas JM</title>
+<!doctype html><html lang="es"><head><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>CRM Instaladas JM</title>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <style>
 :root{--bg:#EEF1FA;--c:#fff;--tx:#0E1B3D;--mu:#55618A;--ln:#DCE2F2;--or:#FF7A1A}
@@ -44,15 +44,54 @@ body.lg #sd,body.lg .tp{display:none}body.lg #mn{margin-left:0}body.lg .lgh{disp
 .fn{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}@media(min-width:700px){.fn{grid-template-columns:1fr 1fr 1fr}}
 .ps{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.ps>div{text-align:center;flex:1;min-width:80px}.ps b{display:block;font-size:24px}
 .bk{display:flex;align-items:center;gap:8px;margin:8px 0}.bk b{font-size:12px}.bk i{flex:1;height:14px;border-radius:7px;background:rgba(127,127,127,.25);overflow:hidden}.bk s{display:block;height:100%;border-radius:7px;text-decoration:none}.bk em{text-align:right;font-style:normal;font-weight:800}
+
+/* ---- Tema v6: marca JM (azul marino + naranja), ancho completo ---- */
+:root{--bg:#F4F6FB;--c:#fff;--tx:#0E1B3D;--mu:#5A6685;--ln:#E4E9F4;--or:#FF7A1A;--onb:#FFF0E3;--ont:#C2560A;--sh:0 1px 2px rgba(14,27,61,.05),0 8px 24px rgba(14,27,61,.06)}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1230;--c:#13204A;--tx:#F3F5FF;--mu:#AEB9DD;--ln:#27386F;--onb:#3A2412;--ont:#FFB27A;--sh:none}}
+body{font-family:Sora,system-ui,sans-serif;font-size:14px}
+.w{max-width:1760px;padding:22px 28px}
+@media(max-width:819px){.w{padding:14px}}
+.cd{border-radius:18px;box-shadow:var(--sh);padding:18px;margin-top:14px}
+.kc{box-shadow:none}
+#nv .on{background:var(--onb);color:var(--ont);box-shadow:inset 3px 0 0 var(--or)}
+.lg2{background:#0E1B3D;color:var(--or)}
+.av{border-color:var(--or);color:var(--or)}
+.fb button.on2{background:#0E1B3D;border-color:#0E1B3D;color:#fff}
+@media(prefers-color-scheme:dark){.fb button.on2{background:var(--or);border-color:var(--or);color:#0E1B3D}}
+.pb i{background:linear-gradient(90deg,#FF7A1A,#FFC93C)}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+tbody tr:hover td,table tr:hover td{background:rgba(127,127,127,.06)}
+.ch.pg{background:#E0ECFF;color:#1D4ED8}.ch.nc{background:#FFE9D6;color:#9A4300}
+@media(prefers-color-scheme:dark){.ch.pg{background:#1E3A8A;color:#BFD4FF}.ch.nc{background:#5A2D10;color:#FFD2B0}.ok{background:#0F4A3E;color:#7FE3C6}.x{background:#5C1F1F;color:#FFB3B3}}
+.lgh{font-size:26px;font-weight:800;margin:40px 0 0}
+/* alertas */
+.al summary{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:12px;background:var(--bg);margin-top:8px;cursor:pointer;list-style:none;font-weight:600}
+.al summary::-webkit-details-marker{display:none}.al summary i{width:10px;height:10px;border-radius:50%;flex:none}
+.al summary b{margin-left:auto;background:var(--c);border:1px solid var(--ln);border-radius:99px;padding:2px 11px}
+.ar2{padding:7px 14px;color:var(--mu);font-size:13px;border-bottom:1px solid var(--ln)}
+/* calendario */
+.calx{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}@media(max-width:1100px){.calx{grid-template-columns:1fr}}
+.chd{display:flex;align-items:center;justify-content:center;gap:16px;background:#0E1B3D;color:#fff;padding:12px;border-radius:14px 14px 0 0;font-weight:700;font-size:16px}
+.chd button{background:transparent;color:#fff;border:0;min-height:32px;padding:4px 12px;font-size:20px}
+.cgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border:1px solid var(--ln);border-top:0;border-radius:0 0 14px 14px;overflow:hidden;background:var(--c)}
+.cwd{padding:8px;text-align:center;font-size:12px;font-weight:700;border-bottom:1px solid var(--ln);background:var(--bg)}
+.cdy{min-height:104px;border-right:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:6px;cursor:pointer;display:flex;flex-direction:column;gap:3px}
+.cdy:hover{background:rgba(255,122,26,.06)}.cdy.vac{cursor:default}.cdy.hoy{background:#E0ECFF}.cdy.sel{outline:2px solid var(--or);outline-offset:-2px}
+@media(prefers-color-scheme:dark){.cdy.hoy{background:#1E3A8A}}
+.cdy .dn{text-align:right;font-size:12px;color:var(--mu)}
+.cc{display:block;font-size:10px;font-weight:700;color:#fff;border-radius:6px;padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}
+.cc.inst{background:#1FA971}.cc.prog{background:#2F80ED}.cc.canc{background:#F59E0B}
+.cmo{font-size:11px;color:var(--mu);text-align:center}
+@media(max-width:700px){.cdy{min-height:62px;padding:3px}.cc{font-size:9px;padding:1px 3px}}
 </style></head><body class="lg"><div id="ov" onclick="sb2()"></div>
-<aside id="sd"><div class="br"><div class="lg2">JM</div><div class="lb"><b>CRM</b><small>Instaladas JM · v5</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
+<aside id="sd"><div class="br"><div class="lg2">JM</div><div class="lb"><b>CRM</b><small>Instaladas JM · v6</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
 <div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><div id="sl"></div></header><h1 class="lgh">CRM Instaladas JM</h1><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
 <script>
 const U="https://znrcrkzlysyqeqiyercd.supabase.co",K="sb_publishable_qH2iEk0R59fgmQPqt2gP3A_AxXlomyY",sb=supabase.createClient(U,K);
 const $=s=>document.querySelector(s),e=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),dim=(y,m)=>new Date(y,m+1,0).getDate(),r2=n=>Math.round(n*100)/100,iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"),T=iso(new Date()),money=n=>"S/ "+r2(n).toFixed(2);
 const ES=["NUEVA","GRABADO","PROGRAMADA","EN PROGRESO","REPROGRAMADA","INSTALADA","CANCELADA","ANULADA","DESAPROBADA","NO PROCEDE","POSIBLE FRAUDE"];
 let PL=[];
-const FULL=["Dashboard","Ventas","Cobranza","Simulador","Cobertura","Historial","Usuarios"],INI=["Inicio"],TABS={admin:FULL,jefe:FULL,supervisor:FULL,back_office:["Ventas","Simulador","Cobertura"],cobranza:["Cobranza","Simulador","Cobertura"],back_data:INI,community_manager:INI,rrhh:INI,capacitador:INI,asesor:INI},
+const FULL=["Dashboard","Calendario","Ventas","Cobranza","Simulador","Cobertura","Historial","Usuarios"],INI=["Inicio"],TABS={admin:FULL,jefe:FULL,supervisor:FULL,back_office:["Ventas","Simulador","Cobertura"],cobranza:["Cobranza","Simulador","Cobertura"],back_data:INI,community_manager:INI,rrhh:INI,capacitador:INI,asesor:INI},
 RN={admin:"Administrador",jefe:"Jefe",supervisor:"Supervisor",back_office:"Back Office",cobranza:"Cobranza",back_data:"Back Data",community_manager:"Community Manager",rrhh:"RRHH",capacitador:"Capacitador",asesor:"Asesor"},MANDO=r=>["admin","jefe","supervisor"].includes(r);
 let usr="",rol,tab,planes=[],code=new URLSearchParams(location.search).get("a")||"";
 const sv=p=>`<svg viewBox="0 0 24 24">${p}</svg>`,IC={
@@ -63,6 +102,7 @@ Simulador:sv('<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8
 Cobertura:sv('<path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'),
 Historial:sv('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
 Usuarios:sv('<path d="M12 3l8 3v6c0 4.5-3.4 7.7-8 9-4.6-1.3-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>'),
+Calendario:sv('<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/>'),
 Inicio:sv('<path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/>')},
 nom=m=>((m||"").split("@")[0].replace(/_jm$/i,"").replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase()))||"Usuario",
 slug=n=>(n||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,""),
@@ -104,13 +144,13 @@ async function add(){const c=$("#a1").value.trim(),d=$("#a2").value.trim(),t=$("
  const o={...F,mesh_cobro:+$("#a10").value||0,winbox:+$("#a11").value||0,winbox_cobro:(+$("#a11").value||0)*20,extra:(+$("#a10").value||0)+(+$("#a11").value||0)*20,tipo_doc:$("#a9").value,cliente:c,dni:d,tel:t,direccion:$("#a4").value,distrito:$("#a5").value,plan_id:$("#a6").value,tramo:$("#a7").value,fprog:$("#a8").value},{error}=await sb.rpc("asesora_crear_ficha",{p_code:code,p_d:o});if(error)return msg(error.message);msg();asesora()}
 /* ---- personal ---- */
 function rd(){const nm=nom(usr);$("#sl").innerHTML=`<div class=us><div class=un><b>${e(nm)}</b><small>${e(RN[rol]||rol)}</small></div><div class=av>${e(nm.slice(0,2).toUpperCase())}</div></div>`;$("#tt").textContent=tab;$("#nv").innerHTML=TABS[rol].map(t=>`<button class="${t==tab?"on":""}" title="${t}" onclick="tab='${t}';rd();sb2(-1)">${IC[t]||""}<span class=lb>${t}</span></button>`).join("");msg();
- const f={Dashboard:vD,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov()})}
+ const f={Dashboard:vD,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov()})}
 async function delV(b){if(!confirm("¿Eliminar la venta de "+b.dataset.n+"? Se borra junto con sus cobros y no se puede deshacer."))return;const{error}=await sb.rpc("eliminar_venta",{p_id:b.dataset.id});if(error)return msg(error.message);uDone("Venta eliminada")}
-async function vV(){const{data,error}=await sb.from("ventas").select("*,planes(nombre),asesoras(nombre)").order("creada",{ascending:false}).limit(200);if(error)return`<div class=cd>${e(error.message)}</div>`;const ed=MANDO(rol)||rol=="back_office";
+async function vVn(){const{data,error}=await sb.from("ventas").select("*,planes(nombre),asesoras(nombre)").order("creada",{ascending:false}).limit(200);if(error)return`<div class=cd>${e(error.message)}</div>`;const ed=MANDO(rol)||rol=="back_office";
  return`<div class=cd><table><tr><th>Cliente</th><th>DNI</th><th>Asesora</th><th>Plan</th><th>Dirección</th><th>Tramo</th><th>Estado</th><th>Instalación</th>${MANDO(rol)?"<th></th>":""}</tr>${data.map(v=>`<tr><td>${e(v.cliente)}<br><small>${e(v.telefono)}${v.whatsapp&&v.whatsapp!=v.telefono?" · WA "+e(v.whatsapp):""}</small></td><td>${e(v.dni)}<br><small>${e(v.tipo_doc)}</small></td><td>${e(v.asesoras?.nombre)}</td><td>${e(v.planes?.nombre||v.plan_txt)}<br><small>${e(v.precio_ficha)}</small>${+v.extra?`<br><small>Extras S/ ${v.extra}</small>`:""}</td><td>${e(v.direccion)}<br><small>${e(v.distrito)}${v.lat?` · <a href="https://www.google.com/maps?q=${v.lat},${v.lng}" target=_blank>mapa</a>`:""}</small></td><td>${e(v.tramo)}<br><small>${v.fecha_prog||""}</small></td><td>${ed?`<select onchange="setE('${v.id}',this.value,'${v.fecha_inst||""}')">${ES.map(s=>`<option ${s==v.estado?"selected":""}>${s}</option>`).join("")}</select>`:ch([v.estado,"n"])}</td><td>${ed?`<input type=date value="${v.fecha_inst||""}" onchange="setF('${v.id}',this.value)">`:v.fecha_inst||"–"}</td>${MANDO(rol)?`<td><button class=g data-id="${v.id}" data-n="${e(v.cliente)}" onclick=delV(this)>Eliminar</button></td>`:""}</tr>`).join("")||"<tr><td>Sin ventas</td></tr>"}</table></div>`}
 async function setE(id,es,fi){const u={estado:es};if(es=="INSTALADA"&&!fi)u.fecha_inst=T;const{error}=await sb.from("ventas").update(u).eq("id",id);if(error)msg(error.message);rd()}
 async function setF(id,f){const{error}=await sb.from("ventas").update({fecha_inst:f||null}).eq("id",id);if(error)msg(error.message);rd()}
-async function vC(){const{data,error}=await sb.from("cobros").select("*,ventas(cliente,fecha_inst,extra,planes(*))").order("vence");if(error)return`<div class=cd>${e(error.message)}</div>`;const g={},pay=MANDO(rol)||rol=="cobranza";let pc=0,ve=0;
+async function vCn(){const{data,error}=await sb.from("cobros").select("*,ventas(cliente,fecha_inst,extra,planes(*))").order("vence");if(error)return`<div class=cd>${e(error.message)}</div>`;const g={},pay=MANDO(rol)||rol=="cobranza";let pc=0,ve=0;
  data.forEach(c=>{(g[c.venta_id]=g[c.venta_id]||{v:c.ventas,c:[]}).c.push(c)});
  const rows=Object.entries(g).map(([id,x])=>{const cl=calc(x.v.planes,x.v.fecha_inst);return`<tr><td>${e(x.v.cliente)}<br><small>${e(x.v.planes?.nombre)} · inst. ${x.v.fecha_inst}</small></td>${x.c.sort((a,b)=>a.ciclo-b.ciclo).map(c=>{const es=c.esperado??r2(cl[c.ciclo-1].e+(c.ciclo==1?+x.v.extra||0:0)),s=c.estado=="PAGADO"?["PAGÓ","ok"]:c.estado=="BAJA"?["BAJA",""]:T>c.plazo?["VENCIDO","x"]:["PENDIENTE","n"];if(s[0]=="PENDIENTE")pc+=es;if(s[0]=="VENCIDO"){pc+=es;ve++}
   return`<td>${ch(s)} ${money(es)}${c.ciclo==1&&+x.v.extra?`<br><small>incl. extras S/ ${x.v.extra}</small>`:""}<br><small>vence ${c.vence.slice(5)} · plazo ${c.plazo.slice(5)}</small>${c.estado=="PENDIENTE"&&pay?`<br><button onclick="pg('${c.id}',${es})">Pagó</button>`:""}</td>`}).join("")}<td>${pay?`<button class=g onclick="bj('${id}')">Baja</button>`:""}</td></tr>`}).join("");
@@ -150,7 +190,7 @@ function chartD(ini,fin,R,tiers){const days=[];for(let d=ini;d<=fin;d=addD(d,1))
  ${tiers.map(t=>`<line x1="40" x2="680" y1="${Y(t)}" y2="${Y(t)}" stroke="#F59E0B" stroke-dasharray="5 4"/><text x="680" y="${Y(t)-3}" text-anchor="end" font-size="10" fill="#F59E0B">${t}</text>`).join("")}
  <path d="${P(I)}" fill="none" stroke="#4F46E5" stroke-width="2.5"/><path d="${P(Z)}" fill="none" stroke="#0B8F5F" stroke-width="2.5"/></svg>
  <small><b style="color:#4F46E5">━</b> Ingresadas &nbsp; <b style="color:#0B8F5F">━</b> Altas (instaladas) ${tiers.length?`&nbsp; <b style="color:#F59E0B">╌</b> Tramos del equipo`:""}</small>`}
-async function vD(){let R,PE,CM,DT;try{[R,PE,CM,DT]=await Promise.all([allT("app_ventas","mes,asesor_id,dia,cliente,tipo","id"),allT("personal","id,nombre,cargo","id"),allT("config_mes","mes,tiers_equipo","mes"),allT("app_detalle","mes,plan,distrito,precio","id")])}
+async function vD(){let R,PE,CM,DT;try{[R,PE,CM,DT]=await Promise.all([allT("app_ventas","mes,asesor_id,dia,cliente,tipo","id"),allT("personal","id,nombre,cargo,activo","id"),allT("config_mes","mes,tiers_equipo","mes"),allT("app_detalle","mes,asesor_id,plan,distrito,precio,recibo","id")])}
  catch(x){return`<div class=cd><b>Aún no llegan datos de la app.</b><p class=mu>${e(x.message)}</p><p class=mu>Revisa que hayas ejecutado el Bloque 1 (CRM) y el Bloque 2 (app) de la conexión.</p></div>`}
  let lg=null;try{const r=await sb.from("ingesta_log").select("at").order("at",{ascending:false}).limit(1);lg=r.data?.[0]?.at||null}catch(_){}
  const[ini,fin]=rango(),inR=v=>v.dia>=ini&&v.dia<=fin,P=R.filter(inR),al=P.filter(v=>v.tipo=="inst"),pg2=P.filter(v=>v.tipo=="prog"),cn=P.filter(v=>v.tipo=="canc"),apr=al.length+pg2.length,
@@ -180,9 +220,69 @@ async function vD(){let R,PE,CM,DT;try{[R,PE,CM,DT]=await Promise.all([allT("app
  <div class=kc style="background:var(--k2);text-align:center"><h4 style="color:var(--k2t)">Venta → alta</h4><div class=bg style="color:var(--k2t)">${pct(al.length,apr)}</div><small>${al.length} instaladas de ${apr} aprobadas</small></div>
  <div class=kc style="background:var(--k3);text-align:center"><h4 style="color:var(--k3t)">Concreción total</h4><div class=bg style="color:var(--k3t)">${pct(al.length,P.length)}</div><small>${al.length} instaladas de ${P.length} ingresadas</small></div></div>
  <div class=cd><b>Cumplimiento del periodo</b>${ndH>93||(fin<ini)?`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`:(()=>{const c=chartD(ini,fin,P,tiers);return c||`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`})()}</div>
+ ${alertas(R,P,PE,DT,m1,m2,nm)}
  <div class=cd><b>Por asesora</b><table><tr><th>Asesora</th><th>Ingresadas</th><th>Instaladas</th><th>En camino</th><th>Canceladas</th><th>Concreción</th></tr>${Object.entries(A).sort((a,b)=>b[1].z-a[1].z).map(([id,x])=>`<tr><td>${e(nm[id]||"—")}</td><td>${x.i}</td><td><b>${x.z}</b></td><td>${x.p}</td><td>${x.c}</td><td>${x.z+x.c?Math.round(x.z/(x.z+x.c)*100)+"%":"—"}</td></tr>`).join("")||"<tr><td>Sin datos en este periodo</td></tr>"}</table><small class=mu>Concreción = instaladas ÷ (instaladas + canceladas).</small></div>
  <div class=dg><div class=cd style="margin:0"><b>Planes más vendidos</b>${bars(cnt("plan"),"#5B8DEF")}</div><div class=cd style="margin:0"><b>Distritos con más instaladas</b>${bars(cnt("distrito"),"#1FB59A")}</div></div>
  <div class=cd><b>Ventas instaladas con detalle</b><div class=ps><div><b>${D.length}</b><small>instaladas</small></div><div><b style="font-size:20px">${mon(suma)}</b><small>suma de precios</small></div><div><b style="font-size:20px">${D.length?mon(suma/D.length):"—"}</b><small>precio promedio</small></div></div><small class=mu>Detalle del mes de la hoja INSTALADAS (plan, distrito y precio).</small></div>
  <div style="margin-top:8px">${foot}</div>`}
+const SRC={v:"app",c:"app"},MN=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"],
+TP={inst:["Instalada","ok"],prog:["En camino","pg"],canc:["No concretada","nc"]},ddm=d=>(d||"").slice(8,10)+"/"+(d||"").slice(5,7),
+segH=(k,cur)=>`<div class=fb style="margin-bottom:4px"><button class="${cur=="app"?"on2":""}" onclick="SRC.${k}='app';rd()">Datos de la app (en vivo)</button><button class="${cur=="crm"?"on2":""}" onclick="SRC.${k}='crm';rd()">Registro propio del CRM</button></div>`,
+sinApp=x=>`<div class=cd><b>Aún no llegan datos de la app.</b><p class=mu>${e(x.message)}</p></div>`;
+/* ---------- alertas del Dashboard ---------- */
+function alertas(R,P,PE,DT,m1,m2,nm){const venc=R.filter(v=>v.tipo=="prog"&&v.dia<T),canc=P.filter(v=>v.tipo=="canc"),sr=DT.filter(x=>x.mes>=m1&&x.mes<=m2&&!(+x.recibo>0)),
+ act=new Set(P.map(v=>v.asesor_id)),sv=PE.filter(p=>p.cargo=="ASESOR"&&p.activo!==false&&!act.has(p.id)),
+ L=[["#F59E0B","Programadas con fecha vencida",venc,v=>`${e(v.cliente)} · ${e(nm[v.asesor_id]||"")} · ${ddm(v.dia)}`],
+ ["#EF4444","No concretadas del periodo",canc,v=>`${e(v.cliente)} · ${e(nm[v.asesor_id]||"")} · ${ddm(v.dia)}`],
+ ["#0EA5E9","Instaladas sin recibo de cobranza",sr,x=>`${e(nm[x.asesor_id]||"")} · ${e(x.plan||"")} · ${e(x.distrito||"")}`],
+ ["#8B5CF6","Asesoras sin ventas en el periodo",sv,p=>e(p.nombre)]],n=L.filter(x=>x[2].length).length;
+ return`<div class=cd><div style="display:flex;align-items:center;gap:10px"><b>Alertas operativas</b><span class="ch ${n?"x":"ok"}">${n?n+" por revisar":"todo en orden"}</span></div>${L.map(([c,t,a,fn])=>`<details class=al><summary><i style="background:${c}"></i>${t}<b>${a.length}</b></summary>${a.slice(0,15).map(x=>`<div class=ar2>${fn(x)}</div>`).join("")||"<div class=ar2>Todo en orden ✔</div>"}${a.length>15?`<div class=ar2>… y ${a.length-15} más</div>`:""}</details>`).join("")}</div>`}
+/* ---------- VENTAS (datos de la app) ---------- */
+const VA={d:null,q:"",t:"all",a:"",m:T.slice(0,7)};
+async function vV(){if(SRC.v=="crm")return segH("v","crm")+await vVn();
+ try{const[R,PE]=await Promise.all([allT("app_ventas","id,mes,asesor_id,dia,cliente,tipo,turno","id"),allT("personal","id,nombre","id")]);VA.d={R,nm:Object.fromEntries(PE.map(p=>[p.id,p.nombre]))}}catch(x){return segH("v","app")+sinApp(x)}
+ return segH("v","app")+`<div id=vaw>${vaH()}</div>`}
+function vaRe(){const el=$("#vaw");if(el)el.innerHTML=vaH()}
+function vaRes(){const el=$("#vares");if(el)el.innerHTML=vaR()}
+function vaM(){const{R}=VA.d;return R.filter(v=>v.mes==VA.m)}
+function vaH(){const{nm}=VA.d,M=vaM(),as=[...new Set(M.map(v=>v.asesor_id))].sort((a,b)=>(nm[a]||"").localeCompare(nm[b]||""));
+ return`<div class=cd style="margin-top:0"><div class=fb><input type=month value="${VA.m}" onchange="VA.m=this.value||VA.m;VA.a='';vaRe()"><select onchange="VA.a=this.value;vaRes()"><option value="">Todas las asesoras</option>${as.map(a=>`<option value="${a}" ${VA.a==a?"selected":""}>${e(nm[a]||"—")}</option>`).join("")}</select><input placeholder="Buscar cliente..." value="${e(VA.q)}" oninput="VA.q=this.value;vaRes()" style="min-width:200px"></div><div id=vares style="margin-top:12px">${vaR()}</div></div>`}
+function vaR(){const{nm}=VA.d,M=vaM(),c=k=>M.filter(v=>v.tipo==k).length,q=VA.q.trim().toUpperCase(),
+ F=M.filter(v=>(VA.t=="all"||v.tipo==VA.t)&&(!VA.a||v.asesor_id==VA.a)&&(!q||(v.cliente||"").toUpperCase().includes(q))).sort((x,y)=>x.dia<y.dia?1:x.dia>y.dia?-1:0),
+ chip=(k,l,n)=>`<button class="${VA.t==k?"on2":""}" onclick="VA.t='${k}';vaRes()">${l}: ${n}</button>`;
+ return`<div class=fb>${chip("all","Todas",M.length)}${chip("inst","Instaladas",c("inst"))}${chip("prog","En camino",c("prog"))}${chip("canc","No concretadas",c("canc"))}</div>
+ <table style="margin-top:10px"><tr><th>Fecha</th><th>Cliente</th><th>Asesora</th><th>Estado</th><th>Turno</th></tr>${F.slice(0,300).map(v=>`<tr><td>${ddm(v.dia)}</td><td><b>${e(v.cliente)}</b></td><td>${e(nm[v.asesor_id]||"—")}</td><td><span class="ch ${TP[v.tipo]?TP[v.tipo][1]:""}">${TP[v.tipo]?TP[v.tipo][0]:e(v.tipo)}</span></td><td>${e(v.turno||"")}</td></tr>`).join("")||"<tr><td colspan=5>Sin ventas con estos filtros</td></tr>"}</table>
+ <small class=mu>Mostrando ${Math.min(300,F.length)} de ${F.length}. Se actualiza solo cada 5 minutos desde tu app. Para cambiar un estado, hazlo en tu hoja de Google.</small>`}
+/* ---------- COBRANZA (recibos de la app) ---------- */
+const CA={d:null,m:T.slice(0,7)};
+async function vC(){if(SRC.c=="crm")return segH("c","crm")+await vCn();
+ try{const[DT,PE]=await Promise.all([allT("app_detalle","id,mes,asesor_id,doc,plan,precio,distrito,recibo","id"),allT("personal","id,nombre","id")]);CA.d={DT,nm:Object.fromEntries(PE.map(p=>[p.id,p.nombre]))}}catch(x){return segH("c","app")+sinApp(x)}
+ return segH("c","app")+`<div id=caw>${caH()}</div>`}
+function caRe(){const el=$("#caw");if(el)el.innerHTML=caH()}
+function caH(){const{DT,nm}=CA.d,D=DT.filter(x=>x.mes==CA.m),con=D.filter(x=>+x.recibo>0),sin=D.filter(x=>!(+x.recibo>0)),sum=(L,k)=>L.reduce((s,x)=>s+(+x[k]||0),0),
+ mon=x=>"S/ "+(Math.round(x*100)/100).toLocaleString("es-PE",{minimumFractionDigits:2,maximumFractionDigits:2}),A={};
+ D.forEach(x=>{const a=A[x.asesor_id]=A[x.asesor_id]||{n:0,c:0,s:0,m:0};a.n++;if(+x.recibo>0){a.c++;a.m+=+x.recibo}else a.s++});
+ const kc=(bg,fg,t,v,s)=>`<div class=kc style="background:${bg}"><h4 style="color:${fg}">${t}</h4><div class=bg style="color:${fg}">${v}</div><small>${s}</small></div>`;
+ return`<div class=cd style="margin-top:0"><div class=fb><input type=month value="${CA.m}" onchange="CA.m=this.value||CA.m;caRe()"><small>Recibos de cobranza de las ventas instaladas (hoja INSTALADAS)</small></div></div>
+ <div class=dg>${kc("var(--k1)","var(--k1t)","Instaladas con detalle",D.length,"Del mes seleccionado")}${kc("var(--k3)","var(--k3t)","Con recibo",con.length,pct(con.length,D.length)+" de las instaladas")}${kc("var(--k2)","var(--k2t)","Sin recibo",sin.length,"Pendientes de cobranza")}${kc("var(--k1)","var(--k1t)","Monto en recibos",`<span style="font-size:30px">${mon(sum(D,"recibo"))}</span>`,"Suma de precios: "+mon(sum(D,"precio")))}</div>
+ <div class=cd><b>Por asesora</b><table><tr><th>Asesora</th><th>Instaladas</th><th>Con recibo</th><th>Sin recibo</th><th>Monto recibos</th></tr>${Object.entries(A).sort((a,b)=>b[1].s-a[1].s).map(([id,x])=>`<tr><td>${e(nm[id]||"—")}</td><td>${x.n}</td><td>${x.c}</td><td>${x.s?`<span class="ch nc">${x.s}</span>`:0}</td><td>${mon(x.m)}</td></tr>`).join("")||"<tr><td colspan=5>Sin datos este mes</td></tr>"}</table></div>
+ <div class=cd><b>Instaladas sin recibo de cobranza (${sin.length})</b><table><tr><th>Asesora</th><th>Plan</th><th>Distrito</th><th>Precio</th><th>Documento</th></tr>${sin.slice(0,100).map(x=>`<tr><td>${e(nm[x.asesor_id]||"—")}</td><td>${e(x.plan||"")}</td><td>${e(x.distrito||"")}</td><td>${mon(+x.precio||0)}</td><td>${e(x.doc||"")}</td></tr>`).join("")||"<tr><td colspan=5>Todo cobrado ✔</td></tr>"}</table>${sin.length>100?`<small class=mu>Mostrando 100 de ${sin.length}.</small>`:""}<small class=mu style="display:block;margin-top:6px">Se considera "con recibo" cuando la columna RECIBO de tu hoja tiene un monto mayor a cero.</small></div>`}
+/* ---------- CALENDARIO ---------- */
+const CAL={ym:T.slice(0,7),sel:null,f:"all",d:null};
+async function vCal(){try{const[R,PE]=await Promise.all([allT("app_ventas","id,mes,asesor_id,dia,cliente,tipo,turno","id"),allT("personal","id,nombre","id")]);CAL.d={R,nm:Object.fromEntries(PE.map(p=>[p.id,p.nombre]))}}catch(x){return sinApp(x)}return`<div id=calw>${calH()}</div>`}
+function calRe(){const el=$("#calw");if(el)el.innerHTML=calH()}
+function calM(k){const[y,m]=CAL.ym.split("-").map(Number),d=new Date(y,m-1+k,1);CAL.ym=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");CAL.sel=null;calRe()}
+function calF(f){CAL.f=f;calRe()}
+function calS(d){CAL.sel=CAL.sel==d?null:d;calRe()}
+function calH(){const{R,nm}=CAL.d,[y,m]=CAL.ym.split("-").map(Number),first=new Date(y,m-1,1).getDay(),nd=dim(y,m-1),M=R.filter(v=>v.dia&&v.dia.slice(0,7)==CAL.ym),c=k=>M.filter(v=>v.tipo==k).length,
+ F=M.filter(v=>CAL.f=="all"||v.tipo==CAL.f),by={};F.forEach(v=>(by[v.dia]=by[v.dia]||[]).push(v));
+ const chip=(k,l,n)=>`<button class="${CAL.f==k?"on2":""}" onclick="calF('${k}')">${l}: ${n}</button>`;let cells="";
+ for(let i=0;i<first;i++)cells+=`<div class="cdy vac"></div>`;
+ for(let d=1;d<=nd;d++){const key=CAL.ym+"-"+String(d).padStart(2,"0"),L=by[key]||[];cells+=`<div class="cdy ${key==T?"hoy":""} ${CAL.sel==key?"sel":""} ${L.length?"":"vac"}" ${L.length?`onclick="calS('${key}')"`:""}><span class=dn>${d}</span>${L.slice(0,3).map(v=>`<span class="cc ${v.tipo}" title="${e(v.cliente)}">${e((v.cliente||"").split(" ")[0])}</span>`).join("")}${L.length>3?`<span class=cmo>+${L.length-3}</span>`:""}</div>`}
+ const S=CAL.sel,SL=S?(by[S]||[]):[],side=S?`<b>${+S.slice(8)} de ${MN[+S.slice(5,7)-1]} · ${SL.length} ventas</b>${SL.map(v=>`<div class=ar2><b style="color:var(--tx)">${e(v.cliente)}</b> <span class="ch ${TP[v.tipo]?TP[v.tipo][1]:""}">${TP[v.tipo]?TP[v.tipo][0]:""}</span><br>${e(nm[v.asesor_id]||"—")}${v.turno?" · "+e(v.turno):""}</div>`).join("")}`:`<b>Selecciona un día</b><p class=mu>Haz clic en un día del calendario para ver las ventas de ese día.</p>`;
+ return`<div class=fb style="margin-bottom:12px">${chip("all","Todos",M.length)}${chip("inst","Instaladas",c("inst"))}${chip("prog","En camino",c("prog"))}${chip("canc","No concretadas",c("canc"))}</div>
+ <div class=calx><div><div class=chd><button onclick="calM(-1)">‹</button>${MN[m-1]} ${y}<button onclick="calM(1)">›</button></div><div class=cgrid>${["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"].map(x=>`<div class=cwd>${x}</div>`).join("")}${cells}</div>
+ <div style="margin-top:8px;font-size:12px"><span class="cc inst" style="display:inline-block">Instalada</span> <span class="cc prog" style="display:inline-block">En camino</span> <span class="cc canc" style="display:inline-block">No concretada</span> ${M.length?"":`<span class=mu>Sin datos de este mes (el CRM guarda los últimos 2 meses).</span>`}</div></div>
+ <div class=cd style="margin:0">${side}</div></div>`}
 init();
 </script></body></html>
