@@ -135,14 +135,14 @@ body.lg .w{max-width:460px;margin:0 auto}
 .asm{border-collapse:collapse;font-size:12px}.asm th,.asm td{padding:4px 3px;text-align:center;border-bottom:1px solid var(--ln);min-width:22px}.asm th:first-child,.asm td:first-child{text-align:left;position:sticky;left:0;background:var(--c);z-index:1;padding-right:10px}
 .asm .dom{background:rgba(127,127,127,.12)}.ac{display:inline-block;min-width:18px;padding:2px 0;border-radius:5px;color:#fff;font-weight:700;font-size:11px;text-align:center}
 </style><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%228%202%20104%2092%22%3E%3Crect%20x%3D%228%22%20y%3D%222%22%20width%3D%22104%22%20height%3D%2292%22%20rx%3D%2222%22%20fill%3D%22%23fff%22/%3E%3Cline%20x1%3D%2260%22%20y1%3D%2210%22%20x2%3D%2260%22%20y2%3D%2224%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%229%22%20r%3D%225%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%222%22/%3E%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%2272%22%20height%3D%2264%22%20rx%3D%2224%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2234%22%20y%3D%2236%22%20width%3D%2252%22%20height%3D%2240%22%20rx%3D%2216%22%20fill%3D%22%230E1B3D%22/%3E%3Cellipse%20cx%3D%2248%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cellipse%20cx%3D%2272%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M50%2064%20Q60%2073%2070%2064%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M22%2054%20Q22%2018%2060%2018%20Q98%2018%2098%2054%22%20fill%3D%22none%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2294%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3C/svg%3E"></head><body class="lg"><div id="ov" onclick="sb2()"></div>
-<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Instaladas JM · v23</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
-<div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><div id="sl"></div></header><div class="lgh"></div><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
+<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Instaladas JM · v24</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
+<div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><button class="hb" id="bsb" onclick="abrirBusca()" title="Buscar cliente o predio (Ctrl+K)" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button><button class="hb" id="bth" onclick="cambiaTema()" title="Cambiar entre tema claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><div id="sl"></div></header><div class="lgh"></div><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
 <script>
 const U="https://znrcrkzlysyqeqiyercd.supabase.co",K="sb_publishable_qH2iEk0R59fgmQPqt2gP3A_AxXlomyY",sb=supabase.createClient(U,K);
 const $=s=>document.querySelector(s),e=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),dim=(y,m)=>new Date(y,m+1,0).getDate(),r2=n=>Math.round(n*100)/100,iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"),T=iso(new Date()),money=n=>"S/ "+r2(n).toFixed(2);
 const ES=["NUEVA","GRABADO","PROGRAMADA","EN PROGRESO","REPROGRAMADA","INSTALADA","CANCELADA","ANULADA","DESAPROBADA","NO PROCEDE","POSIBLE FRAUDE"];
 let PL=[];
-const FULL=["Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:FULL,jefe:FULL,supervisor:FULL,back_office:["Ventas","Simulador","Cobertura"],cobranza:["Cobranza","Simulador","Cobertura"],back_data:INI,community_manager:INI,rrhh:["Asistencia"],capacitador:INI,asesor:INI},
+const FULL=["Hoy","Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:FULL,jefe:FULL,supervisor:FULL,back_office:["Hoy","Ventas","Simulador","Cobertura"],cobranza:["Cobranza","Simulador","Cobertura"],back_data:["Calidad","Cobertura"],community_manager:["Comunidad","Cobertura"],rrhh:["Asistencia"],capacitador:["Capacitación","Cobertura"],asesor:["Mis ventas","Cobertura"]},
 RN={admin:"Administrador",jefe:"Jefe",supervisor:"Supervisor",back_office:"Back Office",cobranza:"Cobranza",back_data:"Back Data",community_manager:"Community Manager",rrhh:"RRHH",capacitador:"Capacitador",asesor:"Asesor"},MANDO=r=>["admin","jefe","supervisor"].includes(r);
 let usr="",rol,tab,planes=[],code=new URLSearchParams(location.search).get("a")||"";
 const sv=p=>`<svg viewBox="0 0 24 24">${p}</svg>`,IC={
@@ -171,9 +171,9 @@ return[0,1,2].map(k=>{let b,s;if(e2){b=k?pr:di*dly(0)+pr;s=k?ds(30,k+1):ds(di+30
 async function init(){if(code){localStorage.crm_a=code;return asesora()}const{data:{session}}=await sb.auth.getSession();if(!session)return login();usr=session.user.email;document.body.classList.remove("lg");try{if(localStorage.crm_co)document.body.classList.add("co")}catch(_){}
  const r=await sb.rpc("crm_rol");rol=r.data;if(!rol){$("#m").innerHTML=`<div class=cd>Tu usuario no tiene un rol asignado. Pide al administrador que lo agregue en crm_staff.</div>`;$("#sl").innerHTML=`<button class=g onclick=out()>Salir</button>`;return}
  if(!TABS[rol]){$("#m").innerHTML=`<div class=cd>El rol «${e(rol)}» no es válido. Avisa al supervisor.</div>`;$("#sl").innerHTML=`<button class=g onclick=out()>Salir</button>`;return}
- const p=await sb.from("planes").select("*").order("id");planes=p.data||[];tab=TABS[rol][0];rd()}
-function login(){$("#sl").innerHTML="";$("#nv").innerHTML="";$("#m").innerHTML=`<div class=cd><b>Ingresar</b><div class=fm><input id=lu type=email placeholder="Correo"><input id=lp type=password placeholder="Contraseña"><button onclick=go()>Entrar</button></div><p class=mu>Asesoras: entren con su link personal.</p></div>`}
-async function go(){msg();const{error}=await sb.auth.signInWithPassword({email:$("#lu").value.trim(),password:$("#lp").value});if(error)return msg("Correo o contraseña incorrectos");init()}
+ const p=await sb.from("planes").select("*").order("id");planes=p.data||[];tab=TABS[rol][0];rd();mascotaInit()}
+function login(){$("#sl").innerHTML="";$("#nv").innerHTML="";$("#m").innerHTML=`<div class=cd><b>Ingresar</b><div class=fm><input id=lu type=text autocapitalize=none placeholder="Correo (o tu nombre, ej.: alejandra)"><input id=lp type=password placeholder="Contraseña"><button onclick=go()>Entrar</button></div><p class=mu>Asesoras: entren con su link personal.</p></div>`}
+async function go(){msg();const{error}=await sb.auth.signInWithPassword({email:(u=>u.includes("@")?u:slug(u)+"_jm@gmail.com")($("#lu").value.trim()),password:$("#lp").value});if(error)return msg("Correo o contraseña incorrectos");init()}
 async function out(){await sb.auth.signOut();location.reload()}
 /* ---- asesora ---- */
 let F={};
@@ -198,8 +198,8 @@ function leer(b){F=b?{}:pf($("#fx").value);const f=F;if(!b&&!f.cliente)return ms
 async function add(){const c=$("#a1").value.trim(),d=$("#a2").value.trim(),t=$("#a3").value.trim();if(!c)return msg("Falta el cliente");const td=$("#a9").value,LN={DNI:8,RUC:11};if(!/^\d{8,12}$/.test(d)||(LN[td]&&d.length!=LN[td]))return msg("El documento no es válido: "+td+" debe tener "+(LN[td]||"entre 8 y 12")+" dígitos");if(!/^\d{9}$/.test(t))return msg("El teléfono debe tener 9 dígitos");if(!$("#a6").value)return msg("Elige el plan");
  const o={...F,mesh_cobro:+$("#a10").value||0,winbox:+$("#a11").value||0,winbox_cobro:(+$("#a11").value||0)*20,extra:(+$("#a10").value||0)+(+$("#a11").value||0)*20,tipo_doc:$("#a9").value,cliente:c,dni:d,tel:t,direccion:$("#a4").value,distrito:$("#a5").value,plan_id:$("#a6").value,tramo:$("#a7").value,fprog:$("#a8").value},{error}=await sb.rpc("asesora_crear_ficha",{p_code:code,p_d:o});if(error)return msg(error.message);msg();asesora()}
 /* ---- personal ---- */
-function rd(){const nm=nom(usr);$("#sl").innerHTML=`<div class=us><div class=un><b>${e(nm)}</b><small>${e(RN[rol]||rol)}</small></div><div class=av>${e(nm.slice(0,2).toUpperCase())}</div></div>`;$("#tt").textContent=tab;$("#nv").innerHTML=TABS[rol].map(t=>`<button class="${t==tab?"on":""}" title="${t}" onclick="tab='${t}';rd();sb2(-1)">${IC[t]||""}<span class=lb>${t}</span></button>`).join("");msg();
- const f={Dashboard:vD,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
+function rd(){const nm=nom(usr);$("#sl").innerHTML=`<div class=us><div class=un><b>${e(nm)}</b><small>${e(RN[rol]||rol)}</small></div><div class=av>${e(nm.slice(0,2).toUpperCase())}</div></div>`;$("#tt").textContent=tab;$("#nv").innerHTML=navHTML();msg();
+ const f={Dashboard:vD,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado,Hoy:vHoy,"Mis ventas":vMis,Calidad:vCalidad,"Capacitación":vCap,Comunidad:vCom}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
 async function delV(b){if(!confirm("¿Eliminar la venta de "+b.dataset.n+"? Se borra junto con sus cobros y no se puede deshacer."))return;const{error}=await sb.rpc("eliminar_venta",{p_id:b.dataset.id});if(error)return msg(error.message);uDone("Venta eliminada")}
 async function vVn(){const{data,error}=await sb.from("ventas").select("*,planes(nombre),asesoras(nombre)").order("creada",{ascending:false}).limit(200);if(error)return`<div class=cd>${e(error.message)}</div>`;const ed=MANDO(rol)||rol=="back_office";
  return`<div class=cd><table><tr><th>Cliente</th><th>DNI</th><th>Asesora</th><th>Plan</th><th>Dirección</th><th>Tramo</th><th>Estado</th><th>Instalación</th>${MANDO(rol)?"<th></th>":""}</tr>${data.map(v=>`<tr><td>${e(v.cliente)}<br><small>${e(v.telefono)}${v.whatsapp&&v.whatsapp!=v.telefono?" · WA "+e(v.whatsapp):""}</small></td><td>${e(v.dni)}<br><small>${e(v.tipo_doc)}</small></td><td>${e(v.asesoras?.nombre)}</td><td>${e(v.planes?.nombre||v.plan_txt)}<br><small>${e(v.precio_ficha)}</small>${+v.extra?`<br><small>Extras S/ ${v.extra}</small>`:""}</td><td>${e(v.direccion)}<br><small>${e(v.distrito)}${v.lat?` · <a href="https://www.google.com/maps?q=${v.lat},${v.lng}" target=_blank>mapa</a>`:""}</small></td><td>${e(v.tramo)}<br><small>${v.fecha_prog||""}</small></td><td>${ed?`<select onchange="setE('${v.id}',this.value,'${v.fecha_inst||""}')">${ES.map(s=>`<option ${s==v.estado?"selected":""}>${s}</option>`).join("")}</select>`:ch([v.estado,"n"])}</td><td>${ed?`<input type=date value="${v.fecha_inst||""}" onchange="setF('${v.id}',this.value)">`:v.fecha_inst||"–"}</td>${MANDO(rol)?`<td><button class=g data-id="${v.id}" data-n="${e(v.cliente)}" onclick=delV(this)>Eliminar</button></td>`:""}</tr>`).join("")||"<tr><td>Sin ventas</td></tr>"}</table></div>`}
@@ -227,7 +227,7 @@ async function vhRefresca(){if(!document.getElementById("vhr"))return;try{await 
 async function ciRefresca(){if(!document.getElementById("cir"))return;try{await ciCargarG();ciRes()}catch(_){}}
 async function huGuardar(){const v=document.getElementById("hu").value.trim(),m=document.getElementById("hum"),{error}=await sb.rpc("crm_ajuste_set",{p_clave:"hoja_url",p_valor:v||null});if(error)return msg(error.message);msg("");_hu=undefined;m.textContent=v?"Guardado. Prueba editando una venta: debería reflejarse en tu hoja en segundos.":"Enlace borrado: volverá a depender del envío cada 10 minutos."}
 /* ---------- PREDIOS HABILITADOS ---------- */
-const ED={d:null,pend:null},edCols="id,nombre,direccion,distrito,lat,lng,torres,obs,total_torres,hps,agencia,fecha_hab,exclusividad,fin_excl,promo,alerta",edCan=()=>MANDO(rol)||rol=="back_office";
+const ED={d:null,pend:null},edCols="id,nombre,direccion,distrito,lat,lng,torres,obs,total_torres,hps,agencia,fecha_hab,exclusividad,fin_excl,promo,alerta",edCan=()=>MANDO(rol)||rol=="back_office"||rol=="back_data";
 const edN=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase();
 const edFec=s=>/^\d{4}-\d{2}-\d{2}$/.test(String(s||"").trim())?String(s).trim():"";
 function edCoord(s){const m=String(s||"").replace(/\u2212/g,"-").match(/(-?\d{1,2}\.\d{3,})\s*[,;\s]\s*(-?\d{2,3}\.\d{3,})/);if(!m)return null;const a=+m[1],b=+m[2];
@@ -365,26 +365,27 @@ async function vD(){let R,PE,CM,DT;try{[R,PE,CM,DT]=await Promise.all([allT("app
  <small>${ini} → ${fin}</small></div><div style="margin-top:6px">${sy}</div>`;
  const lad=tiers.length?`<div style="position:relative;margin:26px 0 22px"><div class=pb style="height:12px"><i style="width:${Math.min(100,al.length/mxT*100)}%"></i></div>${tiers.map(t=>`<span style="position:absolute;top:-6px;left:calc(${t/mxT*100}% - 1px);width:3px;height:24px;background:${al.length>=t?"#E8A200":"var(--mu)"};border-radius:2px"><b style="position:absolute;top:-16px;left:-14px;width:30px;text-align:center;font-size:11px">${t}</b></span>`).join("")}</div>`:"";
  const foot=`<small class=mu>Fuente: datos de tu app (se actualizan cada 5 min). Altas = instaladas por fecha de instalación. Ingresadas, en camino y no concretadas = ventas registradas en el periodo.</small>`;
- return`${mascotaBar(mascotaMsg({al:al.length,tiers,nx,pend,idx,remH}))}<div class=cd style="margin-top:6px">${fb}</div>
- <div class=cd><div class=ps><div><small>RITMO POR DÍA HÁBIL</small><b>${rit.toFixed(1)}</b><small>${nx&&remH?"ideal "+(pend/remH).toFixed(1)+"/d":"instaladas/d"}</small></div>
- <div style="flex:3;min-width:220px;text-align:left"><small>ALTAS DEL PERIODO${tiers.length?" · TRAMOS DEL EQUIPO":""}</small><b>${al.length}${tiers.length?` <small>/ ${tiers[tiers.length-1]}</small>`:""}</b>${lad}<small>${tiers.length?(nx?`Faltan <strong>${pend}</strong> para el tramo ${idx+1} (${nx})`:"¡Todos los tramos logrados!"):"Sin tramos cargados para este periodo"}</small></div>
- <div><small>PROYECCIÓN</small><b>${proy}</b><small>${fin>=T?"al cierre del periodo":"periodo cerrado"}</small></div><div><small>DÍAS HÁBILES</small><b>${remH}</b><small>quedan</small></div></div></div>
- ${desg(GI.length,gv,gh,gl,gp)}<div class=dg>
- <div class=kc style="background:var(--k1)"><h4 style="color:var(--k1t)">Ingresadas</h4><div class=bg style="color:var(--k1t)">${P.length}</div><small>Ventas registradas en el periodo</small></div>
- <div class=kc style="background:var(--k2)"><h4 style="color:var(--k2t)">En camino</h4><div class=bg style="color:var(--k2t)">${pg2.length}</div><small>Programadas, en proceso o reprogramadas</small></div>
- <div class=kc style="background:var(--k3)"><h4 style="color:var(--k3t)">Altas</h4><div class=bg style="color:var(--k3t)">${al.length}</div><small>No concretadas: <b>${cn.length}</b></small></div></div>
- <div class=fn><div class=kc style="background:var(--k1);text-align:center"><h4 style="color:var(--k1t)">Pre-venta → venta (neta)</h4><div class=bg style="color:var(--k1t)">${pct(apr,P.length)}</div><small>${apr} aprobadas de ${P.length} ingresadas</small></div>
- <div class=kc style="background:var(--k2);text-align:center"><h4 style="color:var(--k2t)">Venta → alta</h4><div class=bg style="color:var(--k2t)">${pct(al.length,apr)}</div><small>${al.length} instaladas de ${apr} aprobadas</small></div>
- <div class=kc style="background:var(--k3);text-align:center"><h4 style="color:var(--k3t)">Concreción total</h4><div class=bg style="color:var(--k3t)">${pct(al.length,P.length)}</div><small>${al.length} instaladas de ${P.length} ingresadas</small></div></div>
- <div class=cd><b>Cumplimiento del periodo</b>${ndH>93||(fin<ini)?`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`:(()=>{const c=chartD(ini,fin,P,tiers);return c||`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`})()}</div>
- <div class=g2>${alertas(R,P,PE,DT,m1,m2,nm)}
- <div class=cd><b>Por asesora</b><table><tr><th>Asesora</th><th>Ingresadas</th><th>Instaladas</th><th>En camino</th><th>Canceladas</th><th>Concreción</th></tr>${Object.entries(A).sort((a,b)=>b[1].z-a[1].z).map(([id,x])=>`<tr><td>${e(nm[id]||"—")}</td><td>${x.i}</td><td><b>${x.z}</b></td><td>${x.p}</td><td>${x.c}</td><td>${x.z+x.c?Math.round(x.z/(x.z+x.c)*100)+"%":"—"}</td></tr>`).join("")||"<tr><td>Sin datos en este periodo</td></tr>"}</table><small class=mu>Concreción = instaladas ÷ (instaladas + canceladas).</small></div>
-</div><div class=g3><div class=cd style="margin:0"><b>Planes más vendidos</b>${bars(cnt("plan"),"#5B8DEF")}</div><div class=cd style="margin:0"><b>Distritos con más instaladas</b>${bars(cnt("distrito"),"#1FB59A")}</div>
+ return`${mascotaBar(mascotaMsg({al:al.length,tiers,nx,pend,idx,remH}))}<div class=cd style="margin-top:6px">${fb}</div>${guiaDash()}
+ ${sec("¿Cómo vamos?","Resumen del periodo elegido arriba: cuántas ventas ya se instalaron, a qué velocidad y cuántas se esperan al cierre.")}<div class=cd><div class=ps><div><small>RITMO POR DÍA HÁBIL</small><b>${rit.toFixed(1)}</b><small>${nx&&remH?"instaladas por día · ideal "+(pend/remH).toFixed(1)+" por día":"instaladas por día"}</small></div>
+ <div style="flex:3;min-width:220px;text-align:left"><small>INSTALADAS (ALTAS) DEL PERIODO${tiers.length?" · METAS ESCALONADAS (TRAMOS)":""}</small><b>${al.length}${tiers.length?` <small>/ ${tiers[tiers.length-1]}</small>`:""}</b>${lad}<small>${tiers.length?(nx?`Faltan <strong>${pend}</strong> para el tramo ${idx+1} (${nx})`:"¡Todos los tramos logrados!"):"Sin tramos cargados para este periodo"}</small></div>
+ <div><small>PROYECCIÓN</small><b>${proy}</b><small>${fin>=T?"instaladas al cierre, si seguimos igual":"periodo cerrado"}</small></div><div><small>DÍAS HÁBILES</small><b>${remH}</b><small>días de trabajo que quedan</small></div></div></div>
+ ${desg(GI.length,gv,gh,gl,gp)}${sec("Estado de las ventas","Cómo están las ventas registradas en este periodo.")}<div class=dg>
+ <div class=kc style="background:var(--k1)"><h4 style="color:var(--k1t)">Ventas ingresadas</h4><div class=bg style="color:var(--k1t)">${P.length}</div><small>Registradas en el periodo</small></div>
+ <div class=kc style="background:var(--k2)"><h4 style="color:var(--k2t)">En camino</h4><div class=bg style="color:var(--k2t)">${pg2.length}</div><small>Por instalar: programadas, en proceso o reprogramadas</small></div>
+ <div class=kc style="background:var(--k3)"><h4 style="color:var(--k3t)">Instaladas (altas)</h4><div class=bg style="color:var(--k3t)">${al.length}</div><small>Ventas que ya se instalaron</small></div>
+ <div class=kc style="background:var(--k4)"><h4 style="color:var(--k4t)">No concretadas</h4><div class=bg style="color:var(--k4t)">${cn.length}</div><small>Se cayeron: canceladas, anuladas o desaprobadas</small></div></div>
+ ${sec("¿Cuánto se concreta?","De las ventas que ingresan, cuántas llegan a instalarse. Mientras más alto, mejor.")}<div class=fn><div class=kc style="background:var(--k1);text-align:center"><h4 style="color:var(--k1t)">De ingresada a aprobada</h4><div class=bg style="color:var(--k1t)">${pct(apr,P.length)}</div><small>${apr} aprobadas de ${P.length} ingresadas (aprobada = instalada o en camino)</small></div>
+ <div class=kc style="background:var(--k2);text-align:center"><h4 style="color:var(--k2t)">De aprobada a instalada</h4><div class=bg style="color:var(--k2t)">${pct(al.length,apr)}</div><small>${al.length} instaladas de ${apr} aprobadas</small></div>
+ <div class=kc style="background:var(--k3);text-align:center"><h4 style="color:var(--k3t)">Concreción total</h4><div class=bg style="color:var(--k3t)">${pct(al.length,P.length)}</div><small>${al.length} instaladas de ${P.length} ingresadas: de cada 100 ventas, cuántas se instalan</small></div></div>
+ ${sec("Evolución","Cómo avanza el periodo día a día.")}<div class=cd><b>Cumplimiento del periodo</b> <small class=mu>ventas instaladas frente a las metas escalonadas</small>${ndH>93||(fin<ini)?`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`:(()=>{const c=chartD(ini,fin,P,tiers);return c||`<p class=mu>El gráfico se muestra para periodos de hasta 93 días.</p>`})()}</div>
+ ${sec("Qué revisar y quién vende","Casos que conviene atender y el resultado de cada asesora.")}<div class=g2>${alertas(R,P,PE,DT,m1,m2,nm)}
+ <div class=cd><b>Ventas por asesora</b><table><tr><th>Asesora</th><th>Ingresadas</th><th>Instaladas</th><th>En camino</th><th>Canceladas</th><th>Concreción</th></tr>${Object.entries(A).sort((a,b)=>b[1].z-a[1].z).map(([id,x])=>`<tr><td>${e(nm[id]||"—")}</td><td>${x.i}</td><td><b>${x.z}</b></td><td>${x.p}</td><td>${x.c}</td><td>${x.z+x.c?Math.round(x.z/(x.z+x.c)*100)+"%":"—"}</td></tr>`).join("")||"<tr><td>Sin datos en este periodo</td></tr>"}</table><small class=mu>Concreción = de las ventas ya resueltas (instaladas o canceladas), qué porcentaje se instaló.</small></div>
+</div>${sec("¿Qué se vende y dónde?","Los 5 planes y los 5 distritos con más instaladas del periodo.")}<div class=g3><div class=cd style="margin:0"><b>Planes más vendidos</b>${bars(cnt("plan"),"#5B8DEF")}</div><div class=cd style="margin:0"><b>Distritos con más instaladas</b>${bars(cnt("distrito"),"#1FB59A")}</div>
  <div class=cd><b>Ventas instaladas con detalle</b><div class=ps><div><b>${D.length}</b><small>instaladas</small></div><div><b style="font-size:20px">${mon(suma)}</b><small>suma de precios</small></div><div><b style="font-size:20px">${D.length?mon(suma/D.length):"—"}</b><small>precio promedio</small></div></div><small class=mu>Detalle del mes de la hoja INSTALADAS (plan, distrito y precio).</small></div>
 </div> <div style="margin-top:8px">${foot}</div>`}
 const SRC={v:"hoja",c:"ciclos"},MN=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","Noviembre","Diciembre"],
-TP={inst:["Instalada","ok"],prog:["En camino","pg"],canc:["No concretada","nc"]},ddm=d=>(d||"").slice(8,10)+"/"+(d||"").slice(5,7),
-segH=(k,cur)=>`<div class=fb style="margin-bottom:4px">${k=="v"?`<button class="${cur=="hoja"?"on2":""}" onclick="SRC.v='hoja';rd()">Ventas de la hoja (con DNI)</button>`:""}${k=="c"?`<button class="${cur=="ciclos"?"on2":""}" onclick="SRC.c='ciclos';rd()">Cobranza por ciclos (completa)</button>`:""}<button class="${cur=="app"?"on2":""}" onclick="SRC.${k}='app';rd()">Datos de la app (en vivo)</button><button class="${cur=="crm"?"on2":""}" onclick="SRC.${k}='crm';rd()">Registro propio del CRM</button></div>`,
+TP={inst:["Instalada","ok"],prog:["En camino","pg"],canc:["No concretada","bad"]},ddm=d=>(d||"").slice(8,10)+"/"+(d||"").slice(5,7),
+segH=(k,cur)=>`<div class=fb style="margin-bottom:4px">${k=="v"?`<button class="${cur=="hoja"?"on2":""}" onclick="SRC.v='hoja';rd()">Ventas de la hoja (con DNI)</button>`:""}${k=="c"?`<button class="${cur=="ciclos"?"on2":""}" onclick="SRC.c='ciclos';rd()">Cobranza por ciclos (completa)</button>`:""}<button class="${cur=="app"?"on2":""}" onclick="SRC.${k}='app';rd()">Resumen de la app</button>${rol=="admin"?`<button class="${cur=="crm"?"on2":""}" onclick="SRC.${k}='crm';rd()">Registro propio del CRM</button>`:""}</div>`,
 sinApp=x=>`<div class=cd><b>Aún no llegan datos de la app.</b><p class=mu>${e(x.message)}</p></div>`;
 /* ---------- alertas del Dashboard ---------- */
 function alertas(R,P,PE,DT,m1,m2,nm){const venc=R.filter(v=>v.tipo=="prog"&&v.dia<T),canc=P.filter(v=>v.tipo=="canc"),sr=DT.filter(x=>x.mes>=m1&&x.mes<=m2&&!(+x.recibo>0)),
@@ -393,7 +394,7 @@ function alertas(R,P,PE,DT,m1,m2,nm){const venc=R.filter(v=>v.tipo=="prog"&&v.di
  ["#EF4444","No concretadas del periodo",canc,v=>`${e(v.cliente)} · ${e(nm[v.asesor_id]||"")} · ${ddm(v.dia)}`],
  ["#0EA5E9","Instaladas sin recibo de cobranza",sr,x=>`${e(nm[x.asesor_id]||"")} · ${e(x.plan||"")} · ${e(x.distrito||"")}`],
  ["#8B5CF6","Asesoras sin ventas en el periodo",sv,p=>e(p.nombre)]],n=L.filter(x=>x[2].length).length;
- return`<div class=cd><div style="display:flex;align-items:center;gap:10px"><b>Alertas operativas</b><span class="ch ${n?"x":"ok"}">${n?n+" por revisar":"todo en orden"}</span></div>${L.map(([c,t,a,fn])=>`<details class=al><summary><i style="background:${c}"></i>${t}<b>${a.length}</b></summary>${a.slice(0,15).map(x=>`<div class=ar2>${fn(x)}</div>`).join("")||"<div class=ar2>Todo en orden ✔</div>"}${a.length>15?`<div class=ar2>… y ${a.length-15} más</div>`:""}</details>`).join("")}</div>`}
+ return`<div class=cd><div style="display:flex;align-items:center;gap:10px"><b>Alertas operativas</b> <small class=mu>toca una línea para ver el detalle</small><span class="ch ${n?"x":"ok"}">${n?n+" por revisar":"todo en orden"}</span></div>${L.map(([c,t,a,fn])=>`<details class=al><summary><i style="background:${c}"></i>${t}<b>${a.length}</b></summary>${a.slice(0,15).map(x=>`<div class=ar2>${fn(x)}</div>`).join("")||"<div class=ar2>Todo en orden ✔</div>"}${a.length>15?`<div class=ar2>… y ${a.length-15} más</div>`:""}</details>`).join("")}</div>`}
 /* ---------- VENTAS (datos de la app) ---------- */
 const VA={d:null,q:"",t:"all",a:"",m:T.slice(0,7)};
 async function vV(){if(SRC.v=="hoja")return await vVh();if(SRC.v=="crm")return segH("v","crm")+await vVn();
@@ -465,9 +466,9 @@ function mascota(sz,o){o=o||{};const id="gH"+(++MSEQ),vb=o.head?"8 2 104 92":"0 
 <path d="M101 72 Q101 90 76 88" fill="none" stroke="#0E1B3D" stroke-width="3" stroke-linecap="round"/><circle cx="73" cy="88" r="4.5" fill="#FF7A1A" stroke="#0E1B3D" stroke-width="2"/></g></svg>`}
 (function(){const b=$("#mbr");if(b)b.innerHTML=mascota(40,{head:1});const l=$(".lgh");if(l)l.innerHTML=`${mascota(120,{wave:1})}<div class="lgl"><img src="${LOGO}" alt="Grupo JM Call Center"></div><div class="lgt">CRM Instaladas JM</div>`})();
 const saludo=()=>{const h=new Date().getHours();return h<12?"Buenos días":h<19?"Buenas tardes":"Buenas noches"};
-const mascotaBar=m=>`<div class="mb"><div class="mw">${mascota(72,{wave:1})}</div><div class="mbub"><b>${saludo()}, ${e(nom(usr).split(" ")[0])}</b><div>${m}</div></div></div>`;
+const mascotaBar=m=>`<div class="mb"><div class="mw" onclick="mascotaPanel()" style="cursor:pointer" title="Toca para ver qué puedo hacer">${mascota(72,{wave:1})}</div><div class="mbub"><b>${saludo()}, ${e(nom(usr).split(" ")[0])}</b><div>${m}</div></div></div>`;
 function mascotaMsg(o){if(o.tiers.length){if(o.nx)return`Llevamos <b>${o.al}</b> instaladas. Faltan <b>${o.pend}</b> para el tramo ${o.idx+1} (${o.nx})${o.remH?`: necesitamos <b>${(o.pend/o.remH).toFixed(1)}</b> por día hábil`:""}.`;return`¡Todos los tramos logrados con <b>${o.al}</b> instaladas! 🎉`}return o.al?`Llevamos <b>${o.al}</b> instaladas en este periodo.`:"Aún no hay instaladas en este periodo."}
-const desg=(n,v,h,l,p)=>n?`<div class=cd><b>Desglose de altas</b><div class=vtab style="margin-top:8px"><div><small>VERTICAL (edificios)</small><b>${v}</b></div><div><small>HORIZONTAL (casas)</small><b>${h}</b></div><div><small>LIMA</small><b>${l}</b></div><div><small>PROVINCIA</small><b>${p}</b></div></div></div>`:"";
+const desg=(n,v,h,l,p)=>n?`<div class=cd><b>Desglose de altas</b> <small class=mu>de las instaladas: edificios o casas, Lima o provincia</small><div class=vtab style="margin-top:8px"><div><small>VERTICAL (edificios)</small><b>${v}</b></div><div><small>HORIZONTAL (casas)</small><b>${h}</b></div><div><small>LIMA</small><b>${l}</b></div><div><small>PROVINCIA</small><b>${p}</b></div></div></div>`:"";
 /*GEO-PURE-START*/
 const normH=h=>String(h==null?"":h).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase().replace(/\s+/g," ").trim(),
 limp=s=>normH(s),
@@ -720,7 +721,7 @@ function ciAbrir(k){const r=CI.d.find(x=>x.clave==k);if(!r)return;const s=ciSt(r
  <div class=cimh><b>Historial de gestión</b>${cs.length?cs.slice(0,20).map(x=>{const t=CT[x.tipo]||[x.tipo,""];return`<div style="margin-top:6px"><span class="ch ${t[1]}">${e(t[0])}</span> <small class=mu>${ciTs(x.at)} · ${e((x.por||"").split("@")[0])}${x.promesa?" · para "+ddm(x.promesa):""}</small>${x.nota?`<br><small>${e(x.nota)}</small>`:""}</div>`}).join(""):`<div class=mu style="margin-top:6px">Todavía no hay gestiones.</div>`}</div></div>`}
 async function ciMarcar(k,n,est){const el=document.getElementById(n==1?"ci_f1":"ci_f2"),f=el&&el.value?el.value:T;
  const{error}=await sb.rpc("cobranza_marcar",{p_clave:k,p_recibo:n,p_estado:est,p_fecha:est=="pagado"?f:null});
- if(error)return msg(error.message);msg("");await ciCargarG();ciRes();ciAbrir(k);hojaEnvia("ciclos",ciRefresca)}
+ if(error)return msg(error.message);msg("");await ciCargarG();ciRes();ciAbrir(k);if(est=="pagado")mascotaFiesta();hojaEnvia("ciclos",ciRefresca)}
 async function ciContacto(k){const t=document.getElementById("ci_t").value,nt=document.getElementById("ci_n").value.trim(),p=document.getElementById("ci_p").value||null;
  if(t=="promesa"&&!p)return msg("Indica la fecha de la promesa de pago.");
  const{error}=await sb.rpc("cobranza_contacto",{p_clave:k,p_tipo:t,p_nota:nt||null,p_promesa:t=="promesa"?p:null});
@@ -742,10 +743,10 @@ async function vVh(){
 function vhRe(){const el=document.getElementById("vhw");if(el)el.innerHTML=vhH()}
 function vhRes(){const el=document.getElementById("vhr");if(el)el.innerHTML=vhR()}
 function vhH(){const as=[...new Set(VH.d.filter(r=>r.mes==VH.f.m).map(r=>r.asesora).filter(Boolean))].sort();
- return`<div class=cd style="margin-top:0"><div class=fb><select onchange="VH.f.m=this.value;VH.f.a='';vhRe()">${VH.ms.map(m=>`<option ${VH.f.m==m?"selected":""}>${m}</option>`).join("")}</select><select onchange="VH.f.a=this.value;vhRes()"><option value="">Todas las asesoras</option>${as.map(a=>`<option ${VH.f.a==a?"selected":""}>${e(a)}</option>`).join("")}</select><input placeholder="Buscar por DNI o nombre..." value="${e(VH.f.q)}" oninput="VH.f.q=this.value;vhRes()" style="min-width:260px"><button class=g onclick="vhXls()">Descargar Excel</button></div>
+ return`<div class=cd style="margin-top:0"><div class=fb><select onchange="VH.f.m=this.value;VH.f.a='';vhRe()">${VH.ms.map(m=>`<option ${VH.f.m==m?"selected":""}>${m}</option>`).join("")}</select><select onchange="VH.f.a=this.value;vhRes()"><option value="">Todas las asesoras</option>${as.map(a=>`<option ${VH.f.a==a?"selected":""}>${e(a)}</option>`).join("")}</select><input placeholder="Buscar por DNI o nombre..." value="${e(VH.f.q)}" oninput="VH.f.q=this.value;vhRes()" style="min-width:260px"><button class=g onclick="vhXls()">Descargar Excel</button>${VH.f.all?`<button class=g onclick="VH.f.all=false;vhRe()">Ver solo el mes elegido</button>`:""}</div>
  <small class=mu style="display:block;margin-top:6px">Al buscar por DNI o nombre se revisan <b>todos los meses</b>. Pulsa <b>Editar</b> para cambiar estado, fecha de instalación u observación: el cambio se escribe en tu hoja en pocos segundos.</small>${MANDO(rol)?`<details style="margin-top:8px"><summary class=mu>Actualización instantánea de la hoja (Jefe y Supervisor)</summary><div class=fb style="margin-top:6px"><input id=hu value="${e(VH.hu||"")}" placeholder="Pega aquí el enlace de la aplicación web de Apps Script" style="flex:1;min-width:260px"><button onclick="huGuardar()">Guardar</button></div><small class=mu id=hum>${VH.hu?"Conectada.":"Sin configurar: los cambios tardan hasta 10 minutos en llegar a la hoja."}</small></details>`:""}</div><div id=vhr>${vhR()}</div>`}
 function vhLista(){const f=VH.f,q=vhN(f.q).trim(),qd=q.replace(/\D/g,"");
- const base=VH.d.filter(r=>(q||r.mes==f.m)&&(!f.a||r.asesora==f.a)&&(!q||vhN(r.cliente).includes(q)||(qd&&(r.doc||"").includes(qd))));
+ const base=VH.d.filter(r=>(q||f.all||r.mes==f.m)&&(!f.a||r.asesora==f.a)&&(!q||vhN(r.cliente).includes(q)||(qd&&(r.doc||"").includes(qd))));
  const L=base.filter(r=>f.t=="all"||(f.t=="otro"?!TP[r.tipo]:r.tipo==f.t)).sort((x,y)=>(y.dia||"")<(x.dia||"")?-1:1);return{base,L}}
 function vhXls(){const{L}=vhLista();if(!L.length)return msg("No hay filas para descargar con estos filtros.");
  const rows=L.map(r=>({Fecha:r.dia||"",Cliente:r.cliente,"Tipo doc":r.tipo_doc||"",Documento:r.doc||"",Asesora:r.asesora||"",Estado:r.estado||"","Fecha instalación":r.fecha_inst||"",Observación:r.obs||"",Hoja:r.hoja}));
@@ -769,7 +770,234 @@ function vhEditar(k){const r=VH.d.find(x=>x.clave==k);if(!r)return;let o=documen
 async function vhGuardar(k){const est=document.getElementById("vh_e").value,f=document.getElementById("vh_f").value||null,ob=document.getElementById("vh_o").value.trim();
  if(est=="INSTALADA"&&!f)return msg("Indica la fecha de instalación.");
  const{error}=await sb.rpc("ventas_editar",{p_clave:k,p_estado:est,p_fecha_inst:f,p_obs:ob||null});
- if(error)return msg(error.message);msg("");vhCerrar();await vhCarga();vhRes();hojaEnvia("ventas",vhRefresca)}
+ if(error)return msg(error.message);msg("");vhCerrar();await vhCarga();vhRes();if(est=="INSTALADA")mascotaFiesta();hojaEnvia("ventas",vhRefresca)}
+
+
+/* ====================================================================
+   v24 · MENÚ POR GRUPOS · HOY · MIS VENTAS · CALIDAD · CAPACITACIÓN · COMUNIDAD
+         BÚSQUEDA UNIVERSAL · FICHA DEL CLIENTE · TEMA · MASCOTA
+   ==================================================================== */
+(function(){const s=document.createElement("style");s.textContent=`
+.sec{margin:20px 2px 6px}.sec h3{margin:0;font-size:15px}.sec p{margin:2px 0 0;font-size:13px}
+.ng{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mu);padding:14px 12px 4px;font-weight:700}
+#nv .ngt{justify-content:space-between;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--mu);min-height:34px;padding:12px 12px 4px;font-weight:700}
+body.co .ng,body.co #nv .ngt{display:none}
+.rt{width:100%;border-collapse:collapse;font-size:13px}.rt td{vertical-align:top}
+@media(max-width:820px){.rt,.rt tbody{display:block}.rt tr.h{display:none}.rt tr{display:block;border:1px solid var(--ln);border-radius:12px;padding:8px 10px;margin:8px 0;background:var(--c)}.rt td{display:flex;gap:8px;padding:3px 0;border:0}.rt td:empty{display:none}.rt td::before{content:attr(data-l);flex:0 0 96px;color:var(--mu);font-weight:600;font-size:11px;text-transform:uppercase}}
+.mo{position:fixed;inset:0;background:rgba(5,10,30,.65);z-index:1000;overflow:auto;padding:16px}
+.gd summary{cursor:pointer}.gd dl{margin:10px 0 0;display:grid;gap:8px}.gd dt{font-weight:700;font-size:13px}.gd dd{margin:0;color:var(--mu);font-size:13px}
+.hl{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--ln);font-size:13px}
+.tl{position:relative;margin:6px 0 4px 8px;padding-left:16px;border-left:2px solid var(--ln)}.tl>div{position:relative;margin:0 0 10px;font-size:13px}.tl>div::before{content:"";position:absolute;left:-23px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--d,var(--mu));border:2px solid var(--c)}
+.com{border-left:4px solid var(--or);margin-bottom:10px}
+.medal{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;font-weight:800;font-size:13px;color:#0E1B3D}
+#mfab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:900;width:62px;height:62px;border-radius:50%;padding:0;border:2px solid var(--or);background:var(--c);box-shadow:0 8px 24px rgba(0,0,0,.28);display:grid;place-items:center;cursor:pointer;min-height:0}
+#mfab svg{width:46px;height:auto}
+#mfab.mj{animation:mjump .8s}@keyframes mjump{0%,100%{transform:translateY(0)}30%{transform:translateY(-26px) rotate(-8deg)}60%{transform:translateY(-6px) rotate(8deg)}}
+#mdot{position:absolute;top:0;right:0;width:15px;height:15px;border-radius:50%;background:#EF4444;border:2px solid var(--c);display:none}#mfab.al #mdot{display:block}
+#mfab.zz::after{content:"z z";position:absolute;top:-12px;right:-2px;font-weight:800;font-size:13px;color:var(--mu)}
+#mpan{position:fixed;right:16px;bottom:calc(88px + env(safe-area-inset-bottom));z-index:900;width:min(340px,calc(100vw - 32px));background:var(--c);border:1px solid var(--ln);border-radius:18px;padding:14px;box-shadow:0 18px 48px rgba(0,0,0,.35)}
+#mpan .mh{display:flex;gap:10px;align-items:center}#mpan .mh svg{width:52px;height:auto}#mpan .mt{font-size:13.5px;line-height:1.45;margin:8px 0}
+#mpan button.g{width:100%;justify-content:flex-start;text-align:left;margin-top:6px;font-weight:600}
+body.lg #mfab,body.lg #mpan{display:none}.w{padding-bottom:90px}
+.cfw{position:fixed;inset:0;pointer-events:none;z-index:1200;overflow:hidden}.cfw i{position:absolute;bottom:14%;width:9px;height:14px;border-radius:2px;opacity:0;animation:cfy 1.5s ease-out forwards}
+@keyframes cfy{0%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--r))}}
+.ch.nc{background:#FFF0C2;color:#7A4D00}
+:root{--ort:#C2560A;--k4:#FDE8E8;--k4t:#B42318}
+@media(prefers-color-scheme:dark){.ch.nc{background:#4A3A12;color:#FBBF24}:root{--ort:#FF7A1A;--ln:#3A4E92;--sh:0 1px 0 rgba(255,255,255,.04) inset,0 8px 22px rgba(0,0,0,.28);--k4:#4A1A1A;--k4t:#FCA5A5}}
+@media(max-width:600px){.dg{grid-template-columns:1fr 1fr!important;gap:8px}.dg .kc{padding:12px}.dg .bg{font-size:30px}.dg .kc small{font-size:11px;line-height:1.3}.dg .kc h4{font-size:11px}}
+.edt .bs{color:var(--ort);border-color:var(--ort)}.edt .bs.g{color:var(--mu);border-color:var(--ln)}
+`;document.head.appendChild(s)})();
+
+Object.assign(IC,{
+ Hoy:sv('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
+ "Mis ventas":IC.Ventas,
+ Calidad:sv('<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>'),
+ "Capacitación":sv('<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/>'),
+ Comunidad:sv('<path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a4 4 0 0 1 0 6M17.5 6.5a8 8 0 0 1 0 11"/>')});
+
+/* ---------- utilidades ---------- */
+function sec(t,s){return`<div class=sec><h3>${t}</h3>${s?`<p class=mu>${s}</p>`:""}</div>`}
+function irA(t){tab=t;rd();sb2(-1)}
+function cerrarMo(id){const o=document.getElementById(id);if(o)o.remove()}
+function moDiv(id,html){let o=document.getElementById(id);if(!o){o=document.createElement("div");o.id=id;o.className="mo";o.onclick=ev=>{if(ev.target===o)o.remove()};document.body.appendChild(o)}o.innerHTML=html;return o}
+const CI_COLS="clave,ciclo,mes,fecha,asesora,cliente,tipo_doc,doc,telefono,distrito,estado,plan,cargo_fijo,obs1,recibo1,pago1,extra,recibo2,recibo2_txt,pago2,debe,obs";
+async function cobCarga(){CI.d=await allT("cobranza_ciclos",CI_COLS,"clave");await ciCargarG()}
+const miNom=()=>vhN(nom(usr)),soloMias=L=>rol=="asesor"?L.filter(r=>vhN(r.asesora)==miNom()):L;
+const nomC=s=>String(s||"").toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());
+function xlsLista(nombre,rows){if(!rows.length)return msg("No hay filas para descargar.");const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Datos");XLSX.writeFile(wb,nombre+"_"+T+".xlsx")}
+
+/* ---------- menú agrupado ---------- */
+const GR=[["Operación",["Hoy","Dashboard","Mis ventas","Ventas","Cobranza","Mapa","Cobertura","Calidad"]],["Equipo",["Calendario","Asistencia","Bonos","Capacitación","Comunidad"]],["Herramientas",["Simulador"]],["Administración",["Usuarios","Historial","Estado"]]];
+let NAVADM=false;
+function navHTML(){const L=TABS[rol],btn=t=>`<button class="${t==tab?"on":""}" title="${t}" onclick="tab='${t}';rd();sb2(-1)">${IC[t]||""}<span class=lb>${t}</span></button>`;
+ if(L.length<5)return L.map(btn).join("");
+ const seen=new Set();let h="";
+ GR.forEach(([g,ts])=>{const mine=ts.filter(t=>L.includes(t));mine.forEach(t=>seen.add(t));if(!mine.length)return;
+  if(g=="Administración"){const open=NAVADM||mine.includes(tab);h+=`<button class=ngt onclick="NAVADM=!NAVADM;rd()"><span class=lb>${g}</span><span class=lb>${open?"▾":"▸"}</span></button>`+(open?mine.map(btn).join(""):"")}
+  else h+=`<div class=ng><span class=lb>${g}</span></div>`+mine.map(btn).join("")});
+ L.filter(t=>!seen.has(t)).forEach(t=>h+=btn(t));return h}
+
+/* ---------- tema claro / oscuro (manual) ---------- */
+function aplicaTema(t){document.querySelectorAll("style").forEach(st=>{if(st.dataset.o===undefined)st.dataset.o=st.textContent;const o=st.dataset.o;if(!/prefers-color-scheme\s*:\s*dark/.test(o))return;
+ st.textContent=t?o.replace(/\(\s*prefers-color-scheme\s*:\s*dark\s*\)/g,t=="dark"?" all":" not all"):o});document.documentElement.style.colorScheme=t||""}
+function temaActual(){return document.documentElement.dataset.t||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}
+function cambiaTema(){const n=temaActual()=="dark"?"light":"dark";document.documentElement.dataset.t=n;aplicaTema(n);try{localStorage.crm_theme=n}catch(_){}}
+try{const t=localStorage.crm_theme;if(t){document.documentElement.dataset.t=t;aplicaTema(t)}}catch(_){}
+
+/* ---------- comunicados ---------- */
+let _com={t:0,h:""};
+async function comBar(){if(Date.now()-_com.t<60000)return _com.h;let h="";
+ try{const{data}=await sb.from("comunicados").select("id,titulo,texto,por,creado").eq("activo",true).order("creado",{ascending:false}).limit(2);
+  h=(data||[]).map(c=>`<div class="cd com"><b>${e(c.titulo)}</b>${c.texto?`<div>${e(c.texto)}</div>`:""}<small class=mu>${new Date(c.creado).toLocaleDateString("es-PE")} · ${e(nom(c.por))}</small></div>`).join("")}catch(_){}
+ _com={t:Date.now(),h};return h}
+
+/* ---------- HOY (qué hacer hoy) ---------- */
+async function hoyDatos(){const r={v:[],c:null};try{await vhCarga();r.v=VH.d}catch(_){}
+ if(MANDO(rol)){try{await cobCarga();r.c=CI.d}catch(_){r.c=null}}return r}
+function hoyCalc(D){const V=D.v,mes=T.slice(0,7),inst=V.filter(x=>x.tipo=="inst"),
+ K={instHoy:inst.filter(x=>x.fecha_inst==T||(!x.fecha_inst&&x.dia==T)).length,progHoy:V.filter(x=>x.tipo=="prog"&&x.fecha_inst==T).length,ingHoy:V.filter(x=>x.fecha==T).length,instMes:inst.filter(x=>(x.fecha_inst||x.dia||"").slice(0,7)==mes).length},
+ A=[{k:"venc",t:"En camino con fecha vencida",s:"Ventas programadas cuya fecha ya pasó y siguen sin instalarse. Conviene llamar al cliente y reprogramar.",l:V.filter(x=>x.tipo=="prog"&&x.fecha_inst&&x.fecha_inst<T)},
+  {k:"sest",t:"Ventas sin estado",s:"Están en la hoja pero sin estado. Hay que completarlo para que cuenten.",l:V.filter(x=>!x.estado&&x.mes==mes)},
+  {k:"sdoc",t:"Ventas sin documento",s:"Falta el DNI o RUC: sin él no se puede buscar ni cobrar.",l:V.filter(x=>!x.doc&&x.tipo!="canc"&&x.mes==mes)},
+  {k:"dup",t:"DNI repetido",s:"El mismo documento aparece en dos ventas distintas. Puede ser una venta duplicada.",l:V.filter(x=>x.doc&&x.fecha&&x.tipo!="canc"&&(VH.dup[x.doc]||0)>1)}];
+ if(D.c){const S=D.c.map(r=>({r,s:ciSt(r),l:(CI.c[r.clave]||[])[0]||null}));
+  A.push({k:"deuda",t:"Deuda sin gestionar",s:"Clientes que deben y a los que nadie ha contactado todavía.",l:S.filter(x=>x.s.g=="debe"&&!x.l).map(x=>x.r)},
+   {k:"prom0",t:"Promesas de pago para hoy",s:"Clientes que prometieron pagar hoy y siguen debiendo. Hay que confirmar.",l:S.filter(x=>x.l&&x.l.tipo=="promesa"&&x.l.promesa==T&&x.s.g=="debe").map(x=>x.r),az:1},
+   {k:"promV",t:"Promesas vencidas",s:"Prometieron pagar, la fecha pasó y siguen debiendo.",l:S.filter(x=>x.l&&x.l.tipo=="promesa"&&x.l.promesa&&x.l.promesa<T&&x.s.g=="debe").map(x=>x.r)})}
+ return{K,A}}
+function hoyIr(k){const V={venc:["Ventas","prog"],sest:["Ventas","otro"]};
+ if(V[k]){SRC.v="hoja";VH.f.t=V[k][1];VH.f.q="";VH.f.a="";VH.f.all=true;return irA("Ventas")}
+ if(k=="sdoc"||k=="dup")return irA(TABS[rol].includes("Calidad")?"Calidad":"Ventas");
+ SRC.c="ciclos";CI.f.s="debe";CI.f.k=k=="deuda"?"none":"promesa";CI.f.q="";CI.f.a="";CI.f.c="";irA("Cobranza")}
+function alertaHTML(a,go){const c=a.l.length?(a.az?"#0EA5E9":"#EF4444"):"#22C55E";
+ return`<details class=al><summary><i style="background:${c}"></i>${a.t}<b>${a.l.length}</b></summary><p class=mu style="margin:6px 0">${a.s}</p>${a.l.slice(0,10).map(x=>`<div class=hl><span style="flex:1;min-width:0"><b>${e(x.cliente||"—")}</b><br><small class=mu>${e(x.doc||"sin documento")}${x.asesora?" · "+e(x.asesora):""}${x.fecha_inst?" · instalación "+ddm(x.fecha_inst):""}</small></span><button class="g" data-d="${e(x.doc||"")}" data-n="${e(x.cliente||"")}" onclick="fichaCliente(this.dataset.d,this.dataset.n)">Ficha</button></div>`).join("")||"<div class=hl>Todo en orden ✔</div>"}${a.l.length>10?`<div class=hl><small class=mu>… y ${a.l.length-10} más</small></div>`:""}${a.l.length&&go?`<div style="margin-top:8px"><button onclick="hoyIr('${a.k}')">Ver todos</button></div>`:""}</details>`}
+async function vHoy(){let D;try{D=await hoyDatos()}catch(x){return`<div class=cd>No se pudieron leer los datos.<br><small class=mu>${e(x.message||String(x))}</small></div>`}
+ if(!D.v.length&&!D.c)return`${await comBar()}<div class=cd>Todavía no hay ventas cargadas. Revisa que el envío de tu hoja esté activo (pestaña Estado).</div>`;
+ const{K,A}=hoyCalc(D),n=A.filter(a=>a.l.length).length,kc=(c,t,v,s)=>`<div class=kc style="background:var(--${c})"><h4 style="color:var(--${c}t)">${t}</h4><div class=bg style="color:var(--${c}t)">${v}</div><small>${s}</small></div>`;
+ MZ.n=A.filter(a=>a.l.length&&!a.az).reduce((t,a)=>t+a.l.length,0)+A.filter(a=>a.az&&a.l.length).reduce((t,a)=>t+a.l.length,0);
+ return`${await comBar()}<div class=sec style="margin-top:0"><h3>Hoy, ${new Date().toLocaleDateString("es-PE",{weekday:"long",day:"numeric",month:"long"})}</h3><p class=mu>Lo que pasa hoy y lo que conviene revisar. Los números del periodo completo están en el Dashboard.</p></div>
+ <div class=dg>${kc("k3","Instaladas hoy",K.instHoy,"Ventas con instalación hoy")}${kc("k2","Programadas para hoy",K.progHoy,"Instalaciones que se esperan hoy")}${kc("k1","Ventas ingresadas hoy",K.ingHoy,"Registradas hoy en la hoja")}${kc("k3","Instaladas en el mes",K.instMes,"Acumulado del mes actual")}</div>
+ ${sec("Qué revisar","Toca una línea para ver los casos. Rojo: hay algo por resolver. Verde: todo en orden.")}<div class=cd><div style="display:flex;align-items:center;gap:10px"><b>Pendientes de hoy</b><span class="ch ${n?"x":"ok"}">${n?n+" por revisar":"todo en orden"}</span></div>${A.map(a=>alertaHTML(a,true)).join("")}</div>`}
+
+/* ---------- MIS VENTAS (asesora) ---------- */
+const MIS={m:"",q:""};
+async function vMis(){try{await vhCarga();VH.d=soloMias(VH.d);VH.ms=[...new Set(VH.d.map(r=>r.mes).filter(Boolean))].sort().reverse()}catch(x){return`<div class=cd>No se pudieron leer tus ventas.<br><small class=mu>${e(x.message||String(x))}</small></div>`}
+ if(!VH.d.length)return`${await comBar()}<div class=cd><b>Todavía no vemos ventas a tu nombre.</b><p class=mu>Tu usuario debe llamarse igual que en la hoja (por ejemplo, alejandra_jm@gmail.com para ALEJANDRA). Si sigue vacío, avisa a tu supervisor.</p></div>`;
+ if(!MIS.m||!VH.ms.includes(MIS.m))MIS.m=VH.ms.includes(T.slice(0,7))?T.slice(0,7):VH.ms[0];
+ return`${await comBar()}<div id=misw>${misH()}</div>`}
+function misH(){const q=vhN(MIS.q).trim(),qd=q.replace(/\D/g,""),M=VH.d.filter(r=>r.mes==MIS.m),c=t=>M.filter(r=>r.tipo==t).length,res=c("inst")+c("canc");
+ const L=VH.d.filter(r=>q?(vhN(r.cliente).includes(q)||(qd.length>=4&&(r.doc||"").includes(qd))):r.mes==MIS.m).sort((a,b)=>(b.dia||"")<(a.dia||"")?-1:1),kc=(cl,t,v,s)=>`<div class=kc style="background:var(--${cl})"><h4 style="color:var(--${cl}t)">${t}</h4><div class=bg style="color:var(--${cl}t)">${v}</div><small>${s}</small></div>`;
+ return`${sec("Mis ventas","Solo ves tus propias ventas. Los números son del mes elegido.")}<div class=cd style="margin-top:0"><div class=fb><select onchange="MIS.m=this.value;MIS.q='';misRe()">${VH.ms.map(m=>`<option ${MIS.m==m?"selected":""}>${m}</option>`).join("")}</select><input placeholder="Buscar mis ventas por DNI o nombre..." value="${e(MIS.q)}" oninput="MIS.q=this.value;misRes()" style="flex:1;min-width:220px"></div></div>
+ <div class=dg>${kc("k1","Ingresadas",M.length,"Ventas que registraste este mes")}${kc("k3","Instaladas",c("inst"),"Ya instaladas (altas)")}${kc("k2","En camino",c("prog"),"Por instalar")}${kc("k4","No concretadas",c("canc"),res?"Concreción: "+Math.round(c("inst")/res*100)+"%":"Canceladas o anuladas")}</div>
+ <div id=misr>${misR(L)}</div>`}
+function misR(L){const tp=r=>TP[r.tipo]||["Sin estado",""];return`<div class=cd><table class=rt><tr class=h><th>Fecha</th><th>Cliente</th><th>Documento</th><th>Estado</th><th>Instalación</th><th>Motivo / observación</th></tr>${L.slice(0,200).map(r=>`<tr><td data-l="Fecha">${r.dia?ddm(r.dia):"—"}</td><td data-l="Cliente"><b>${e(r.cliente)}</b></td><td data-l="Documento">${e(r.doc||"—")}</td><td data-l="Estado"><span class="ch ${tp(r)[1]}">${e(r.estado||tp(r)[0])}</span></td><td data-l="Instalación">${r.fecha_inst?ddm(r.fecha_inst):""}</td><td data-l="Observación"><small>${e((r.obs||"").slice(0,120))}</small></td></tr>`).join("")||"<tr><td colspan=6>Sin resultados</td></tr>"}</table><small class=mu>${L.length} venta(s). Si falta alguna, avisa a tu supervisor.</small></div>`}
+function misRe(){const el=document.getElementById("misw");if(el)el.innerHTML=misH()}
+function misRes(){const q=vhN(MIS.q).trim(),qd=q.replace(/\D/g,""),L=VH.d.filter(r=>q?(vhN(r.cliente).includes(q)||(qd.length>=4&&(r.doc||"").includes(qd))):r.mes==MIS.m).sort((a,b)=>(b.dia||"")<(a.dia||"")?-1:1);const el=document.getElementById("misr");if(el)el.innerHTML=misR(L)}
+
+/* ---------- CALIDAD DE DATOS (Back Data) ---------- */
+const CALQ={S:[]};
+async function vCalidad(){try{await vhCarga()}catch(x){return`<div class=cd>No se pudieron leer las ventas.<br><small class=mu>${e(x.message||String(x))}</small></div>`}
+ let C=[],E=[];try{C=await allT("cobranza_ciclos","clave,cliente,doc,telefono,asesora,ciclo","clave")}catch(_){}try{E=await allT("edificios","id,nombre,distrito,direccion,lat,lng,torres,obs","id")}catch(_){}
+ const V=VH.d.filter(r=>r.tipo!="canc"),fv=r=>({Cliente:r.cliente,Documento:r.doc||"",Asesora:r.asesora||"",Estado:r.estado||"",Hoja:r.hoja});
+ CALQ.S=[{t:"Ventas sin documento",s:"Falta el DNI o RUC: sin él no se puede buscar ni cobrar.",L:V.filter(r=>!r.doc),x:fv},
+  {t:"Documento con formato raro",s:"Un DNI debe tener 8 números y un RUC 11.",L:V.filter(r=>r.doc&&((/DNI/.test(r.tipo_doc||"")&&!/^\d{8}$/.test(r.doc))||(/RUC/.test(r.tipo_doc||"")&&!/^\d{11}$/.test(r.doc)))),x:fv},
+  {t:"DNI repetido",s:"Mismo documento en dos ventas distintas no canceladas: puede ser una venta duplicada.",L:V.filter(r=>r.doc&&r.fecha&&(VH.dup[r.doc]||0)>1),x:fv},
+  {t:"Ventas sin estado",s:"Están en la hoja pero sin estado.",L:VH.d.filter(r=>!r.estado),x:fv},
+  {t:"En camino con fecha vencida",s:"Programadas cuya fecha ya pasó.",L:VH.d.filter(r=>r.tipo=="prog"&&r.fecha_inst&&r.fecha_inst<T),x:r=>({...fv(r),Instalacion:r.fecha_inst})},
+  {t:"Cobranza: clientes sin teléfono",s:"No se les puede llamar para cobrar.",L:C.filter(r=>!r.telefono),x:r=>({Cliente:r.cliente,Documento:r.doc||"",Asesora:r.asesora||"",Ciclo:r.ciclo})},
+  {t:"Predios sin coordenadas",s:"No aparecen en el mapa ni en la búsqueda por punto.",L:E.filter(x=>x.lat==null),x:x=>({Predio:x.nombre,Distrito:x.distrito||"",Direccion:x.direccion||""}),p:1},
+  {t:"Predios con datos corridos",s:"La fuente venía desordenada: confirmar en el Coberturero.",L:E.filter(x=>(x.obs||"").includes("corridos")),x:x=>({Predio:x.nombre,Distrito:x.distrito||"",Direccion:x.direccion||""}),p:1},
+  {t:"Predios sin torres",s:"No se sabe qué torres están habilitadas.",L:E.filter(x=>!x.torres),x:x=>({Predio:x.nombre,Distrito:x.distrito||"",Direccion:x.direccion||""}),p:1}];
+ const tot=CALQ.S.filter(s=>s.L.length).length;
+ return`${sec("Calidad de datos","Errores y datos faltantes que conviene corregir para que ventas, cobranza y cobertura sean confiables.")}<div class=cd><div style="display:flex;align-items:center;gap:10px"><b>Revisión</b><span class="ch ${tot?"x":"ok"}">${tot?tot+" tipos de problema":"todo en orden"}</span></div>
+ ${CALQ.S.map((s,i)=>`<details class=al><summary><i style="background:${s.L.length?"#EF4444":"#22C55E"}"></i>${s.t}<b>${s.L.length}</b></summary><p class=mu style="margin:6px 0">${s.s}</p>${s.L.slice(0,25).map(r=>s.p?`<div class=hl><span style="flex:1"><b>${e(r.nombre)}</b><br><small class=mu>${e(r.distrito||"")} ${e(r.direccion||"")}</small></span><button class=g data-t="${e(r.nombre)}" onclick="irCob(this.dataset.t)">Abrir</button></div>`:`<div class=hl><span style="flex:1;min-width:0"><b>${e(r.cliente||"—")}</b><br><small class=mu>${e(r.doc||"sin documento")}${r.asesora?" · "+e(r.asesora):""}</small></span><button class=g data-d="${e(r.doc||"")}" data-n="${e(r.cliente||"")}" onclick="fichaCliente(this.dataset.d,this.dataset.n)">Ficha</button></div>`).join("")||"<div class=hl>Todo en orden ✔</div>"}${s.L.length>25?`<div class=hl><small class=mu>… y ${s.L.length-25} más (están en el Excel)</small></div>`:""}${s.L.length?`<div style="margin-top:8px"><button class=g onclick="calXls(${i})">Descargar Excel</button></div>`:""}</details>`).join("")}</div>`}
+function calXls(i){const s=CALQ.S[i];xlsLista("calidad_"+s.t.toLowerCase().replace(/[^a-z]+/g,"_"),s.L.map(s.x))}
+function irCob(t){tab="Cobertura";rd();sb2(-1);setTimeout(()=>{const q=document.getElementById("eq");if(q){q.value=t;edRes()}},400)}
+
+/* ---------- CAPACITACIÓN ---------- */
+let CAPM="";
+async function vCap(){const mes=CAPM||T.slice(0,7);let R;try{const{data,error}=await sb.rpc("resumen_equipo",{p_mes:mes});if(error)throw error;R=data}catch(x){return`<div class=cd>No se pudo leer el resumen del equipo.<br><small class=mu>${e(x.message||String(x))}</small></div>`}
+ const A=(R.asesoras||[]).map(a=>({...a,res:a.instaladas+a.no_concretadas,pc:a.instaladas+a.no_concretadas?a.instaladas/(a.instaladas+a.no_concretadas):null})),ok=A.filter(a=>a.res>=5),prom=ok.length?ok.reduce((t,a)=>t+a.pc,0)/ok.length:null,
+ ref=prom==null?[]:ok.filter(a=>a.pc<prom-0.1).sort((a,b)=>a.pc-b.pc),est=R.estados||[],mx=Math.max(1,...est.map(x=>x.n));
+ return`${sec("Capacitación","Dónde reforzar al equipo. Los números son del mes elegido y no incluyen datos personales de clientes.")}<div class=cd style="margin-top:0"><div class=fb><input type=month value="${mes}" onchange="CAPM=this.value||CAPM;rd()"></div></div>
+ ${sec("A quién reforzar","Asesoras con más de 10 puntos por debajo del promedio del equipo en concreción (instaladas ÷ instaladas + no concretadas). Se miden desde 5 ventas resueltas.")}
+ <div class=cd>${ref.length?ref.map(a=>`<div class=hl><span style="flex:1"><b>${e(nomC(a.asesora))}</b><br><small class=mu>${a.instaladas} instaladas · ${a.no_concretadas} no concretadas</small></span><span class="ch nc">${Math.round(a.pc*100)}% de concreción</span></div>`).join(""):`<p class=mu>${prom==null?"Aún no hay suficientes ventas resueltas en este mes.":"Nadie está por debajo del promedio ("+Math.round(prom*100)+"%). ✔"}</p>`}</div>
+ ${sec("Resultados por asesora","Ordenadas por instaladas.")}<div class=cd><table class=rt><tr class=h><th>Asesora</th><th>Ingresadas</th><th>Instaladas</th><th>En camino</th><th>No concretadas</th><th>Concreción</th></tr>${A.map(a=>`<tr><td data-l="Asesora"><b>${e(nomC(a.asesora))}</b></td><td data-l="Ingresadas">${a.ingresadas}</td><td data-l="Instaladas"><b>${a.instaladas}</b></td><td data-l="En camino">${a.en_camino}</td><td data-l="No concretadas">${a.no_concretadas}</td><td data-l="Concreción">${a.pc==null?"—":Math.round(a.pc*100)+"%"}</td></tr>`).join("")||"<tr><td colspan=6>Sin datos en este mes</td></tr>"}</table></div>
+ ${sec("Por qué se caen las ventas","Estado final de las ventas no concretadas del mes.")}<div class=cd>${est.map(x=>`<div class=bk><b style="width:auto;flex:2;font-size:12px">${e(x.estado)}</b><i style="flex:1"><s style="width:${x.n/mx*100}%;background:#EF4444"></s></i><em style="width:44px;font-size:15px">${x.n}</em></div>`).join("")||"<small class=mu>Sin ventas no concretadas</small>"}</div>
+ ${sec("Materiales","Herramientas para entrenar.")}<div class=cd><div class=hl style="border:0"><span style="flex:1"><b>Predios habilitados</b><br><small class=mu>Buscar edificios y torres habilitadas</small></span><button class=g onclick="irA('Cobertura')">Abrir</button></div><div class=hl><span style="flex:1"><b>Oferta comercial WIN</b><br><small class=mu>Página externa de apoyo a la venta (no es del CRM)</small></span><a href="https://oferta-comercial-win.vercel.app/" target=_blank rel=noopener><button class=g>Abrir</button></a></div></div>`}
+
+/* ---------- COMUNIDAD ---------- */
+async function vCom(){const mes=T.slice(0,7);let R={asesoras:[]};try{const{data}=await sb.rpc("resumen_equipo",{p_mes:mes});if(data)R=data}catch(_){}
+ let C=[];try{const{data}=await sb.from("comunicados").select("id,titulo,texto,por,creado").eq("activo",true).order("creado",{ascending:false}).limit(20);C=data||[]}catch(_){}
+ const top=(R.asesoras||[]).filter(a=>a.instaladas>0).slice(0,3),col=["#F5C04A","#C7CEDB","#D99A6A"],can=MANDO(rol)||rol=="community_manager";_com.t=0;
+ return`${sec("Reconocimientos del mes","Las asesoras con más instaladas este mes. Ideal para felicitar al equipo.")}<div class=cd>${top.length?top.map((a,i)=>`<div class=hl style="align-items:center;${i?"":"border-top:0"}"><span class=medal style="background:${col[i]}">${i+1}</span><span style="flex:1"><b>${e(nomC(a.asesora))}</b></span><span class="ch ok">${a.instaladas} instaladas</span></div>`).join(""):`<p class=mu>Aún no hay instaladas este mes.</p>`}</div>
+ ${can?`${sec("Publicar un comunicado","Lo verá todo el equipo al entrar al CRM.")}<div class=cd><div style="display:grid;gap:8px"><input id=cmt placeholder="Título (ej.: Meta de la semana)" maxlength=120><textarea id=cmx rows=3 maxlength=800 placeholder="Mensaje para el equipo" style="width:100%"></textarea><button style="justify-self:start" onclick="comPub()">Publicar</button></div></div>`:""}
+ ${sec("Comunicados activos")}<div class=cd>${C.map(c=>`<div class=hl style="flex-wrap:wrap"><span style="flex:1;min-width:200px"><b>${e(c.titulo)}</b><br>${e(c.texto||"")}<br><small class=mu>${new Date(c.creado).toLocaleDateString("es-PE")} · ${e(nom(c.por))}</small></span>${can?`<button class=g data-i="${c.id}" onclick="comDel(this.dataset.i)">Quitar</button>`:""}</div>`).join("")||"<p class=mu>No hay comunicados.</p>"}</div>`}
+async function comPub(){const t=$("#cmt").value.trim(),x=$("#cmx").value.trim();if(!t)return msg("Escribe un título.");const{error}=await sb.rpc("comunicado_publicar",{p_titulo:t,p_texto:x||null});if(error)return msg(error.message);msg("");_com.t=0;rd()}
+async function comDel(id){if(!confirm("¿Quitar este comunicado?"))return;const{error}=await sb.rpc("comunicado_borrar",{p_id:+id});if(error)return msg(error.message);msg("");_com.t=0;rd()}
+
+/* ---------- BÚSQUEDA UNIVERSAL + FICHA DEL CLIENTE ---------- */
+let _bt;
+function abrirBusca(){if(document.getElementById("bsm"))return;
+ const o=moDiv("bsm",`<div class=cimb style="margin-top:6vh"><div class=fb style="justify-content:space-between"><h3 style="margin:0">Buscar</h3><button class=g onclick="cerrarMo('bsm')">Cerrar</button></div><div class=sb style="max-width:none;margin-top:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id=bsq placeholder="DNI, nombre, teléfono o edificio..." autocomplete=off oninput="buscaDeb()" style="width:100%;padding:12px 14px 12px 42px;border-radius:12px;font-size:15px"></div><div id=bsr2 style="margin-top:10px"><p class=mu>Escribe al menos 3 letras o 4 números.</p></div></div>`);
+ setTimeout(()=>{const i=document.getElementById("bsq");if(i)i.focus()},50)}
+function buscaDeb(){clearTimeout(_bt);_bt=setTimeout(buscaYa,260)}
+async function buscaYa(){const inp=document.getElementById("bsq"),out=document.getElementById("bsr2");if(!inp||!out)return;
+ const q=inp.value.replace(/[^0-9A-Za-zÁÉÍÓÚÜÑáéíóúüñ .\-]/g,"").trim(),dig=q.replace(/\D/g,"");
+ if(q.length<3||(/^\d+$/.test(q)&&q.length<4)){out.innerHTML='<p class=mu>Escribe al menos 3 letras o 4 números.</p>';return}
+ out.innerHTML='<p class=mu>Buscando…</p>';const fz=q.replace(/[aeiouáéíóúü]/gi,"_"),nm=c=>`${c}.ilike.*${q}*,${c}.ilike.*${fz}*`;
+ const run=(t,cols,f,l)=>sb.from(t).select(cols).or(f).limit(l).then(r=>r.data||[]).catch(()=>[]);
+ const[v0,c0,ed]=await Promise.all([run("ventas_hoja","clave,cliente,doc,tipo_doc,asesora,estado,tipo,hoja","doc.ilike.*"+q+"*,"+nm("cliente"),12),
+  run("cobranza_ciclos","clave,cliente,doc,telefono,asesora,ciclo","doc.ilike.*"+q+"*,"+nm("cliente")+(dig.length>=4?",telefono.ilike.*"+dig+"*":""),12),
+  run("edificios","id,nombre,distrito,direccion,torres",nm("nombre")+","+nm("direccion")+",distrito.ilike.*"+q+"*",8)]);
+ const v=soloMias(v0),c=rol=="asesor"?[]:c0;
+ if(!document.getElementById("bsq")||document.getElementById("bsq").value.replace(/[^0-9A-Za-zÁÉÍÓÚÜÑáéíóúüñ .\-]/g,"").trim()!=q)return;
+ const M={};v.forEach(r=>{const k=r.doc||"n:"+r.cliente,x=M[k]=M[k]||{cliente:r.cliente,doc:r.doc,tipo_doc:r.tipo_doc,ve:[],co:[]};x.ve.push(r)});
+ c.forEach(r=>{const k=r.doc||"n:"+r.cliente,x=M[k]=M[k]||{cliente:r.cliente,doc:r.doc,ve:[],co:[]};x.co.push(r);x.tel=x.tel||r.telefono});
+ const K=Object.values(M);
+ out.innerHTML=(K.length?`<b>Clientes</b>${K.slice(0,10).map(x=>`<div class=hl><span style="flex:1;min-width:0"><b>${e(x.cliente)}</b><br><small class=mu>${e(x.doc||"sin documento")}${x.tel?" · "+e(x.tel):""}</small><br>${x.ve.slice(0,2).map(r=>`<span class="ch ${(TP[r.tipo]||["",""])[1]}">${e(r.estado||"Sin estado")}</span>`).join(" ")}${x.co.length?` <span class="ch pg">Cobranza</span>`:""}</span><button data-d="${e(x.doc||"")}" data-n="${e(x.cliente)}" onclick="fichaCliente(this.dataset.d,this.dataset.n)">Ficha</button></div>`).join("")}`:"")+
+  (ed.length?`<div style="margin-top:10px"><b>Predios habilitados</b></div>${ed.map(x=>`<div class=hl><span style="flex:1;min-width:0"><b>${e(x.nombre)}</b><br><small class=mu>${e(x.distrito||"")} · ${e(x.direccion||"")}${x.torres?" · Torres: "+e(String(x.torres).slice(0,40)):""}</small></span><button class=g data-t="${e(x.nombre)}" onclick="cerrarMo('bsm');irCob(this.dataset.t)">Ver</button></div>`).join("")}`:"")||'<p class=mu>No encontré nada con ese texto.</p>'}
+async function fichaCliente(doc,nombre){cerrarMo("bsm");const o=moDiv("fcm",`<div class=cimb><p class=mu>Cargando ficha…</p></div>`),by=doc&&doc!="undefined"&&doc!="null",col=by?"doc":"cliente",val=by?doc:nombre;
+ const get=(t,c)=>sb.from(t).select(c).eq(col,val).limit(40).then(r=>r.data||[]).catch(()=>[]);
+ const[V0,C0]=await Promise.all([get("ventas_hoja",vhCols),get("cobranza_ciclos",CI_COLS)]),V=soloMias(V0),C=rol=="asesor"?[]:C0;if(C.length){try{await ciCargarG()}catch(_){}}
+ const nm=(V[0]||C[0]||{}).cliente||nombre,tel=(C.find(r=>r.telefono)||{}).telefono,ases=[...new Set([...V,...C].map(r=>r.asesora).filter(Boolean))],pl=(C.find(r=>r.plan)||{}).plan,cf=(C.find(r=>r.cargo_fijo!=null)||{}).cargo_fijo,
+ dot=r=>({inst:"#22C55E",prog:"#3B82F6",canc:"#EF4444"}[r.tipo]||"#94A3B8");
+ V.sort((a,b)=>(a.dia||"")<(b.dia||"")?-1:1);
+ const tv=V.map(r=>`<div style="--d:${dot(r)}"><b>${r.dia?ddm(r.dia):"—"} · ${e(r.estado||"Sin estado")}</b><br><small class=mu>${e(r.hoja)} · ${e(r.asesora||"")}${r.fecha_inst?" · instalación "+ddm(r.fecha_inst):""}</small>${r.obs?`<br><small>${e(r.obs)}</small>`:""}</div>`).join(""),
+ tc=C.map(r=>{const s=ciSt(r);return`<div style="--d:${s.g=="debe"?"#EF4444":s.g=="ok"?"#22C55E":"#F59E0B"}"><b>${e(r.ciclo)}</b> · ${e(r.plan||"")}${r.cargo_fijo!=null?" · cargo fijo "+money(r.cargo_fijo):""}<br><small>Recibo I ${r.recibo1!=null?money(r.recibo1):"—"}: <span class="ch ${s.a[1]}">${s.a[0]}</span> &nbsp; Recibo II ${r.recibo2!=null?money(r.recibo2):e(r.recibo2_txt||"—")}: <span class="ch ${s.b[1]}">${s.b[0]}</span></small>${rol=="cobranza"||MANDO(rol)?`<br><button class=g data-k="${e(r.clave)}" onclick="ciAbrir(this.dataset.k)" style="margin-top:4px">Gestionar cobranza</button>`:""}</div>`}).join(""),
+ tg=C.flatMap(r=>(CI.c[r.clave]||[])).sort((a,b)=>b.id-a.id).slice(0,8).map(x=>{const t=CT[x.tipo]||[x.tipo,""];return`<div style="--d:#38BDF8"><b>${e(t[0])}</b> <small class=mu>${ciTs(x.at)} · ${e(nom(x.por))}${x.promesa?" · para "+ddm(x.promesa):""}</small>${x.nota?`<br><small>${e(x.nota)}</small>`:""}</div>`}).join("");
+ o.innerHTML=`<div class=cimb><div class=fb style="justify-content:space-between"><h3 style="margin:0">${e(nm)}</h3><button class=g onclick="cerrarMo('fcm')">Cerrar</button></div><small class=mu>${e((V[0]||C[0]||{}).tipo_doc||"")} ${e(by?doc:"sin documento")}${tel?" · Tel. "+e(tel):""}${ases.length?" · "+e(ases.join(", ")):""}${pl?"<br>"+e(pl)+(cf!=null?" · cargo fijo "+money(cf):""):""}</small>
+ ${!V.length&&!C.length?`<p class=mu>No encontré más datos de este cliente con tus permisos.</p>`:""}
+ ${V.length?`<div class=cimh><b>Ventas</b><div class=tl>${tv}</div></div>`:""}${C.length?`<div class=cimh><b>Cobranza</b><div class=tl>${tc}</div></div>`:""}${tg?`<div class=cimh><b>Gestión de cobranza</b><div class=tl>${tg}</div></div>`:""}</div>`}
+document.addEventListener("keydown",ev=>{if((ev.ctrlKey||ev.metaKey)&&ev.key.toLowerCase()=="k"&&!document.body.classList.contains("lg")){ev.preventDefault();abrirBusca()}if(ev.key=="Escape"){cerrarMo("bsm");cerrarMo("fcm");mpanCierra()}});
+
+/* ---------- MASCOTA INTERACTIVA ---------- */
+const MZ={n:null,clicks:0,t:0};
+const mudo=()=>{try{return localStorage.crm_mute=="1"}catch(_){return false}};
+function mascotaInit(){if(document.getElementById("mfab"))return;
+ const b=document.createElement("button");b.id="mfab";b.setAttribute("aria-label","Asistente JM");b.title="Asistente JM";b.onclick=()=>{MZ.clicks++;clearTimeout(MZ.t);MZ.t=setTimeout(()=>MZ.clicks=0,900);if(MZ.clicks>=5){MZ.clicks=0;mascotaFiesta(true);return}mascotaPanel()};
+ b.innerHTML=mascota(46,{head:true})+"<i id=mdot></i>";document.body.appendChild(b);
+ const h=new Date().getHours();if(h<6||h>=22){b.classList.add("zz");document.querySelectorAll(".meye").forEach(x=>x.setAttribute("ry","1.6"))}
+ let raf=0;document.addEventListener("mousemove",ev=>{if(raf||mudo())return;raf=requestAnimationFrame(()=>{raf=0;document.querySelectorAll("svg.mas").forEach(s=>{const r=s.getBoundingClientRect();if(!r.width||b.classList.contains("zz"))return;const dx=Math.max(-1,Math.min(1,(ev.clientX-(r.left+r.width/2))/300)),dy=Math.max(-1,Math.min(1,(ev.clientY-(r.top+r.height/2))/300)),ey=s.querySelectorAll(".meye");if(ey.length==2){ey[0].setAttribute("cx",48+dx*2.4);ey[1].setAttribute("cx",72+dx*2.4);ey[0].setAttribute("cy",52+dy*2.4);ey[1].setAttribute("cy",52+dy*2.4)}})})});
+ if(!mudo())setTimeout(mascotaAvisos,4500)}
+async function mascotaAvisos(){try{let m="",n=0;
+ if(MANDO(rol)||rol=="back_office"){const D=await hoyDatos(),{A}=hoyCalc(D);n=A.reduce((t,a)=>t+a.l.length,0);const w=A.filter(a=>a.l.length).sort((a,b)=>b.l.length-a.l.length)[0];m=n?`Hay <b>${n}</b> casos por revisar. Lo más urgente: <b>${w.t.toLowerCase()}</b> (${w.l.length}).`:"Todo en orden por ahora. ¡Buen trabajo!"}
+ else if(rol=="asesor"){await vhCarga();VH.d=soloMias(VH.d);const k=VH.d.filter(r=>r.tipo=="inst"&&(r.fecha_inst||r.dia||"").slice(0,7)==T.slice(0,7)).length;m=`Llevas <b>${k}</b> instalada${k==1?"":"s"} este mes. ${k?"¡Sigue así!":"¡Vamos por la primera!"}`;n=0}
+ MZ.m=m;MZ.n=n;const f=document.getElementById("mfab");if(f&&n)f.classList.add("al")}catch(_){}}
+function mpanCierra(){const p=document.getElementById("mpan");if(p)p.remove()}
+function mascotaPanel(){if(document.getElementById("mpan"))return mpanCierra();
+ const acc=[["Buscar cliente o predio","abrirBusca()"]];if(MANDO(rol)||rol=="back_office")acc.push(["Qué revisar hoy","irA('Hoy')"]);if(rol=="asesor")acc.push(["Mis ventas","irA('Mis ventas')"]);if(TABS[rol].includes("Cobertura"))acc.push(["Buscar edificio habilitado","irA('Cobertura')"]);
+ if(rol=="cobranza")acc.push(["Clientes con deuda","irA('Cobranza')"]);acc.push([temaActual()=="dark"?"Cambiar a tema claro":"Cambiar a tema oscuro","cambiaTema();mpanCierra()"]);
+ const h=new Date().getHours(),sal=h<6||h>=22?"¡Qué tarde! Descansa pronto":h<12?"Buenos días":h<19?"Buenas tardes":"Buenas noches",msg2=MZ.m||"Soy tu asistente. Puedo llevarte rápido a lo que necesitas.";
+ const p=document.createElement("div");p.id="mpan";p.innerHTML=`<div class=mh>${mascota(52,{head:true})}<div><b>${sal}, ${e(nom(usr).split(" ")[0])}</b><br><small class=mu>${e(RN[rol]||rol)}</small></div></div><div class=mt>${msg2}</div>${acc.map(([t,f])=>`<button class=g onclick="mpanCierra();${f}">${t}</button>`).join("")}<button class=g onclick="mascotaMudo()">${mudo()?"Activar animaciones y avisos":"Silenciar avisos y animaciones"}</button>`;document.body.appendChild(p);
+ document.getElementById("mfab").classList.remove("al")}
+function mascotaMudo(){try{localStorage.crm_mute=mudo()?"":"1"}catch(_){}mpanCierra()}
+function mascotaFiesta(extra){if(mudo()&&!extra)return;const c=["#FF7A1A","#FFC93C","#22C55E","#38BDF8","#A78BFA","#F43F5E"],w=document.createElement("div");w.className="cfw";
+ for(let i=0;i<(extra?60:36);i++){const p=document.createElement("i");p.style.cssText=`left:${50+(Math.random()*40-20)}%;background:${c[i%6]};--dx:${Math.round(Math.random()*640-320)}px;--dy:${-Math.round(Math.random()*420+80)}px;--r:${Math.round(Math.random()*720)}deg;animation-delay:${Math.round(Math.random()*140)}ms`;w.appendChild(p)}
+ document.body.appendChild(w);const f=document.getElementById("mfab");if(f){f.classList.add("mj");setTimeout(()=>f.classList.remove("mj"),900)}setTimeout(()=>w.remove(),1900)}
+
+function guiaDash(){const d=[["Ventas ingresadas","Ventas que las asesoras registraron en el periodo, hayan sido instaladas o no."],["En camino","Ventas aprobadas que todavía no se instalan: programadas, en proceso o reprogramadas."],["Instaladas (altas)","Ventas que ya se instalaron. Se cuentan por la fecha de instalación."],["No concretadas","Ventas que se cayeron: canceladas, anuladas, desaprobadas o sin procedencia."],["Ritmo por día hábil","Cuántas instalaciones se logran por día de trabajo en lo que va del periodo."],["Proyección","Cuántas instaladas habría al cierre si se mantiene el ritmo actual."],["Metas escalonadas (tramos)","Metas del equipo por niveles. Cada nivel alcanzado mejora el bono."],["Concreción","De cada 100 ventas ya resueltas, cuántas terminaron instaladas. Más alto es mejor."],["Alertas operativas","Casos que conviene revisar hoy, por ejemplo programadas con fecha vencida."]];
+ return`<details class="cd gd"><summary><b>¿Cómo leer este tablero?</b> <span class=mu>Toca para ver qué significa cada número</span></summary><dl>${d.map(([t,x])=>`<div><dt>${t}</dt><dd>${x}</dd></div>`).join("")}</dl></details>`}
 
 init();
 </script></body></html>
