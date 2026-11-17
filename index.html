@@ -134,15 +134,20 @@ body.lg .w{max-width:460px;margin:0 auto}
 .ei{display:flex;gap:12px;align-items:flex-start;padding:12px 4px;border-bottom:1px solid var(--ln)}.ei:last-child{border:0}.ei i{width:12px;height:12px;border-radius:50%;margin-top:4px;flex:none}
 .asm{border-collapse:collapse;font-size:12px}.asm th,.asm td{padding:4px 3px;text-align:center;border-bottom:1px solid var(--ln);min-width:22px}.asm th:first-child,.asm td:first-child{text-align:left;position:sticky;left:0;background:var(--c);z-index:1;padding-right:10px}
 .asm .dom{background:rgba(127,127,127,.12)}.ac{display:inline-block;min-width:18px;padding:2px 0;border-radius:5px;color:#fff;font-weight:700;font-size:11px;text-align:center}
+.fxr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.fxr2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fxfl{display:block;margin-top:10px}.fxfl>span{font-size:12px;font-weight:600;color:var(--mu)}.fxfl input,.fxfl select{width:100%;margin-top:4px;text-transform:uppercase}.fxfl small{display:block;margin-top:3px;font-size:12px}
+#fbox textarea{width:100%;min-height:70px;margin-top:10px;border:1.5px dashed var(--ln);border-radius:12px;padding:10px;font:inherit;background:var(--c);color:inherit}
+#fbox hr{border:0;border-top:1px dashed var(--ln);margin:14px 0 4px}.fxbad{border-color:#EF4444!important;background:#EF444414!important}.fxerr{color:#EF4444;font-weight:600}.fxokm{color:#0B8F5F;font-weight:700}
+.fxok{background:#0B8F5F1A;border:1.5px solid #0B8F5F;border-radius:12px;padding:10px;margin-top:8px}.fxno{background:#F59E0B1F;border:1.5px solid #F59E0B;border-radius:12px;padding:10px;margin-top:8px}
 </style><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%228%202%20104%2092%22%3E%3Crect%20x%3D%228%22%20y%3D%222%22%20width%3D%22104%22%20height%3D%2292%22%20rx%3D%2222%22%20fill%3D%22%23fff%22/%3E%3Cline%20x1%3D%2260%22%20y1%3D%2210%22%20x2%3D%2260%22%20y2%3D%2224%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%229%22%20r%3D%225%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%222%22/%3E%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%2272%22%20height%3D%2264%22%20rx%3D%2224%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2234%22%20y%3D%2236%22%20width%3D%2252%22%20height%3D%2240%22%20rx%3D%2216%22%20fill%3D%22%230E1B3D%22/%3E%3Cellipse%20cx%3D%2248%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cellipse%20cx%3D%2272%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M50%2064%20Q60%2073%2070%2064%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M22%2054%20Q22%2018%2060%2018%20Q98%2018%2098%2054%22%20fill%3D%22none%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2294%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3C/svg%3E"></head><body class="lg"><div id="ov" onclick="sb2()"></div>
-<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V05</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
+<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V06</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
 <div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><button class="hb" id="bsb" onclick="abrirBusca()" title="Buscar cliente o predio (Ctrl+K)" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button><button class="hb" id="bth" onclick="cambiaTema()" title="Cambiar entre tema claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><div id="sl"></div></header><div class="lgh"></div><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
 <script>
 const U="https://znrcrkzlysyqeqiyercd.supabase.co",K="sb_publishable_qH2iEk0R59fgmQPqt2gP3A_AxXlomyY",sb=supabase.createClient(U,K);
 const $=s=>document.querySelector(s),e=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),dim=(y,m)=>new Date(y,m+1,0).getDate(),r2=n=>Math.round(n*100)/100,iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"),T=iso(new Date()),money=n=>"S/ "+r2(n).toFixed(2);
 const ES=["NUEVA","GRABADO","PROGRAMADA","EN PROGRESO","REPROGRAMADA","INSTALADA","CANCELADA","ANULADA","DESAPROBADA","NO PROCEDE","POSIBLE FRAUDE"];
 let PL=[];
-const FULL=["Central","Hoy","Cola","Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:["Central","Dashboard","Cobertura","Usuarios"],jefe:["Central","Dashboard","Cobertura","Usuarios"],supervisor:["Central","Dashboard","Cobertura","Usuarios"],back_office:["Central","Dashboard","Cobertura"],cobranza:["Central","Cobertura"],back_data:["Central","Cobertura"],community_manager:["Central","Cobertura"],rrhh:["Central"],capacitador:["Central","Cobertura"],asesor:["Central","Cobertura"]},
+const FULL=["Central","Hoy","Cola","Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:["Central","Dashboard","Ficha","Cobertura","Usuarios"],jefe:["Central","Dashboard","Ficha","Cobertura","Usuarios"],supervisor:["Central","Dashboard","Ficha","Cobertura","Usuarios"],back_office:["Central","Dashboard","Ficha","Cobertura"],cobranza:["Central","Cobertura"],back_data:["Central","Cobertura"],community_manager:["Central","Cobertura"],rrhh:["Central"],capacitador:["Central","Cobertura"],asesor:["Central","Cobertura"]},
 RN={admin:"Administrador",jefe:"Jefe",supervisor:"Supervisor",back_office:"Back Office",cobranza:"Cobranza",back_data:"Back Data",community_manager:"Community Manager",rrhh:"RRHH",capacitador:"Capacitador",asesor:"Asesor"},MANDO=r=>["admin","jefe","supervisor"].includes(r);
 let usr="",rol,tab,planes=[],code=new URLSearchParams(location.search).get("a")||"";
 const sv=p=>`<svg viewBox="0 0 24 24">${p}</svg>`,IC={
@@ -159,6 +164,7 @@ Estado:sv('<path d="M3 12h4l3-8 4 16 3-8h4"/>'),
 Mapa:sv('<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/>'),
 Calendario:sv('<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/>'),
 Central:sv('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'),
+Ficha:sv('<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>'),
 Inicio:sv('<path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/>')},
 nom=m=>((m||"").split("@")[0].replace(/_jm$/i,"").replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase()))||"Usuario",
 slug=n=>(n||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,""),
@@ -169,7 +175,7 @@ function calc(p,fi){if(!p||!fi)return[0,1,2].map(()=>({e:0,v:"",pz:""}));const p
 const ds=(n,k)=>{const u=Math.min(n,pool);if(u<=0||dm<=0)return 0;pool-=u;return t=="p"?u*dly(k)*v/100:u*dm/30};
 return[0,1,2].map(k=>{let b,s;if(e2){b=k?pr:di*dly(0)+pr;s=k?ds(30,k+1):ds(di+30,1)}else{b=k?pr:di*dly(0);s=k?ds(30,k):ds(di,0)}const o=(e2?1:0)+k;return{e:r2(b-s),v:iso(new Date(y,m+o,28)),pz:iso(new Date(y,m+o+1,0))}})}
 /* ---------- CENTRAL · hoja REGISTRO DE VENTAS ---------- */
-const CRM_VER="V05",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
+const CRM_VER="V06",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
 CEAL={asesor_nuevo:"Asesor nuevo",doc_duplicado:"Documento repetido",doc_invalido:"Documento con formato raro",sin_documento:"Venta sin documento",sin_vendedor:"Venta sin vendedor",status_desconocido:"STATUS desconocido",plan_no_reconocido:"Plan no reconocido",precio_distinto:"Precio distinto al oficial",edificio_no_registrado:"Edificio fuera de cobertura"};
 function cenSet(k,v){CE[k]=v;if(k=="mes"){CE.est="";CE.ase=""}rd()}
 async function cenRes(id){const{error}=await sb.from("registro_alertas").update({resuelta:true}).eq("id",id);if(error)return alert(error.message);rd()}
@@ -230,6 +236,161 @@ async function vDash(){let R,A;
  <div><b>Ventas por canal</b>${dbBar(dbAgr(M,"canal"),M.length,"#F59E0B")}<br><b>Ventas por campaña</b>${dbBar(dbAgr(M,"campana"),M.length,"#F59E0B")}</div>
  <div><b>Ventas por plan</b>${dbBar(dbAgr(M,"plan"),M.length,"#A855F7")}</div>
  <div><b>Top 10 distritos</b>${dbBar(dbAgr(M,"distrito").slice(0,10),M.length,"#EF4444")}</div></div>`}
+/* ================= FICHA DE VENTA (CRM) ================= */
+const FX={code:"",as:null,tab:"Ficha"};
+const N=s=>String(s==null?"":s).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/\s+/g," ").trim().toUpperCase();
+const NT=s=>String(s==null?"":s).replace(/\s+/g," ").trim().toUpperCase(); // mayúsculas conservando tildes y Ñ
+const PLANES=[["MONO 1000 MBPS","LIMA","MONO","1000 MBPS",139,69.5],["MONO 850 MBPS","LIMA","MONO","850 MBPS",119,59.5],["MONO 750 MBPS","LIMA","MONO","750 MBPS",109,54.5],["MONO 500 MBPS","LIMA","MONO","500 MBPS",99,null],
+["XGSPON 2.5 GB","LIMA","XGSPON","2.5 GB",199,99.5],["XGSPON 2.0 GB","LIMA","XGSPON","2.0 GB",189,94.5],["XGSPON 1.5 GB","LIMA","XGSPON","1.5 GB",169,139],
+["GAMER 1000 MBPS","LIMA","GAMER","1000 MBPS",159,79.5],["GAMER 600 MBPS","LIMA","GAMER","600 MBPS",129,64.5],
+["HB L1MAX PREMIUM 1000 MBPS","LIMA","L1MAX","1000 MBPS",149.9,74.95],["HB L1MAX PREMIUM 850 MBPS","LIMA","L1MAX","850 MBPS",129.9,64.95],["HB L1MAX PREMIUM 750 MBPS","LIMA","L1MAX","750 MBPS",119.9,59.95],
+["HB WTV 1000 MBPS","LIMA","WTV","1000 MBPS",139.9,null],["HB WTV 850 MBPS","LIMA","WTV","850 MBPS",119.9,null],["HB WTV 750 MBPS","LIMA","WTV","750 MBPS",109.9,null],["HB WTV 500 MBPS","LIMA","WTV","500 MBPS",99.9,null],
+["HB DGO FULL XGSPON 2.5 GB","LIMA","DGO FULL","2.5 GB",199.9,99.9],["HB DGO HOGAR XGSPON 2.0 GB","LIMA","DGO HOGAR","2.0 GB",189.9,94.95],["HB DGO FULL 1000 MBPS","LIMA","DGO FULL","1000 MBPS",179.9,89.95],
+["HB DGO HOGAR 1000 MBPS","LIMA","DGO HOGAR","1000 MBPS",159.9,79.95],["HB DGO HOGAR 850 MBPS","LIMA","DGO HOGAR","850 MBPS",139.9,69.95],
+["RUC 20 1000 MBPS","LIMA","RUC20","1000 MBPS",139,null],["RUC 20 850 MBPS","LIMA","RUC20","850 MBPS",119,null],["RUC 20 750 MBPS","LIMA","RUC20","750 MBPS",109,null],
+["MONO PROV 1000 MBPS","PROV","MONO","1000 MBPS",129,null],["MONO PROV 750 MBPS","PROV","MONO","750 MBPS",99,null],["MONO PROV 550 MBPS","PROV","MONO","550 MBPS",89,null],
+["HB PROV L1MAX PREMIUM 1000 MBPS","PROV","L1MAX","1000 MBPS",129.9,64.95],["HB PROV L1MAX PREMIUM 750 MBPS","PROV","L1MAX","750 MBPS",119.9,59.95],
+["HB PROV WTV 750 MBPS","PROV","WTV","750 MBPS",99.9,49.95],["HB PROV WTV 550 MBPS","PROV","WTV","550 MBPS",89.9,44.95],
+["HB PROV DGO FULL 1000 MBPS","PROV","DGO FULL","1000 MBPS",159.9,79.95],["HB PROV DGO HOGAR 1000 MBPS","PROV","DGO HOGAR","1000 MBPS",129.9,64.95],["HB PROV FONOWIN 350 MBPS","PROV","FONOWIN","350 MBPS",79,39.95],
+["RUC 20 PROV 1000 MBPS","PROV","RUC20","1000 MBPS",129,null],["RUC 20 PROV 750 MBPS","PROV","RUC20","750 MBPS",99,null],["RUC 20 PROV 550 MBPS","PROV","RUC20","550 MBPS",89,null]];
+const LIMA_CALLAO=["ANCON","ATE","ATE VITARTE","BARRANCO","BRENA","CARABAYLLO","CHACLACAYO","CHORRILLOS","CIENEGUILLA","COMAS","EL AGUSTINO","INDEPENDENCIA","JESUS MARIA","LA MOLINA","LA VICTORIA","LIMA","CERCADO DE LIMA","LINCE","LOS OLIVOS","LURIGANCHO","CHOSICA","LURIN","MAGDALENA","MAGDALENA DEL MAR","MIRAFLORES","PACHACAMAC","PUCUSANA","PUEBLO LIBRE","PUENTE PIEDRA","PUNTA HERMOSA","PUNTA NEGRA","RIMAC","SAN BARTOLO","SAN BORJA","SAN ISIDRO","SAN JUAN DE LURIGANCHO","SAN JUAN DE MIRAFLORES","SAN LUIS","SAN MARTIN DE PORRES","SAN MIGUEL","SANTA ANITA","SANTA MARIA DEL MAR","SANTA ROSA","SANTIAGO DE SURCO","SURCO","SURQUILLO","VILLA EL SALVADOR","VILLA MARIA DEL TRIUNFO","CALLAO","BELLAVISTA","CARMEN DE LA LEGUA","CARMEN DE LA LEGUA REYNOSO","LA PERLA","LA PUNTA","VENTANILLA","MI PERU"];
+const ALIAS_DIST={"SMP":"SAN MARTIN DE PORRES","S M P":"SAN MARTIN DE PORRES","SJL":"SAN JUAN DE LURIGANCHO","S J L":"SAN JUAN DE LURIGANCHO","SJM":"SAN JUAN DE MIRAFLORES","VMT":"VILLA MARIA DEL TRIUNFO","VES":"VILLA EL SALVADOR","CERCADO":"CERCADO DE LIMA"};
+const dinero=n=>n==null?"":(Math.round(n*100)/100).toFixed(2),numero=s=>{const m=String(s||"").replace(",",".").match(/\d+(\.\d+)?/);return m?Number(m[0]):null};
+function planOficial(raw,dist,tipoDoc,nDoc){const t=N(raw).replace(/\bMPBS\b|\bMBP\b|\bMEGAS?\b|\bMB\b/g,"MBPS").replace(/(\d)(MBPS|MPBS|MB)\b/g,"$1 MBPS");if(!t)return null;let vel="";
+ const gb=t.match(/(\d)(?:[.,](\d))?\s*G(?:B|BPS)?\b/);if(gb)vel=gb[1]+"."+(gb[2]||"0")+" GB";else{const m=t.match(/\b(350|500|550|600|750|850|1000)\b/);if(m)vel=m[1]+" MBPS"}if(!vel)return null;
+ let tp;if(/DGO/.test(t))tp=/FULL/.test(t)?["DGO FULL"]:/HOGAR/.test(t)?["DGO HOGAR"]:["DGO FULL","DGO HOGAR"];else if(/L1 ?MAX/.test(t))tp=["L1MAX"];else if(/WIN ?TV|\bWTV\b/.test(t))tp=["WTV"];
+ else if(/CABLE|\bTV\b|TELEVISION/.test(t))tp=["WTV","L1MAX","DGO FULL","DGO HOGAR"];else if(/FONO ?WIN/.test(t))tp=["FONOWIN"];else if(/GAMER/.test(t))tp=["GAMER"];else if(/XGSPON/.test(t)||/GB$/.test(vel))tp=["XGSPON"];
+ else tp=tipoDoc=="RUC"&&/^20/.test(nDoc)?["RUC20"]:["MONO"];
+ const d=N(dist),reg=!d||LIMA_CALLAO.includes(d)?"LIMA":"PROV";let c=PLANES.filter(p=>p[1]==reg&&p[3]==vel&&tp.includes(p[2]));if(!c.length)c=PLANES.filter(p=>p[3]==vel&&tp.includes(p[2]));
+ return c.length==1?{nombre:c[0][0],regular:dinero(c[0][4]),promo:c[0][5]==null?"SIN PROMO":dinero(c[0][5])}:c.length>1?{varios:c.map(p=>p[0])}:null}
+
+// [clave, etiqueta en la plantilla, grupo]
+const FC=[["canal","CANAL",1],["campana","CAMPAÑA",1],["asesor","ASESOR",1],["coord","COORDENADAS",2],["zona","ZONA",2],
+["nombre","NOMBRE Y APELLIDO",3],["tdoc","TIPO DE DOC",3],["ndoc","N° DE DOC",3],["score","SCORE",3],
+["lnac","LUGAR NACIMIENTO",4],["fnac","FECHA NACIMIENTO",4],["correo","CORREO ELECTRÓNICO",4],
+["leads","LEADS",5],["tel1","TELÉFONO 1(LIMPIO)",5],["tel2","TELÉFONO 2(GRABACION)",5],["telref","TELÉFONO DE REFERIDO",5],["titular","DATOS TITULAR",5],
+["vivienda","¿CASA O CONDOMINIO?",6],["condominio","NOMBRE DE CONDOMINIO",6],["direccion","DIRECCION DE INSTALACIÓN",6],["distrito","DISTRITO",6],["piso","PISO E INTERIOR",6],
+["plan","PLAN CONTRATADO",7],["pregular","PRECIO REGULAR",7],["ppromo","PRECIO PROMOCIONAL",7],["mesh","MESH",7],["winbox","WINBOX",7],["fonowin","FONO WIN",7],["rango","RANGO DE INSTALACION",7],
+["axb","AXB (SI O NO)",8],["adicional","ADICIONAL",8]];
+const FK={};FC.forEach(f=>FK[N(f[1]).replace(/[^A-Z0-9]/g,"")]=f[0]);
+Object.assign(FK,{CAMPANA:"campana",VENDEDOR:"asesor",NOMBRES:"nombre",NOMBREYAPELLIDOS:"nombre",CLIENTE:"nombre",TIPODOCUMENTO:"tdoc",NDOC:"ndoc",NDEDOCUMENTO:"ndoc",NUMERODEDOC:"ndoc",DNI:"ndoc",
+ LUGARDENACIMIENTO:"lnac",FECHADENACIMIENTO:"fnac",CORREO:"correo",EMAIL:"correo",LEAD:"leads",TELEFONO1:"tel1",TELEFONO1LIMPIO:"tel1",TELEFONO2:"tel2",TELEFONO2GRABACION:"tel2",REFERIDO:"telref",TITULAR:"titular",
+ CASAOCONDOMINIO:"vivienda",CONDOMINIO:"condominio",DIRECCION:"direccion",DIRECCIONDEINSTALACION:"direccion",PISO:"piso",PISOEINTERIOR:"piso",PLAN:"plan",PRECIOREGULAR:"pregular",PRECIOPROMOCIONAL:"ppromo",
+ FONOWIN:"fonowin",RANGO:"rango",RANGODEINSTALACION:"rango",AXB:"axb",AXBSIONO:"axb",ADICIONALES:"adicional"});
+const OPC={canal:["PULSE","EXPORTEL","LLAMA PERU"],campana:["MULTICANAL","ATAQUE"],tdoc:["DNI","CE","RUC","PASAPORTE","PTP"],vivienda:["CASA","CONDOMINIO"],
+ mesh:["0","1","2","3","4","5"],winbox:["0","1","2","3","4","5"],fonowin:["NO","SI"],axb:["NO","SI"],
+ adicional:["NINGUNO","WINTV PREMIUM","WINTV L1MAX","WINTV L1MAX PREMIUM","DGO HOGAR","DGO FULL","PARAMOUNT+","UNIVERSAL+","MESH WI-FI ADICIONAL","KIT WIFI PRO"]};
+const TRAMOS={1:"TRAMO 1 (8AM A 12PM)",2:"TRAMO 2 (12PM A 4PM)",3:"TRAMO 3 (4PM A 8PM)"};
+let FI={},EDIF=null,EDIF_ERR="";
+const hoyISO=()=>new Date(Date.now()-5*3600000).toISOString().slice(0,10);
+const isoDMY=s=>{const m=String(s||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);return m?m[3]+"/"+m[2]+"/"+m[1]:""};
+const tel9=v=>{const d=String(v).replace(/\D/g,"").replace(/^51(?=9\d{8}$)/,"");return/^9\d{8}$/.test(d)?d.replace(/(\d{3})(\d{3})(\d{3})/,"$1 $2 $3"):null};
+const siNo=v=>{const x=N(v);return/^(SI|S|1|YES)$/.test(x)?"SI":/^(NO|N|0|NINGUNO|-)$/.test(x)?"NO":""};
+function distN(v){let d=N(v).replace(/^\(|\)$/g,"");if(d.includes(","))d=d.split(",")[0].trim();return ALIAS_DIST[d]||d}
+function region(){const d=distN(FI.distrito);return!d||LIMA_CALLAO.includes(d)?"LIMA":"PROV"}
+function planesOpc(){const reg=region(),ruc20=FI.tdoc=="RUC"&&/^20/.test(FI.ndoc);return PLANES.filter(p=>p[1]==reg&&(p[2]!="RUC20"||ruc20)).map(p=>p[0])}
+function fichaVacia(){const o={};FC.forEach(f=>o[f[0]]="");o.rfecha="";o.rtramo="";o._p={};return o}
+// Convierte lo pegado a los valores de los desplegables
+function fichaLeer(txt){const r={};String(txt||"").split(/\r?\n/).forEach(l=>{const i=l.indexOf(":");if(i<0)return;const c=FK[N(l.slice(0,i)).replace(/[^A-Z0-9]/g,"")];if(c)r[c]=l.slice(i+1).trim()});
+ const o=fichaVacia(),pick=(k,v)=>{const x=N(v);if(OPC[k].includes(x))o[k]=x;else if(x)o._p[k]=x};
+ pick("canal",N(r.canal).replace(/^LLAMA ?PERU$/,"LLAMA PERU"));pick("campana",r.campana);
+ const co=String(r.coord||"").replace(/−/g,"-").match(/(-?\d{1,2}\.\d+)\s*[,;\s]\s*(-?\d{2}\.\d+)/);o.coord=co?co[1]+", "+co[2]:NT(r.coord);
+ ["zona","nombre","score","lnac","titular","direccion","piso"].forEach(k=>o[k]=NT(r[k]));o.zona=o.zona.replace(/^BLANCO$/,"BLANCA");
+ let td=N(r.tdoc).replace(/^C\.?E\.?$|^CARNET.*/,"CE").replace(/^PAS.*/,"PASAPORTE");const nd=N(r.ndoc).replace(/[^0-9A-Z]/g,"");
+ if(!td&&/^\d+$/.test(nd))td=nd.length==8?"DNI":nd.length==11?"RUC":nd.length==9?"CE":"";pick("tdoc",td);o.ndoc=nd;
+ const fn=String(r.fnac||"").match(/(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})/);o.fnac=fn?fn[3]+"-"+("0"+fn[2]).slice(-2)+"-"+("0"+fn[1]).slice(-2):"";if(!fn&&N(r.fnac))o._p.fnac=N(r.fnac);
+ o.correo=String(r.correo||"").trim().toUpperCase();["leads","tel1","tel2","telref"].forEach(k=>{const t=tel9(r[k]||"");o[k]=t||String(r[k]||"").trim()});
+ const vi=N(r.vivienda);pick("vivienda",/CONDO/.test(vi)?"CONDOMINIO":/CASA/.test(vi)?"CASA":vi);
+ o.condominio=/^(NO|-|NO APLICA|NINGUNO)?$/.test(N(r.condominio))?"":NT(r.condominio);o.distrito=distN(r.distrito);
+ FI=o;const pl=planOficial(r.plan,o.distrito,o.tdoc,o.ndoc);if(pl&&pl.nombre)o.plan=pl.nombre;else if(N(r.plan))o._p.plan=N(r.plan)+(pl&&pl.varios?" (puede ser: "+pl.varios.join(" / ")+")":"");
+ ["mesh","winbox"].forEach(k=>{const x=N(r[k]);pick(k,/^(NO|NINGUNO|-)$/.test(x)?"0":x)});["fonowin","axb"].forEach(k=>{const v=siNo(r[k]);if(v)o[k]=v;else if(N(r[k]))o._p[k]=N(r[k])});
+ const ad=N(r.adicional);if(/^(NO|NINGUNO|-|0)$/.test(ad))o.adicional="NINGUNO";else{const f=OPC.adicional.find(a=>N(a)==ad||N(a).replace(/[^A-Z0-9]/g,"")==ad.replace(/[^A-Z0-9]/g,""));if(f)o.adicional=f;else if(ad)o._p.adicional=ad}
+ const rg=N(r.rango),m=rg.match(/(\d{1,2})\s*[\/.\-]\s*(\d{1,2})(?:\s*[\/.\-]\s*(\d{2,4}))?/);
+ if(m){const y=m[3]?(m[3].length==2?"20"+m[3]:m[3]):hoyISO().slice(0,4);o.rfecha=y+"-"+("0"+m[2]).slice(-2)+"-"+("0"+m[1]).slice(-2);
+  const rest=rg.slice(m.index+m[0].length),tm=rest.match(/TRAMO\s*(\d)|(\d)\s*(?:ER|DO|RO)?\s*TRAMO/);let t=tm?+(tm[1]||tm[2]):null;
+  if(!t){const h=rest.match(/(\d{1,2})\s*(?:AM|PM)?\s*(?:A|-|AL|HASTA)\s*(\d{1,2})/);if(h){const a=+h[1];t=a==8||a==9?1:a==12||a==1?2:a==4||a==3||a==16?3:null}}
+  if(TRAMOS[t])o.rtramo=String(t)}else if(rg)o._p.rango=rg;
+ cobertura(true);return o}
+// ---------- Cobertura (edificios del CRM) ----------
+async function edifCargar(){if(EDIF)return;try{const p=FX.code?{p_codigo:FX.code}:{};const{data,error}=await sb.rpc("app_edificios",p);if(error)throw error;EDIF=data||[];EDIF_ERR="";fichaRe()}catch(x){EDIF_ERR="No se pudo leer la cobertura";EDIF=null}}
+function dist2(a,b,c,d){const R=6371000,r=Math.PI/180,x=(d-b)*r*Math.cos((a+c)/2*r),y=(c-a)*r;return Math.sqrt(x*x+y*y)*R}
+function edifMatch(){if(!EDIF||FI.vivienda!="CONDOMINIO")return null;const n=N(FI.condominio),d=distN(FI.distrito),co=String(FI.coord).match(/(-?\d+\.\d+),\s*(-?\d+\.\d+)/);
+ let best=null;if(co){EDIF.forEach(x=>{if(x.lat==null||x.lng==null)return;const m=dist2(+co[1],+co[2],+x.lat,+x.lng);if(m<=120&&(!best||m<best.m))best={x,m}});if(best)return best.x}
+ if(n){const f=EDIF.filter(x=>{const en=N(x.nombre);return en&&(en==n||(n.length>=5&&(en.includes(n)||n.includes(en))))});const g=f.filter(x=>!d||N(x.distrito)==d);if(g.length==1)return g[0];if(f.length==1)return f[0]}
+ const di=N(FI.direccion);if(di.length>=8){const f=EDIF.filter(x=>{const ed=N(x.direccion);return ed.length>=8&&(di.includes(ed)||ed.includes(di))});if(f.length==1)return f[0]}return null}
+function cobertura(silencio){const x=edifMatch();FI._ed=x?x.id:null;if(!x)return;FI.condominio=NT(x.nombre);if(x.distrito)FI.distrito=distN(x.distrito);if(x.direccion)FI.direccion=NT(x.direccion);
+ if(x.lat!=null&&x.lng!=null&&!/\d/.test(FI.coord))FI.coord=(+x.lat).toFixed(6)+", "+(+x.lng).toFixed(6);if(!silencio)fichaGuardar()}
+// ---------- Validación ----------
+function fichaValidar(o){const E={},V={},req=(k,f)=>{const v=f?f(o[k]):NT(o[k]);if(v)V[k]=v;else E[k]=o._p&&o._p[k]?"Se pegó «"+o._p[k]+"»: elige una opción válida":"Falta este dato";return!!v};
+ ["canal","campana","tdoc","vivienda","mesh","winbox","fonowin","axb","adicional"].forEach(k=>req(k,v=>OPC[k].includes(v)?v:""));
+ if(N(o.asesor))V.asesor=N(o.asesor);else E.asesor="Elige el asesor";
+ const co=String(o.coord).match(/^\s*(-?\d{1,2}\.\d+)\s*,\s*(-?\d{2}\.\d+)\s*$/);if(co&&+co[1]<0&&+co[1]>-18.5&&+co[2]<-68&&+co[2]>-81.5)V.coord=co[1]+", "+co[2];else E.coord=o.coord?"Coordenadas no válidas (ej. -12.0464, -77.0428)":"Falta este dato";
+ ["zona","score","lnac","titular","direccion","piso"].forEach(k=>req(k));
+ const nm=NT(o.nombre);if(nm&&/^[A-ZÁÉÍÓÚÜÑ.' -]+$/.test(nm)&&nm.split(" ").length>=2)V.nombre=nm;else E.nombre=nm?"Solo letras, nombre y apellido":"Falta este dato";
+ const td=o.tdoc,nd=String(o.ndoc||"").replace(/[^0-9A-Z]/gi,"").toUpperCase();
+ const okDoc=td=="DNI"?/^\d{8}$/.test(nd):td=="CE"?/^\d{9}$/.test(nd):td=="RUC"?/^(10|15|17|20)\d{9}$/.test(nd):/^[0-9A-Z]{6,12}$/.test(nd);
+ if(nd&&okDoc)V.ndoc=nd;else E.ndoc=!nd?"Falta este dato":td=="DNI"?"El DNI tiene 8 números":td=="CE"?"El CE tiene 9 números":td=="RUC"?"El RUC tiene 11 números (10… o 20…)":"Documento no válido";
+ if(o.fnac){const f=new Date(o.fnac+"T12:00"),edad=(Date.now()-f)/31557600000;if(edad>=18&&edad<=100)V.fnac=isoDMY(o.fnac);else E.fnac="Debe ser mayor de 18 años"}else E.fnac=o._p&&o._p.fnac?"Se pegó «"+o._p.fnac+"»: elige la fecha":"Falta este dato";
+ if(/^[^\s@]+@[^\s@]+\.[A-Z]{2,}$/i.test(o.correo))V.correo=String(o.correo).toUpperCase();else E.correo=o.correo?"Correo no válido":"Falta este dato";
+ ["leads","tel1","tel2","telref"].forEach(k=>{const t=tel9(o[k]);if(t)V[k]=t;else E[k]=o[k]?"Debe ser un celular de 9 números (9…)":"Falta este dato"});
+ if(o.vivienda=="CONDOMINIO"){if(NT(o.condominio))V.condominio=NT(o.condominio);else E.condominio="Falta el nombre del condominio"}else if(o.vivienda=="CASA")V.condominio="NO APLICA";else E.condominio="Primero elige CASA o CONDOMINIO";
+ const di=distN(o.distrito);if(di)V.distrito=di;else E.distrito="Falta este dato";
+ if(planesOpc().includes(o.plan)){const p=PLANES.find(x=>x[0]==o.plan);V.plan=o.plan;V.pregular=dinero(p[4]);V.ppromo=p[5]==null?"SIN PROMO":dinero(p[5])}
+ else{E.plan=o.plan?"Ese plan no corresponde a "+(region()=="LIMA"?"Lima":"provincia")+": elige otro":o._p&&o._p.plan?"Se pegó «"+o._p.plan+"»: elige el plan":"Falta este dato";E.pregular=E.ppromo="Sale del plan"}
+ if(!o.rfecha)E.rango="Elige la fecha de instalación";else if(o.rfecha<hoyISO())E.rango="La fecha ya pasó";else if(!TRAMOS[o.rtramo])E.rango="Elige el tramo";else V.rango=isoDMY(o.rfecha)+" "+TRAMOS[o.rtramo];
+ return{E,V}}
+function fichaTexto(V){let t="",g=0;FC.forEach(f=>{if(g&&f[2]!=g)t+="\n";g=f[2];t+=f[1]+": "+(V[f[0]]??"")+"\n"});return t.trim()}
+function fichaGuardar(){try{localStorage.setItem("crm_ficha",JSON.stringify(FI))}catch(_){}}
+function fichaInit(asesor){try{FI=JSON.parse(localStorage.getItem("crm_ficha")||"null")||fichaVacia()}catch(_){FI=fichaVacia()}FI._p=FI._p||{};if(asesor)FI.asesor=asesor;edifCargar()}
+// ---------- Pantalla ----------
+function fSet(k,v){FI[k]=v;if(FI._p)delete FI._p[k];if(["condominio","direccion","distrito","coord","vivienda"].includes(k))cobertura();fichaGuardar();fichaRe()}
+function fichaHTML(asesores){const{E,V}=fichaValidar(FI),nE=Object.keys(E).length,ed=FI._ed&&EDIF?EDIF.find(x=>x.id==FI._ed):null;let g=0;
+ const sel=(k,ops,val)=>`<select onchange="fSet('${k}',this.value)" ${E[k]?'class="fxbad"':""}><option value="">— Elige —</option>${ops.map(o=>`<option ${o==val?"selected":""}>${e(o)}</option>`).join("")}</select>`;
+ const inp=(k,extra)=>`<input value="${e(FI[k])}" ${extra||""} oninput="const p=this.selectionStart;FI['${k}']=this.value.toUpperCase();this.value=FI['${k}'];try{this.setSelectionRange(p,p)}catch(_){}fichaGuardar();fichaEstado()" onchange="fSet('${k}',this.value.toUpperCase())" ${E[k]?'class="fxbad"':""}>`;
+ const ctl=k=>{if(k=="asesor")return asesores?sel("asesor",asesores,FI.asesor):`<input value="${e(FI.asesor)}" readonly>`;
+  if(OPC[k])return sel(k,OPC[k],FI[k]);if(k=="plan")return sel("plan",planesOpc(),FI.plan);
+  if(k=="pregular"||k=="ppromo")return`<input value="${e(V[k]||"")}" readonly>`;
+  if(k=="fnac")return`<input type="date" value="${e(FI.fnac)}" max="${new Date(Date.now()-18*31557600000).toISOString().slice(0,10)}" onchange="fSet('fnac',this.value)" ${E.fnac?'class="fxbad"':""}>`;
+  if(k=="rango")return`<div class="fxr2"><input type="date" min="${hoyISO()}" value="${e(FI.rfecha)}" onchange="fSet('rfecha',this.value)" ${E.rango&&!FI.rfecha?'class="fxbad"':""}><select onchange="fSet('rtramo',this.value)" ${E.rango&&FI.rfecha?'class="fxbad"':""}><option value="">Tramo</option>${[1,2,3].map(t=>`<option value="${t}" ${FI.rtramo==t?"selected":""}>${TRAMOS[t]}</option>`).join("")}</select></div>`;
+  if(k=="condominio"){if(FI.vivienda=="CASA")return`<input value="NO APLICA" readonly>`;const L=(EDIF||[]).filter(x=>!distN(FI.distrito)||N(x.distrito)==distN(FI.distrito)).map(x=>NT(x.nombre));return inp(k,'list="dl_ed" placeholder="Escribe o elige el edificio"')+`<datalist id="dl_ed">${[...new Set(L)].sort().map(n=>`<option value="${e(n)}">`).join("")}</datalist>`}
+  if(k=="distrito")return inp(k,'list="dl_di" placeholder="Escribe o elige el distrito"')+`<datalist id="dl_di">${LIMA_CALLAO.map(n=>`<option value="${n}">`).join("")}</datalist>`;
+  if(["leads","tel1","tel2","telref"].includes(k))return inp(k,'inputmode="tel" placeholder="9XX XXX XXX"');
+  if(k=="ndoc")return inp(k,'inputmode="numeric"');if(k=="correo")return inp(k,'inputmode="email"');if(k=="coord")return inp(k,'placeholder="-12.0464, -77.0428"');return inp(k)};
+ const edBox=FI.vivienda!="CONDOMINIO"?"":ed?`<div class="fxok">🏢 <b>En cobertura: ${e(NT(ed.nombre))}</b><br><small>${e([ed.distrito,ed.torres?"Torres: "+ed.torres:"",ed.agencia?"Agencia: "+ed.agencia:"",ed.exclusividad?"Exclusividad: "+ed.exclusividad+(ed.fin_excl?" hasta "+ed.fin_excl:""):"",ed.promo?"Promo: "+ed.promo:""].filter(Boolean).join(" · "))}</small>${ed.alerta?`<br><small class="fxerr">⚠ ${e(ed.alerta)}</small>`:""}</div>`
+  :EDIF?`<div class="fxno">🔎 Este edificio <b>no está en la cobertura</b>. Puedes seguir: al copiar la ficha se avisa al CRM para registrarlo.</div>`:EDIF_ERR?`<div class="fxno">${e(EDIF_ERR)}</div>`:"";
+ return`<div class=cd><b>Llenar ficha</b><p class="mu" style="margin:4px 0 8px">Pega la ficha del cliente o llénala aquí. Todo se pasa a MAYÚSCULAS y se revisa solo.</p>
+ <div class="fxr3"><button onclick="fichaPegar()">📋 Pegar</button><button class="g" onclick="fichaReset()">↺ Restablecer</button><button id="fcp" onclick="fichaCopiar()" ${nE?"disabled":""} style="${nE?"opacity:.45;cursor:not-allowed":"background:var(--mint);color:#fff"}">⧉ Copiar</button></div>
+ <textarea id="fpg" placeholder="…o mantén presionado aquí y pega la ficha completa" onpaste="setTimeout(()=>fichaTA(this),0)" onchange="fichaTA(this)"></textarea>
+ <p id="fst" class="${nE?"fxerr":"fxokm"}">${nE?`✖ Faltan o están mal ${nE} dato(s). Corrige lo que está en rojo para poder copiar.`:"✔ Ficha correcta. Ya puedes copiarla y enviarla."}</p>
+ ${FC.map(f=>{const k=f[0],sep=g&&f[2]!=g;g=f[2];const er=E[k];return`${sep?"<hr>":""}<label class="fxfl"><span>${e(f[1])}${k=="asesor"&&!asesores?" 🔒":k=="pregular"||k=="ppromo"?" (automático)":""}</span>${ctl(k)}${er?`<small class="fxerr">${e(er)}</small>`:""}</label>${k=="condominio"?edBox:""}`}).join("")}</div>`}
+function fichaRe(){const box=document.getElementById("fbox");if(!box)return;const a=document.activeElement,pos=a&&a.selectionStart,idx=[...box.querySelectorAll("input,select")].indexOf(a);
+ box.innerHTML=fichaHTML(box.dataset.staff?JSON.parse(box.dataset.staff):null);
+ if(idx>=0){const n=box.querySelectorAll("input,select")[idx];if(n&&n.tagName=="INPUT"&&n.type!="date"){n.focus();try{n.setSelectionRange(pos,pos)}catch(_){}}}}
+function fichaTA(x){if(!x.value.trim())return;const a=FI.asesor;fichaLeer(x.value);FI.asesor=a;x.value="";fichaGuardar();fichaRe()}
+async function fichaPegar(){try{const t=await navigator.clipboard.readText();if(!t)throw 0;const a=FI.asesor;fichaLeer(t);FI.asesor=a;fichaGuardar();fichaRe()}catch(_){const x=document.getElementById("fpg");if(x){x.focus();x.placeholder="Tu celular no deja leer el portapapeles: mantén presionado aquí y elige Pegar"}}}
+function fichaReset(){const a=FI.asesor;FI=fichaVacia();FI.asesor=a;fichaGuardar();fichaRe()}
+async function fichaCopiar(){const{E,V}=fichaValidar(FI);if(Object.keys(E).length)return;const t=fichaTexto(V);
+ try{await navigator.clipboard.writeText(t)}catch(_){const x=document.createElement("textarea");x.value=t;document.body.appendChild(x);x.select();document.execCommand("copy");x.remove()}
+ let extra="";if(V.vivienda=="CONDOMINIO"&&!FI._ed){try{const p={p_nombre:V.condominio,p_direccion:V.direccion,p_distrito:V.distrito,p_coord:V.coord,p_asesor:V.asesor};if(FX.code)p.p_codigo=FX.code;await sb.rpc("app_alerta_edificio",p);extra=" Se avisó al CRM que el edificio no está en cobertura."}catch(_){}}
+ let g="";try{const p={p_datos:V,p_texto:t,p_cobertura:V.vivienda!="CONDOMINIO"||!!FI._ed};if(FX.code)p.p_codigo=FX.code;const{error}=await sb.rpc("crm_guardar_ficha",p);if(error)throw error;g=" Guardada en el CRM."}catch(x){g=" (No se pudo guardar en el CRM: "+(x.message||x)+")"}
+ const s=document.getElementById("fst");if(s)s.textContent="✔ Ficha copiada. Pégala en WhatsApp."+g+extra;if(!FX.code)setTimeout(fxLista,500)}
+function fichaEstado(){const{E}=fichaValidar(FI),nE=Object.keys(E).length,s=document.getElementById("fst"),b=document.getElementById("fcp");
+ if(s){s.className=nE?"fxerr":"fxokm";s.textContent=nE?`✖ Faltan o están mal ${nE} dato(s). Corrige lo que está en rojo para poder copiar.`:"✔ Ficha correcta. Ya puedes copiarla y enviarla."}
+ if(b){b.disabled=!!nE;b.style.cssText=nE?"opacity:.45;cursor:not-allowed":"background:var(--mint);color:#fff"}}
+
+/* asesor por link ?a=codigo: solo su ficha y sus ventas */
+const FXE={instalada:["Instalada","ok"],programada:["Programada","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperable","nc"],caida:["Caída","bad"]};
+function fxRd(){const A=FX.as;$("#tt").textContent=FX.tab=="Ficha"?"Llenar ficha":"Mis ventas";
+ const tb=`<div class=fxr2 style="margin-bottom:12px">${["Ficha","Mis ventas"].map(t=>`<button class="${t==FX.tab?"":"g"}" onclick="FX.tab='${t}';fxRd()">${t=="Ficha"?"📝 Llenar ficha":"📊 Mis ventas"}</button>`).join("")}</div>`;
+ const pie=`<p class=mu style="text-align:center;margin:14px 0">${e(A.nombre)} · CRM ${CRM_VER} · <a href="#" onclick="try{localStorage.removeItem('crm_a')}catch(_){};location.href=location.pathname;return false">Soy del equipo: iniciar sesión</a></p>`;
+ if(FX.tab=="Ficha"){fichaInit(A.nombre);$("#m").innerHTML=tb+`<div id=fbox>${fichaHTML(null)}</div>`+pie;return}
+ const V=A.ventas||[];$("#m").innerHTML=tb+`<div class=cd><b>Mis ventas del mes</b> <span class=mu>(${V.length})</span><table style="margin-top:8px"><tr><th>Cliente</th><th>Doc.</th><th>Plan</th><th>Venta</th><th>Estado</th></tr>${V.map(v=>`<tr><td>${e(v.c||"—")}</td><td>****${e(v.d)}</td><td>${e(v.p||"POR DEFINIR")}</td><td>${e(v.f||"—")}</td><td>${ch([(FXE[v.e]||[v.e])[0],(FXE[v.e]||["","nc"])[1]])}</td></tr>`).join("")||"<tr><td colspan=5>Aún no tienes ventas este mes</td></tr>"}</table></div>`+pie}
+/* pestaña Ficha para el equipo */
+async function vFicha(){let A=[];try{A=(await allT("asesores","nombre,activo","nombre")).filter(a=>a.activo).map(a=>a.nombre)}catch(_){}
+ fichaInit(null);setTimeout(fxLista,0);return`<div id=fbox data-staff='${e(JSON.stringify(A))}'>${fichaHTML(A)}</div><div id=fxl></div>`}
+async function fxLista(){const el=document.getElementById("fxl");if(!el)return;const{data,error}=await sb.from("fichas").select("id,at,asesor,cliente,doc,plan,cobertura,texto").order("at",{ascending:false}).limit(100);
+ if(error){el.innerHTML=`<div class=cd><span class=mu>No se pudo leer las fichas: ${e(error.message)}</span></div>`;return}window.FXL=data||[];
+ el.innerHTML=`<div class=cd><b>Fichas enviadas</b> <span class=mu>(últimas ${FXL.length})</span><table style="margin-top:8px"><tr><th>Fecha</th><th>Asesor</th><th>Cliente</th><th>Documento</th><th>Plan</th><th>Cobertura</th><th></th></tr>${FXL.map((f,i)=>`<tr><td>${e(new Date(f.at).toLocaleString("es-PE"))}</td><td>${e(f.asesor)}</td><td>${e(f.cliente)}</td><td>${e(f.doc)}</td><td>${e(f.plan)}</td><td>${ch(f.cobertura?["OK","ok"]:["No registrado","bad"])}</td><td><button class=g onclick="navigator.clipboard.writeText(FXL[${i}].texto);this.textContent='Copiada'">Copiar</button></td></tr>`).join("")||"<tr><td colspan=7>Todavía no hay fichas.</td></tr>"}</table></div>`}
 /* ---- entrada ---- */
 async function init(){if(code){localStorage.crm_a=code;return asesora()}const{data:{session}}=await sb.auth.getSession();if(!session){let g="";try{g=localStorage.crm_a||""}catch(_){}if(g){code=g;return asesora()}return login()}usr=session.user.email;document.body.classList.remove("lg");try{if(localStorage.crm_co)document.body.classList.add("co")}catch(_){}
  const r=await sb.rpc("crm_rol");rol=r.data;if(!rol){$("#m").innerHTML=`<div class=cd>Tu usuario no tiene un rol asignado. Pide al administrador que lo agregue en crm_staff.</div>`;$("#sl").innerHTML=`<button class=g onclick=out()>Salir</button>`;return}
@@ -240,10 +401,10 @@ async function go(){msg();const{error}=await sb.auth.signInWithPassword({email:(
 async function out(){await sb.auth.signOut();location.reload()}
 /* ---- asesora ---- */
 let F={};
-async function asesora(){document.body.classList.add("as");dynManifest(code);$("#sl").innerHTML="";$("#nv").innerHTML="";const{data,error}=await sb.rpc("asesora_ventas",{p_code:code});if(error){$("#m").innerHTML=`<div class=cd><span class=er>Link no válido. Pide uno nuevo a tu supervisor.</span></div>`;return}
- PL=(await sb.rpc("planes_publicos")).data||[];
- $("#m").innerHTML=`<div class=cd><b>Nueva venta · pega la ficha</b><textarea id=fx rows=8 style="width:100%;margin-top:8px" placeholder="Pega aquí la ficha completa"></textarea><div class=fm><button onclick=leer()>Leer ficha</button><button class=g onclick="leer(1)">Llenar a mano</button></div><div id=pv></div></div>
- <div class=cd><b>Mis ventas</b><table><tr><th>Cliente</th><th>DNI</th><th>Plan</th><th>Distrito</th><th>Estado</th><th>Instalación</th></tr>${data.map(v=>`<tr><td>${e(v.cliente)}</td><td>${e(v.dni)}</td><td>${e(v.plan)}</td><td>${e(v.distrito)}</td><td>${ch([v.estado,v.estado=="INSTALADA"?"ok":"n"])}</td><td>${v.fecha_inst||"–"}</td></tr>`).join("")||"<tr><td>Aún no tienes ventas</td></tr>"}</table></div><p class=mu style="text-align:center;margin:14px 0"><a href="#" onclick="try{localStorage.removeItem('crm_a')}catch(_){};location.href=location.pathname;return false">Soy del equipo: iniciar sesión</a></p>`} function mp(t,pr){const s=(t.match(/\d{3,4}/)||[])[0];if(!s||!pr)return"";const l1=/L1MAX/i.test(t),dg=/DGO/i.test(t),gm=/GAMER/i.test(t),wt=/WTV|WINTV|WIN TV/i.test(t),x=PL.find(p=>p.nombre.includes(s)&&/L1MAX/i.test(p.nombre)==l1&&/DGO/i.test(p.nombre)==dg&&/GAMER/i.test(p.nombre)==gm&&/WTV/i.test(p.nombre)==wt&&+p.precio==pr);return x?x.id:""}
+async function asesora(){document.body.classList.add("as");dynManifest(code);$("#sl").innerHTML="";$("#nv").innerHTML="";
+ const{data,error}=await sb.rpc("app_asesor",{p_codigo:code});
+ if(error||!data){try{localStorage.removeItem("crm_a")}catch(_){};$("#m").innerHTML=`<div class=cd><span class=er>Link no válido o asesor desactivado. Pide tu link a tu supervisor.</span><p><a href="#" onclick="location.href=location.pathname;return false">Soy del equipo: iniciar sesión</a></p></div>`;return}
+ FX.code=code;FX.as=data;fxRd()} function mp(t,pr){const s=(t.match(/\d{3,4}/)||[])[0];if(!s||!pr)return"";const l1=/L1MAX/i.test(t),dg=/DGO/i.test(t),gm=/GAMER/i.test(t),wt=/WTV|WINTV|WIN TV/i.test(t),x=PL.find(p=>p.nombre.includes(s)&&/L1MAX/i.test(p.nombre)==l1&&/DGO/i.test(p.nombre)==dg&&/GAMER/i.test(p.nombre)==gm&&/WTV/i.test(p.nombre)==wt&&+p.precio==pr);return x?x.id:""}
 function doc(v){v=v.toUpperCase();const R=v.match(/\d+/g)||[];let t=/CARNET|EXTRANJ|\bC\.?E\.?\b/.test(v)?"CE":/RUC/.test(v)?"RUC":/DNI/.test(v)?"DNI":"",n="";
  if(t=="RUC"){n=R.find(x=>x.length==11)||R.join("");if(n.length==10){const w=[5,4,3,2,7,6,5,4,3,2],q=w.reduce((a,x,i)=>a+x*n[i],0),d=11-q%11;n+=d==10?0:d==11?1:d}}else n=R.sort((a,b)=>b.length-a.length)[0]||"";
  if(!t)t=n.length==11?"RUC":n.length==8?"DNI":n?"CE":"";return{t,n}}
@@ -261,7 +422,7 @@ async function add(){const c=$("#a1").value.trim(),d=$("#a2").value.trim(),t=$("
  const o={...F,mesh_cobro:+$("#a10").value||0,winbox:+$("#a11").value||0,winbox_cobro:(+$("#a11").value||0)*20,extra:(+$("#a10").value||0)+(+$("#a11").value||0)*20,tipo_doc:$("#a9").value,cliente:c,dni:d,tel:t,direccion:$("#a4").value,distrito:$("#a5").value,plan_id:$("#a6").value,tramo:$("#a7").value,fprog:$("#a8").value},{error}=await sb.rpc("asesora_crear_ficha",{p_code:code,p_d:o});if(error)return msg(error.message);msg();asesora()}
 /* ---- personal ---- */
 function rd(){const nm=nom(usr);$("#sl").innerHTML=`<div class=us><div class=un><b>${e(nm)}</b><small>${e(RN[rol]||rol)}</small></div><div class=av>${e(nm.slice(0,2).toUpperCase())}</div></div>`;$("#tt").textContent=tab;$("#nv").innerHTML=navHTML();msg();
- const f={Central:vCentral,Dashboard:vDash,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado,Hoy:vHoy,Cola:vCola,"Mis ventas":vMis,Calidad:vCalidad,"Capacitación":vCap,Comunidad:vCom}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
+ const f={Central:vCentral,Dashboard:vDash,Ficha:vFicha,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado,Hoy:vHoy,Cola:vCola,"Mis ventas":vMis,Calidad:vCalidad,"Capacitación":vCap,Comunidad:vCom}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
 async function delV(b){if(!confirm("¿Eliminar la venta de "+b.dataset.n+"? Se borra junto con sus cobros y no se puede deshacer."))return;const{error}=await sb.rpc("eliminar_venta",{p_id:b.dataset.id});if(error)return msg(error.message);uDone("Venta eliminada")}
 async function vVn(){const{data,error}=await sb.from("ventas").select("*,planes(nombre),asesoras(nombre)").order("creada",{ascending:false}).limit(200);if(error)return`<div class=cd>${e(error.message)}</div>`;const ed=MANDO(rol)||rol=="back_office";
  return`<div class=cd><table><tr><th>Cliente</th><th>DNI</th><th>Asesora</th><th>Plan</th><th>Dirección</th><th>Tramo</th><th>Estado</th><th>Instalación</th>${MANDO(rol)?"<th></th>":""}</tr>${data.map(v=>`<tr><td>${e(v.cliente)}<br><small>${e(v.telefono)}${v.whatsapp&&v.whatsapp!=v.telefono?" · WA "+e(v.whatsapp):""}</small></td><td>${e(v.dni)}<br><small>${e(v.tipo_doc)}</small></td><td>${e(v.asesoras?.nombre)}</td><td>${e(v.planes?.nombre||v.plan_txt)}<br><small>${e(v.precio_ficha)}</small>${+v.extra?`<br><small>Extras S/ ${v.extra}</small>`:""}</td><td>${e(v.direccion)}<br><small>${e(v.distrito)}${v.lat?` · <a href="https://www.google.com/maps?q=${v.lat},${v.lng}" target=_blank>mapa</a>`:""}</small></td><td>${e(v.tramo)}<br><small>${v.fecha_prog||""}</small></td><td>${ed?`<select onchange="setE('${v.id}',this.value,'${v.fecha_inst||""}')">${ES.map(s=>`<option ${s==v.estado?"selected":""}>${s}</option>`).join("")}</select>`:ch([v.estado,"n"])}</td><td>${ed?`<input type=date value="${v.fecha_inst||""}" onchange="setF('${v.id}',this.value)">`:v.fecha_inst||"–"}</td>${MANDO(rol)?`<td><button class=g data-id="${v.id}" data-n="${e(v.cliente)}" onclick=delV(this)>Eliminar</button></td>`:""}</tr>`).join("")||"<tr><td>Sin ventas</td></tr>"}</table></div>`}
