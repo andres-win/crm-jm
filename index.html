@@ -151,14 +151,14 @@ body.lg .w{max-width:460px;margin:0 auto}
  h2{font-size:19px}
 }
 </style><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%228%202%20104%2092%22%3E%3Crect%20x%3D%228%22%20y%3D%222%22%20width%3D%22104%22%20height%3D%2292%22%20rx%3D%2222%22%20fill%3D%22%23fff%22/%3E%3Cline%20x1%3D%2260%22%20y1%3D%2210%22%20x2%3D%2260%22%20y2%3D%2224%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%229%22%20r%3D%225%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%222%22/%3E%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%2272%22%20height%3D%2264%22%20rx%3D%2224%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2234%22%20y%3D%2236%22%20width%3D%2252%22%20height%3D%2240%22%20rx%3D%2216%22%20fill%3D%22%230E1B3D%22/%3E%3Cellipse%20cx%3D%2248%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cellipse%20cx%3D%2272%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M50%2064%20Q60%2073%2070%2064%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M22%2054%20Q22%2018%2060%2018%20Q98%2018%2098%2054%22%20fill%3D%22none%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2294%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3C/svg%3E"></head><body class="lg"><div id="ov" onclick="sb2()"></div>
-<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V20</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
+<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V22</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
 <div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><button class="hb" id="bsb" onclick="abrirBusca()" title="Buscar cliente o predio (Ctrl+K)" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button><button class="hb" id="bth" onclick="cambiaTema()" title="Cambiar entre tema claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><div id="sl"></div></header><div class="lgh"></div><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
 <script>
 const U="https://znrcrkzlysyqeqiyercd.supabase.co",K="sb_publishable_qH2iEk0R59fgmQPqt2gP3A_AxXlomyY",sb=supabase.createClient(U,K);
 const $=s=>document.querySelector(s),e=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),dim=(y,m)=>new Date(y,m+1,0).getDate(),r2=n=>Math.round(n*100)/100,iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"),T=iso(new Date()),money=n=>"S/ "+r2(n).toFixed(2);
 const ES=["NUEVA","GRABADO","PROGRAMADA","EN PROGRESO","REPROGRAMADA","INSTALADA","CANCELADA","ANULADA","DESAPROBADA","NO PROCEDE","POSIBLE FRAUDE"];
 let PL=[];
-const FULL=["Central","Hoy","Cola","Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:["Central","Leads","Dashboard","Ficha","Cobertura","Usuarios"],jefe:["Central","Leads","Dashboard","Ficha","Cobertura","Usuarios"],supervisor:["Central","Leads","Dashboard","Ficha","Cobertura","Usuarios"],back_office:["Central","Leads","Dashboard","Ficha","Cobertura"],cobranza:["Cobertura"],back_data:["Central","Leads","Cobertura"],community_manager:["Cobertura"],rrhh:["Cobertura"],capacitador:["Cobertura"],asesor:[]},
+const FULL=["Central","Hoy","Cola","Dashboard","Calendario","Mapa","Ventas","Cobranza","Asistencia","Bonos","Simulador","Cobertura","Historial","Usuarios","Estado"],INI=["Inicio"],TABS={admin:["Central","Leads","Embudo","Dashboard","Ficha","Cobertura","Usuarios"],jefe:["Central","Leads","Embudo","Dashboard","Ficha","Cobertura","Usuarios"],supervisor:["Central","Leads","Embudo","Dashboard","Ficha","Cobertura","Usuarios"],back_office:["Central","Leads","Embudo","Dashboard","Ficha","Cobertura"],cobranza:["Cobertura"],back_data:["Central","Leads","Embudo","Cobertura"],community_manager:["Cobertura"],rrhh:["Cobertura"],capacitador:["Cobertura"],asesor:[]},
 RN={admin:"Administrador",jefe:"Jefe",supervisor:"Supervisor",back_office:"Back Office",cobranza:"Cobranza",back_data:"Back Data",community_manager:"Community Manager",rrhh:"RRHH",capacitador:"Capacitador",asesor:"Asesor"},MANDO=r=>["admin","jefe","supervisor"].includes(r);
 let usr="",rol,tab,planes=[],code=(new URLSearchParams(location.search).get("a")||(location.hash.match(/[#&]a=([a-z0-9]+)/i)||[])[1]||"").trim().toLowerCase();
 const sv=p=>`<svg viewBox="0 0 24 24">${p}</svg>`,IC={
@@ -175,6 +175,7 @@ Estado:sv('<path d="M3 12h4l3-8 4 16 3-8h4"/>'),
 Mapa:sv('<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/>'),
 Calendario:sv('<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/>'),
 Central:sv('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'),
+Embudo:sv('<path d="M3 4h18l-7 8v6l-4 2v-8z"/>'),
 Leads:sv('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>'),
 Ficha:sv('<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>'),
 Inicio:sv('<path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/>')},
@@ -187,7 +188,7 @@ function calc(p,fi){if(!p||!fi)return[0,1,2].map(()=>({e:0,v:"",pz:""}));const p
 const ds=(n,k)=>{const u=Math.min(n,pool);if(u<=0||dm<=0)return 0;pool-=u;return t=="p"?u*dly(k)*v/100:u*dm/30};
 return[0,1,2].map(k=>{let b,s;if(e2){b=k?pr:di*dly(0)+pr;s=k?ds(30,k+1):ds(di+30,1)}else{b=k?pr:di*dly(0);s=k?ds(30,k):ds(di,0)}const o=(e2?1:0)+k;return{e:r2(b-s),v:iso(new Date(y,m+o,28)),pz:iso(new Date(y,m+o+1,0))}})}
 /* ---------- CENTRAL · hoja REGISTRO DE VENTAS ---------- */
-const CRM_VER="V20",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
+const CRM_VER="V22",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
 CEAL={asesor_nuevo:"Asesor nuevo",doc_duplicado:"Documento repetido",doc_invalido:"Documento con formato raro",sin_documento:"Venta sin documento",sin_vendedor:"Venta sin vendedor",status_desconocido:"STATUS desconocido",plan_no_reconocido:"Plan no reconocido",precio_distinto:"Precio distinto al oficial",edificio_no_registrado:"Edificio fuera de cobertura",cola_sin_asesores:"Leads en cola sin asesores"};
 function cenSet(k,v){CE[k]=v;if(k=="mes"){CE.est="";CE.ase=""}rd()}
 async function cenRes(id){const{error}=await sb.from("registro_alertas").update({resuelta:true}).eq("id",id);if(error)return alert(error.message);rd()}
@@ -299,20 +300,21 @@ const PLANES=[
   ["XGSPON 2.5 GB", "LIMA", "XGSPON", "2.5 GB", 199, 99.5],
   ["XGSPON 2.0 GB", "LIMA", "XGSPON", "2.0 GB", 189, 94.5],
   ["XGSPON 1.5 GB", "LIMA", "XGSPON", "1.5 GB", 169, 139],
-  ["GAMER 1000 MBPS", "LIMA", "GAMER", "1000 MBPS", 159, 79.5],
-  ["GAMER 600 MBPS", "LIMA", "GAMER", "600 MBPS", 129, 64.5],
+  ["GAMER PRO 1000", "LIMA", "GAMER", "1000 MBPS", 159, 79.5],
+  ["GAMER PRO 600", "LIMA", "GAMER", "600 MBPS", 129, 64.5],
   ["HB DGO FULL XGSPON 2.5 GB", "LIMA", "DGO FULL", "2.5 GB", 199.9, 99.9],
   ["HB DGO HOGAR XGSPON 2.0 GB", "LIMA", "DGO HOGAR", "2.0 GB", 189.9, 94.95],
-  ["MONO PROV 1000 MBPS", "PROV", "MONO", "1000 MBPS", 129, null],
-  ["MONO PROV 750 MBPS", "PROV", "MONO", "750 MBPS", 99, null],
-  ["MONO PROV 550 MBPS", "PROV", "MONO", "550 MBPS", 89, null],
-  ["HB PROV L1MAX PREMIUM 1000 MBPS", "PROV", "L1MAX", "1000 MBPS", 129.9, 64.95],
-  ["HB PROV L1MAX PREMIUM 750 MBPS", "PROV", "L1MAX", "750 MBPS", 119.9, 59.95],
-  ["HB PROV WTV 750 MBPS", "PROV", "WTV", "750 MBPS", 99.9, 49.95],
-  ["HB PROV WTV 550 MBPS", "PROV", "WTV", "550 MBPS", 89.9, 44.95],
-  ["HB PROV DGO FULL 1000 MBPS", "PROV", "DGO FULL", "1000 MBPS", 159.9, 79.95],
-  ["HB PROV DGO HOGAR 1000 MBPS", "PROV", "DGO HOGAR", "1000 MBPS", 129.9, 64.95],
-  ["HB PROV FONOWIN 350 MBPS", "PROV", "FONOWIN", "350 MBPS", 79, 39.95]
+  ["MONO 350MBPS", "PROV", "MONO", "350 MBPS", 69, 34.5],
+  ["350MBPS + FONOWIN", "PROV", "FONOWIN", "350 MBPS", 79, 39.5],
+  ["MONO 550MBPS", "PROV", "MONO", "550 MBPS", 89, 44.5],
+  ["MONO 750MBPS", "PROV", "MONO", "750 MBPS", 99, 49.5],
+  ["MONO 1000MBPS", "PROV", "MONO", "1000 MBPS", 129, 64.5],
+  ["550MBPS + WINTV PREMIUM", "PROV", "WTV", "550 MBPS", 89.9, 44.95],
+  ["750MBPS + WINTV PREMIUM", "PROV", "WTV", "750 MBPS", 99.9, 49.95],
+  ["750MBPS + WINTV L1MAX PREMIUM", "PROV", "L1MAX", "750 MBPS", 119.9, 59.95],
+  ["1000MBPS + WINTV L1MAX PREMIUM", "PROV", "L1MAX", "1000 MBPS", 129.9, 64.95],
+  ["1000MBPS + DGO HOGAR", "PROV", "DGO HOGAR", "1000 MBPS", 129.9, 64.95],
+  ["1000MBPS + DGO FULL", "PROV", "DGO FULL", "1000 MBPS", 159.9, 79.95]
 ];
 const LIMA_CALLAO=["ANCON","ATE","ATE VITARTE","BARRANCO","BRENA","CARABAYLLO","CHACLACAYO","CHORRILLOS","CIENEGUILLA","COMAS","EL AGUSTINO","INDEPENDENCIA","JESUS MARIA","LA MOLINA","LA VICTORIA","LIMA","CERCADO DE LIMA","LINCE","LOS OLIVOS","LURIGANCHO","CHOSICA","LURIN","MAGDALENA","MAGDALENA DEL MAR","MIRAFLORES","PACHACAMAC","PUCUSANA","PUEBLO LIBRE","PUENTE PIEDRA","PUNTA HERMOSA","PUNTA NEGRA","RIMAC","SAN BARTOLO","SAN BORJA","SAN ISIDRO","SAN JUAN DE LURIGANCHO","SAN JUAN DE MIRAFLORES","SAN LUIS","SAN MARTIN DE PORRES","SAN MIGUEL","SANTA ANITA","SANTA MARIA DEL MAR","SANTA ROSA","SANTIAGO DE SURCO","SURCO","SURQUILLO","VILLA EL SALVADOR","VILLA MARIA DEL TRIUNFO","CALLAO","BELLAVISTA","CARMEN DE LA LEGUA","CARMEN DE LA LEGUA REYNOSO","LA PERLA","LA PUNTA","VENTANILLA","MI PERU"];
 const ALIAS_DIST={"SMP":"SAN MARTIN DE PORRES","S M P":"SAN MARTIN DE PORRES","SJL":"SAN JUAN DE LURIGANCHO","S J L":"SAN JUAN DE LURIGANCHO","SJM":"SAN JUAN DE MIRAFLORES","VMT":"VILLA MARIA DEL TRIUNFO","VES":"VILLA EL SALVADOR","CERCADO":"CERCADO DE LIMA"};
@@ -408,7 +410,7 @@ function fichaValidar(o){const E={},V={},req=(k,f)=>{const v=f?f(o[k]):NT(o[k]);
  if(NT(o.leads))V.leads=NT(o.leads);else E.leads="Falta este dato";["tel1","tel2","telref"].forEach(k=>{const t=tel9(o[k]);if(t)V[k]=t;else E[k]=o[k]?"Debe ser un celular de 9 números (9…)":"Falta este dato"});
  if(o.vivienda=="CONDOMINIO"){if(NT(o.condominio))V.condominio=NT(o.condominio);else E.condominio="Falta el nombre del condominio"}else if(o.vivienda=="CASA")V.condominio="NO APLICA";else E.condominio="Primero elige CASA o CONDOMINIO";
  const di=distN(o.distrito);if(di)V.distrito=di;else E.distrito="Falta este dato";
- if(planesOpc().includes(o.plan)){const p=PLANES.find(x=>x[0]==o.plan);V.plan=o.plan;V.pregular=dinero(p[4]);V.ppromo=esRuc20()?"SIN PROMO · RUC 20: CON COSTO DE INSTALACIÓN":p[5]==null?"SIN PROMO":dinero(p[5])}
+ if(planesOpc().includes(o.plan)){const p=PLANES.find(x=>x[0]==o.plan&&x[1]==region());V.plan=o.plan;V.pregular=dinero(p[4]);V.ppromo=esRuc20()?"SIN PROMO · RUC 20: CON COSTO DE INSTALACIÓN":p[5]==null?"SIN PROMO":dinero(p[5])}
  else{E.plan=o.plan?"Ese plan no corresponde a "+(region()=="LIMA"?"Lima":"provincia")+": elige otro":o._p&&o._p.plan?"Se pegó «"+o._p.plan+"»: elige el plan":"Falta este dato";E.pregular=E.ppromo="Sale del plan"}
  if(!o.rfecha)E.rango="Elige la fecha de instalación";else if(o.rfecha<hoyISO())E.rango="La fecha ya pasó";else if(!TRAMOS[o.rtramo])E.rango="Elige el tramo";else V.rango=isoDMY(o.rfecha)+" "+TRAMOS[o.rtramo];
  return{E,V}}
@@ -454,12 +456,13 @@ function fichaEstado(){const{E}=fichaValidar(FI),nE=Object.keys(E).length,s=docu
 
 /* asesor por link ?a=codigo: solo su ficha y sus ventas */
 const FXE={instalada:["Instalada","ok"],programada:["Programada","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperable","nc"],caida:["Caída","bad"]};
-function fxRd(){const A=FX.as,TT={Leads:"Mis leads",Ficha:"Llenar ficha",Cobertura:"Cobertura","Mis ventas":"Mis datos"};if(!TT[FX.tab])FX.tab="Leads";$("#tt").textContent=TT[FX.tab];
- const ICA={Leads:IC.Leads,Ficha:IC.Ficha,Cobertura:IC.Cobertura,"Mis ventas":IC.Dashboard};
- $("#nv").innerHTML=Object.keys(TT).map(t=>`<button class="${t==FX.tab?"on":""}" title="${TT[t]}" onclick="FX.tab='${t}';fxRd();sb2(-1)">${ICA[t]||""}<span class=lb>${TT[t]}${t=="Leads"?"<span id=ltb></span>":""}</span></button>`).join("");
+function fxRd(){const A=FX.as,TT={Leads:"Mis leads",Ficha:"Llenar ficha",Cobertura:"Cobertura","Mis ventas":"Mis datos",Avisos:"Avisos"};if(!TT[FX.tab])FX.tab="Leads";$("#tt").textContent=TT[FX.tab];
+ const ICA={Leads:IC.Leads,Ficha:IC.Ficha,Cobertura:IC.Cobertura,"Mis ventas":IC.Dashboard,Avisos:sv('<path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/>')};
+ $("#nv").innerHTML=Object.keys(TT).map(t=>`<button class="${t==FX.tab?"on":""}" title="${TT[t]}" onclick="FX.tab='${t}';fxRd();sb2(-1)">${ICA[t]||""}<span class=lb>${TT[t]}${t=="Leads"?"<span id=ltb></span>":t=="Avisos"?`<span id=avb>${AV.n?" ("+AV.n+")":""}</span>`:""}</span></button>`).join("");
  $("#sl").innerHTML=`<div class=us><div class=un><b>${e(A.nombre)}</b><small>Asesor</small></div><div class=av>${e(String(A.nombre).slice(0,2).toUpperCase())}</div></div>`;
  const pie=`<p class=mu style="text-align:center;margin:14px 0">${e(A.nombre)} · CRM ${CRM_VER}</p>`;
- laIniciar();
+ laIniciar();avIniciar();
+ if(FX.tab=="Avisos"){$("#m").innerHTML=`<div id=avbox></div>`+pie;avRd();avLeer();laBadge();return}
  if(FX.tab=="Leads"){$("#m").innerHTML=`<div id=lbox></div>`+pie;laRd();laBadge();return}
  if(FX.tab=="Ficha"){fichaInit(A.nombre);$("#m").innerHTML=`<div id=fbox>${fichaHTML(null)}</div>`+pie;laBadge();return}
  if(FX.tab=="Cobertura"){$("#m").innerHTML=vO()+pie;cov();laBadge();return}
@@ -618,8 +621,7 @@ function rpRd(){const b=document.getElementById("lsb");if(!b||LV.v!="reporte")re
  <div class=cd><b>💰 Gasto del día por campaña</b> <span class=mu>(S/ · para costo por lead y por venta)</span>${camps.length?`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-top:8px">${camps.map(c=>`<label class=fl style="margin:0"><span>${e(c)}</span><input type=number min=0 step=0.01 placeholder="0.00" value="${RP.gs[c]!=null?RP.gs[c]:""}" onchange="rpGasto(${JSON.stringify(c).replace(/"/g,"&quot;")},this.value)"></label>`).join("")}</div>`:`<p class=mu>No hay leads de campaña en esta fecha.</p>`}</div>
  <div class=cd><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center"><b>Vista previa</b><div style="display:flex;gap:6px;flex-wrap:wrap"><button style="width:auto;margin:0" onclick="navigator.clipboard.writeText(RP.txt);this.textContent='✔ Copiado'">📋 Copiar para WhatsApp</button><a class="ch ok" style="text-decoration:none;padding:9px 12px" target=_blank href="https://wa.me/?text=${encodeURIComponent(RP.txt||"")}">💬 Abrir WhatsApp</a></div></div>
  <div style="margin-top:10px;padding:14px;border-radius:12px;background:var(--bg);white-space:pre-wrap;font-size:14px;line-height:1.55;max-width:560px">${RP.load?"Generando…":rpHTML(RP.txt||"")}</div></div>
- <div class=cd><b>✉ Envío automático por correo</b><p class=mu style="margin:4px 0 8px">Los días de gestión se envía solo a la hora de medio día y al terminar el horario (cierre). Si un día no se gestiona, no se envía.</p>
- ${PUEDE_HOR()?`<div style="display:grid;grid-template-columns:1fr 140px auto;gap:8px;align-items:end"><label class=fl style="margin:0"><span>Correos (separados por coma)</span><input id=rpco value="${e(C.correos||"")}" placeholder="jefe@gmail.com, supervisor@gmail.com"></label><label class=fl style="margin:0"><span>Hora medio día</span><input id=rpme type=time value="${e(C.medio||"12:00")}"></label><button style="width:auto;margin:0" onclick="rpCfg()">Guardar</button></div>`:`<p class=mu>Correos: ${e(C.correos||"—")} · Medio día: ${e(C.medio||"12:00")}</p>`}</div>`}
+ <div class=cd><b>💬 Envío por WhatsApp</b><p class=mu style="margin:4px 0 0">A las 12:00 y al cierre, genera el reporte aquí, presiona <b>📋 Copiar para WhatsApp</b> y pégalo en el grupo (o usa <b>💬 Abrir WhatsApp</b>).</p></div>`}
 
 /* ---------- Horario de gestión ---------- */
 const HO={d:null};
@@ -646,6 +648,71 @@ function hoRd(){const b=document.getElementById("lsb");if(!b||LV.v!="horario"||!
 async function cenMeta(a,v){const{error}=await sb.rpc("crm_meta_set",{p_mes:CE.mes,p_asesor:a,p_meta:+v||0});if(error)return alert(error.message);rd()}
 async function cenUnir(de,a,nd){if(!a)return;const na=(CE.A||[]).find(x=>x.id==a);if(!confirm(`¿Unir "${nd}" con "${na?na.nombre:""}"?\n\nTodo el historial de ${nd} pasa a ${na?na.nombre:""} y "${nd}" queda como nombre alternativo. No se puede deshacer.`))return;
  const{error}=await sb.rpc("crm_unir_asesor",{p_de:de,p_a:a});if(error)return alert(error.message);rd()}
+
+/* ================= V22 · EMBUDO POR CLIENTE (solo CRM) ================= */
+const EM={desde:T.slice(0,8)+"01",hasta:T,d:null,f:"",q:"",ase:""};
+const emDig=s=>String(s||"").replace(/\D/g,""),emTel=s=>{const d=emDig(s);return d.length>=9?d.slice(-9):""},emDoc=s=>{const d=emDig(s);return d.length>=8?d:""};
+async function emCargar(){const b=document.getElementById("emb");if(b)b.innerHTML=`<div class=cd>Cargando embudo…</div>`;
+ try{const hasta2=EM.hasta+"T23:59:59";
+  const[V,F,L,P,A]=await Promise.all([
+   allT("registro_ventas","doc,cliente,telefono,asesor_id,estado,fecha_registro,mes,plan,campana,canal,en_hoja,status_txt","doc"),
+   sb.from("fichas").select("id,at,asesor,cliente,doc,plan,datos").gte("at",EM.desde).lte("at",hasta2).limit(5000).then(r=>{if(r.error)throw r.error;return r.data||[]}),
+   sb.from("leads").select("id,fecha,origen,campana,numero,tel,dni,estado,tip,creado").gte("fecha",EM.desde).lte("fecha",EM.hasta).limit(10000).then(r=>{if(r.error)throw r.error;return r.data||[]}),
+   sb.from("lead_pasos").select("lead_id,asesor,tip,id").order("id").limit(50000).then(r=>r.data||[]),
+   allT("asesores","id,nombre","nombre")]);
+  const AN={};A.forEach(a=>AN[a.id]=a.nombre);
+  const enR=d=>d&&d>=EM.desde&&d<=EM.hasta;
+  const ventas=V.filter(v=>v.en_hoja&&(v.fecha_registro?enR(v.fecha_registro):v.mes==EM.desde.slice(0,7)));
+  const ultA={},venA={};P.forEach(p=>{ultA[p.lead_id]=p.asesor;if(/VENTA (WIN|FIBRA)/.test(p.tip||""))venA[p.lead_id]=p.asesor});
+  const C=[],byDoc={},byTel={};
+  const idx=(c,doc,tels)=>{if(doc)byDoc[doc]=byDoc[doc]||c;tels.forEach(t=>{if(t)byTel[t]=byTel[t]||c})};
+  const find=(doc,tels)=>(doc&&byDoc[doc])||tels.map(t=>t&&byTel[t]).find(Boolean);
+  ventas.forEach(v=>{const c={n:v.cliente||v.doc,doc:v.doc,ase:AN[v.asesor_id]||"",camp:"",v,f:null,l:null};C.push(c);idx(c,emDoc(v.doc),[emTel(v.telefono)])});
+  F.forEach(f=>{const d=f.datos||{},tels=[emTel(d.tel1),emTel(d.tel2),emTel(d.leads)];let c=find(emDoc(f.doc),tels);
+   if(c&&!c.f)c.f=f;else if(!c){c={n:f.cliente||f.doc,doc:f.doc,ase:f.asesor||"",camp:"",v:null,f,l:null};C.push(c)}if(!c.ase)c.ase=f.asesor||"";idx(c,emDoc(f.doc),tels)});
+  L.forEach(l=>{const tels=[emTel(l.tel),emTel(l.numero)];let c=find(emDoc(l.dni),tels);
+   if(c&&!c.l)c.l=l;else if(!c){c={n:l.numero,doc:l.dni?("DNI "+l.dni):"",ase:"",camp:"",v:null,f:null,l};C.push(c)}
+   c.camp=l.origen=="CAMPAÑA"?(l.campana||"").trim():l.origen;if(!c.ase)c.ase=venA[l.id]||ultA[l.id]||"";idx(c,emDoc(l.dni),tels)});
+  C.forEach(c=>{c.st=c.v?(c.v.estado=="instalada"?"I":/caida/.test(c.v.estado)?"C":"V"):c.f?"F":"L";if(!c.camp&&c.v)c.camp="SIN LEAD"});
+  EM.d={C};emRd()}catch(x){const b=document.getElementById("emb");if(b)b.innerHTML=`<div class=cd><b>No se pudo armar el embudo.</b><p class=mu>${e(x.message||x)}</p></div>`}}
+function vEmbudo(){setTimeout(emCargar,0);return`<div id=emb><div class=cd>Cargando embudo…</div></div>`}
+const EMST={L:["Solo lead","nc"],F:["Ficha enviada, sin venta","pg"],V:["Venta en proceso","pg"],I:["Instalada","ok"],C:["Caída","bad"]};
+function emRd(){const b=document.getElementById("emb");if(!b||!EM.d)return;const C=EM.d.C,pc=(a,b)=>b?Math.round(a*100/b)+"%":"—";
+ const cnt=L=>({l:L.filter(c=>c.l).length,f:L.filter(c=>c.f).length,v:L.filter(c=>c.v).length,i:L.filter(c=>c.st=="I").length,c:L.filter(c=>c.st=="C").length});
+ const camp=C.filter(c=>c.l&&c.l.origen=="CAMPAÑA"),K=cnt(C),KC=cnt(camp);
+ const bar=(t,n,base,col)=>`<div style="margin:6px 0"><div style="display:flex;justify-content:space-between;font-size:13px"><b>${t}</b><span>${n} <span class=mu>${base?"· "+pc(n,base):""}</span></span></div><div style="height:16px;border-radius:8px;background:var(--bg);overflow:hidden"><div style="height:100%;width:${base?Math.max(2,Math.round(n*100/base)):100}%;background:${col}"></div></div></div>`;
+ let h=`<div class=cd><div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between"><div><b>Embudo por cliente</b> <span class=mu>· lead → ficha → venta → instalada</span> <span class=ch>CRM ${CRM_VER}</span></div>
+ <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><input type=date value="${EM.desde}" onchange="EM.desde=this.value;emCargar()"> a <input type=date value="${EM.hasta}" onchange="EM.hasta=this.value;emCargar()"><button class=g style="width:auto;margin:0" onclick="emCargar()">↻</button></div></div>
+ <p class=mu style="margin:6px 0 0">Une al cliente por DNI y celular entre la hoja de leads, las fichas enviadas desde el CRM y la hoja de ventas.</p></div>`;
+ h+=`<div class=cd style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px"><div><b>Leads de campaña</b>${bar("Leads",KC.l,0,"#2a78d6")}${bar("Con ficha enviada",KC.f,KC.l,"#6250d6")}${bar("Venta registrada",KC.v,KC.l,"#eda100")}${bar("Instalada",KC.i,KC.l,"#1baf7a")}${bar("Caída",KC.c,KC.v,"#e34948")}</div>
+ <div><b>Todas las ventas del periodo</b>${bar("Fichas enviadas",K.f,0,"#6250d6")}${bar("Ventas registradas",K.v,0,"#eda100")}${bar("Instaladas",K.i,K.v,"#1baf7a")}${bar("Caídas",K.c,K.v,"#e34948")}
+ <p class=mu style="margin:8px 0 0">Ficha → venta: <b>${pc(C.filter(c=>c.f&&c.v).length,K.f)}</b> · Venta → instalada: <b>${pc(K.i,K.v)}</b> · Ventas sin lead (referidos/propias): <b>${C.filter(c=>c.v&&!c.l).length}</b></p></div></div>`;
+ const grp=(fn)=>{const g={};C.forEach(c=>{const k=fn(c);if(!k)return;(g[k]=g[k]||[]).push(c)});return g};
+ const tabla=(tit,g,col)=>`<div class=cd><b>${tit}</b><table style="margin-top:8px"><tr><th>${col}</th><th>Leads</th><th>Fichas</th><th>Ventas</th><th>Instaladas</th><th>Caídas</th><th>Ficha→Venta</th><th>Venta→Inst.</th></tr>${Object.keys(g).sort((a,b)=>cnt(g[b]).v-cnt(g[a]).v).map(k=>{const x=cnt(g[k]);return`<tr style="cursor:pointer" onclick="EM.q='${e(k).replace(/'/g,"")}';emRd()"><td><b>${e(k)}</b></td><td>${x.l}</td><td>${x.f}</td><td>${x.v}</td><td>${x.i}</td><td>${x.c?ch([x.c,"bad"]):0}</td><td>${pc(g[k].filter(c=>c.f&&c.v).length,x.f)}</td><td>${pc(x.i,x.v)}</td></tr>`}).join("")}</table></div>`;
+ h+=tabla("Por asesor",grp(c=>c.ase||"SIN ASESOR"),"Asesor")+tabla("Por campaña",grp(c=>c.camp||(c.l?"":"SIN LEAD")),"Campaña");
+ const fsv=C.filter(c=>c.f&&!c.v&&(Date.now()-new Date(c.f.at))>2*86400000);
+ if(fsv.length)h+=`<div class=cd style="border:2px solid #F59E0B"><b>⚠ ${fsv.length} ficha(s) enviadas hace más de 2 días que no aparecen en la hoja de ventas</b><p class=mu style="margin:4px 0 0">Revisa si se registraron con otro DNI o si se quedaron sin cargar.</p></div>`;
+ const q=EM.q.trim().toUpperCase(),V=C.filter(c=>(!EM.f||c.st==EM.f)&&(!q||[c.n,c.doc,c.ase,c.camp,c.l&&c.l.numero].some(x=>String(x||"").toUpperCase().includes(q))));
+ const fd=d=>d?new Date(d.length==10?d+"T12:00":d).toLocaleDateString("es-PE",{day:"2-digit",month:"2-digit"}):"—";
+ h+=`<div class=cd><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between"><b>Clientes (${V.length})</b><div style="display:flex;gap:6px;flex-wrap:wrap"><select onchange="EM.f=this.value;emRd()"><option value="">Todas las etapas</option>${Object.keys(EMST).map(k=>`<option value=${k} ${EM.f==k?"selected":""}>${EMST[k][0]}</option>`).join("")}</select><input placeholder="Buscar cliente, DNI, asesor, campaña…" value="${e(EM.q)}" oninput="EM.q=this.value;clearTimeout(EM.t);EM.t=setTimeout(emRd,300)" style="max-width:260px"></div></div>
+ <table style="margin-top:8px"><tr><th>Cliente</th><th>Asesor</th><th>Campaña</th><th>Lead</th><th>Ficha</th><th>Venta</th><th>Etapa</th></tr>${V.slice(0,400).map(c=>`<tr><td><b>${e(c.n)}</b>${c.doc?`<br><small>${e(c.doc)}</small>`:""}</td><td>${e(c.ase||"—")}</td><td>${e(c.camp||"—")}</td>
+ <td>${c.l?`✔ ${fd(c.l.fecha)}<br><small>${e(c.l.tip||c.l.estado)}</small>`:"—"}</td><td>${c.f?`✔ ${fd(c.f.at)}`:"—"}</td><td>${c.v?`✔ ${fd(c.v.fecha_registro)}<br><small>${e(c.v.plan||"")}</small>`:"—"}</td><td>${ch(EMST[c.st])}${c.v&&c.v.estado=="caida_recuperable"?" "+ch(["Recuperable","pg"]):""}</td></tr>`).join("")||"<tr><td colspan=7>Sin clientes</td></tr>"}</table></div>`;
+ b.innerHTML=h}
+
+/* ================= V22 · AVISOS AL ASESOR ================= */
+const AV={n:0,d:null,t:null,primera:1};
+function avIniciar(){if(AV.t)return;avCargar();AV.t=setInterval(avCargar,60000)}
+async function avCargar(){const{data}=await sb.rpc("app_avisos",{p_codigo:FX.code});if(!data)return;const nuevos=data.sin_leer>AV.n&&!AV.primera;AV.primera=0;AV.n=data.sin_leer;AV.d=data;
+ const s=document.getElementById("avb");if(s)s.textContent=AV.n?" ("+AV.n+")":"";
+ if(nuevos){const a=data.avisos.find(x=>!x.leido);try{laAviso&&0}catch(_){}try{const c=LA.ac||(LA.ac=new (window.AudioContext||window.webkitAudioContext)());const o=c.createOscillator(),g=c.createGain();o.frequency.value=1046;o.connect(g);g.connect(c.destination);g.gain.setValueAtTime(.2,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.4);o.start();o.stop(c.currentTime+.4)}catch(_){}
+  try{if(window.Notification&&Notification.permission=="granted")new Notification("Novedad de tu venta",{body:a?a.texto:""})}catch(_){}
+  if(typeof msg=="function"&&a)msg(a.texto)}
+ if(FX.tab=="Avisos")avRd()}
+async function avLeer(){await sb.rpc("app_avisos_leer",{p_codigo:FX.code});AV.n=0;const s=document.getElementById("avb");if(s)s.textContent=""}
+function avRd(){const b=document.getElementById("avbox");if(!b)return;const D=AV.d;if(!D){b.innerHTML=`<div class=cd>Cargando avisos…</div>`;return}
+ const col={instalada:"#0B8F5F",caida:"#EF4444",caida_recuperable:"#F59E0B",programada:"#2a78d6"};
+ b.innerHTML=`<div class=cd><b>Novedades de mis ventas</b><p class=mu style="margin:4px 0 0">Aquí te avisamos cuando una venta tuya se instala, se programa o se cae. Las recuperables atiéndelas el mismo día.</p></div>`+
+ (D.avisos.length?D.avisos.map(a=>`<div class=cd style="border-left:5px solid ${col[a.tipo]||"#8a93b3"};${a.leido?"opacity:.75":""}"><div>${e(a.texto)}</div><small class=mu>${e(new Date(a.creado).toLocaleString("es-PE"))}${a.leido?"":" · nuevo"}</small></div>`).join(""):`<div class=cd><p class=mu style="margin:0">Aún no tienes novedades.</p></div>`)}
 
 /* ---- entrada ---- */
 async function init(){if(code){localStorage.crm_a=code;return asesora()}const{data:{session}}=await sb.auth.getSession();if(!session){let g="";try{g=localStorage.crm_a||""}catch(_){}if(g){code=g;return asesora()}return login()}usr=session.user.email;document.body.classList.remove("lg");try{if(localStorage.crm_co)document.body.classList.add("co")}catch(_){}
@@ -681,7 +748,7 @@ async function add(){const c=$("#a1").value.trim(),d=$("#a2").value.trim(),t=$("
  const o={...F,mesh_cobro:+$("#a10").value||0,winbox:+$("#a11").value||0,winbox_cobro:(+$("#a11").value||0)*20,extra:(+$("#a10").value||0)+(+$("#a11").value||0)*20,tipo_doc:$("#a9").value,cliente:c,dni:d,tel:t,direccion:$("#a4").value,distrito:$("#a5").value,plan_id:$("#a6").value,tramo:$("#a7").value,fprog:$("#a8").value},{error}=await sb.rpc("asesora_crear_ficha",{p_code:code,p_d:o});if(error)return msg(error.message);msg();asesora()}
 /* ---- personal ---- */
 function rd(){const nm=nom(usr);$("#sl").innerHTML=`<div class=us><div class=un><b>${e(nm)}</b><small>${e(RN[rol]||rol)}</small></div><div class=av>${e(nm.slice(0,2).toUpperCase())}</div></div>`;$("#tt").textContent=tab;$("#nv").innerHTML=navHTML();msg();
- const f={Central:vCentral,Leads:vLeads,Dashboard:vDash,Ficha:vFicha,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado,Hoy:vHoy,Cola:vCola,"Mis ventas":vMis,Calidad:vCalidad,"Capacitación":vCap,Comunidad:vCom}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
+ const f={Central:vCentral,Leads:vLeads,Embudo:vEmbudo,Dashboard:vDash,Ficha:vFicha,Ventas:vV,Cobranza:vC,Simulador:vS,Cobertura:vO,Historial:vH,Inicio:vI,Usuarios:vU,Calendario:vCal,Mapa:vMapa,Asistencia:vAsis,Bonos:vBon,Estado:vEstado,Hoy:vHoy,Cola:vCola,"Mis ventas":vMis,Calidad:vCalidad,"Capacitación":vCap,Comunidad:vCom}[tab];Promise.resolve(f()).then(h=>{if(h!=null)$("#m").innerHTML=h;if(tab=="Simulador")sim();if(tab=="Cobertura")cov();if(tab=="Mapa")mpInit()})}
 async function delV(b){if(!confirm("¿Eliminar la venta de "+b.dataset.n+"? Se borra junto con sus cobros y no se puede deshacer."))return;const{error}=await sb.rpc("eliminar_venta",{p_id:b.dataset.id});if(error)return msg(error.message);uDone("Venta eliminada")}
 async function vVn(){const{data,error}=await sb.from("ventas").select("*,planes(nombre),asesoras(nombre)").order("creada",{ascending:false}).limit(200);if(error)return`<div class=cd>${e(error.message)}</div>`;const ed=MANDO(rol)||rol=="back_office";
  return`<div class=cd><table><tr><th>Cliente</th><th>DNI</th><th>Asesora</th><th>Plan</th><th>Dirección</th><th>Tramo</th><th>Estado</th><th>Instalación</th>${MANDO(rol)?"<th></th>":""}</tr>${data.map(v=>`<tr><td>${e(v.cliente)}<br><small>${e(v.telefono)}${v.whatsapp&&v.whatsapp!=v.telefono?" · WA "+e(v.whatsapp):""}</small></td><td>${e(v.dni)}<br><small>${e(v.tipo_doc)}</small></td><td>${e(v.asesoras?.nombre)}</td><td>${e(v.planes?.nombre||v.plan_txt)}<br><small>${e(v.precio_ficha)}</small>${+v.extra?`<br><small>Extras S/ ${v.extra}</small>`:""}</td><td>${e(v.direccion)}<br><small>${e(v.distrito)}${v.lat?` · <a href="https://www.google.com/maps?q=${v.lat},${v.lng}" target=_blank>mapa</a>`:""}</small></td><td>${e(v.tramo)}<br><small>${v.fecha_prog||""}</small></td><td>${ed?`<select onchange="setE('${v.id}',this.value,'${v.fecha_inst||""}')">${ES.map(s=>`<option ${s==v.estado?"selected":""}>${s}</option>`).join("")}</select>`:ch([v.estado,"n"])}</td><td>${ed?`<input type=date value="${v.fecha_inst||""}" onchange="setF('${v.id}',this.value)">`:v.fecha_inst||"–"}</td>${MANDO(rol)?`<td><button class=g data-id="${v.id}" data-n="${e(v.cliente)}" onclick=delV(this)>Eliminar</button></td>`:""}</tr>`).join("")||"<tr><td>Sin ventas</td></tr>"}</table></div>`}
@@ -1311,7 +1378,7 @@ const nomC=s=>String(s||"").toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());
 function xlsLista(nombre,rows){if(!rows.length)return msg("No hay filas para descargar.");const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows),"Datos");XLSX.writeFile(wb,nombre+"_"+T+".xlsx")}
 
 /* ---------- menú agrupado ---------- */
-const GR=[["Operación",["Central","Leads","Hoy","Cola","Dashboard","Ficha","Mis ventas","Ventas","Cobranza","Mapa","Cobertura","Calidad"]],["Equipo",["Calendario","Asistencia","Bonos","Capacitación","Comunidad"]],["Herramientas",["Simulador"]],["Administración",["Usuarios","Historial","Estado"]]];
+const GR=[["Operación",["Central","Leads","Embudo","Hoy","Cola","Dashboard","Ficha","Mis ventas","Ventas","Cobranza","Mapa","Cobertura","Calidad"]],["Equipo",["Calendario","Asistencia","Bonos","Capacitación","Comunidad"]],["Herramientas",["Simulador"]],["Administración",["Usuarios","Historial","Estado"]]];
 let NAVADM=false;
 function navHTML(){const L=TABS[rol],btn=t=>`<button class="${t==tab?"on":""}" title="${t}" onclick="tab='${t}';rd();sb2(-1)">${IC[t]||""}<span class=lb>${t}</span></button>`;
  if(L.length<5)return L.map(btn).join("");
