@@ -151,7 +151,7 @@ body.lg .w{max-width:460px;margin:0 auto}
  h2{font-size:19px}
 }
 </style><script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%228%202%20104%2092%22%3E%3Crect%20x%3D%228%22%20y%3D%222%22%20width%3D%22104%22%20height%3D%2292%22%20rx%3D%2222%22%20fill%3D%22%23fff%22/%3E%3Cline%20x1%3D%2260%22%20y1%3D%2210%22%20x2%3D%2260%22%20y2%3D%2224%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%229%22%20r%3D%225%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%222%22/%3E%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%2272%22%20height%3D%2264%22%20rx%3D%2224%22%20fill%3D%22%23FF7A1A%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2234%22%20y%3D%2236%22%20width%3D%2252%22%20height%3D%2240%22%20rx%3D%2216%22%20fill%3D%22%230E1B3D%22/%3E%3Cellipse%20cx%3D%2248%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cellipse%20cx%3D%2272%22%20cy%3D%2252%22%20rx%3D%225.5%22%20ry%3D%227%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M50%2064%20Q60%2073%2070%2064%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M22%2054%20Q22%2018%2060%2018%20Q98%2018%2098%2054%22%20fill%3D%22none%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3Crect%20x%3D%2294%22%20y%3D%2246%22%20width%3D%2214%22%20height%3D%2226%22%20rx%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%230E1B3D%22%20stroke-width%3D%223%22/%3E%3C/svg%3E"></head><body class="lg"><div id="ov" onclick="sb2()"></div>
-<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V17</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
+<aside id="sd"><div class="br"><div class="lg2" id="mbr"></div><div class="lb"><b>CRM</b><small>Grupo JM · V18</small></div></div><nav id="nv"></nav><button class="so" onclick="out()" title="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lb">Cerrar sesión</span></button></aside>
 <div id="mn"><header class="tp"><button class="hb" onclick="sb2()" title="Menú"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button><h1 id="tt"></h1><button class="hb" id="bsb" onclick="abrirBusca()" title="Buscar cliente o predio (Ctrl+K)" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button><button class="hb" id="bth" onclick="cambiaTema()" title="Cambiar entre tema claro y oscuro" aria-label="Cambiar tema"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button><div id="sl"></div></header><div class="lgh"></div><div class="w"><div id="m"></div><p id="er" class="er"></p></div></div>
 <script>
 const U="https://znrcrkzlysyqeqiyercd.supabase.co",K="sb_publishable_qH2iEk0R59fgmQPqt2gP3A_AxXlomyY",sb=supabase.createClient(U,K);
@@ -187,7 +187,7 @@ function calc(p,fi){if(!p||!fi)return[0,1,2].map(()=>({e:0,v:"",pz:""}));const p
 const ds=(n,k)=>{const u=Math.min(n,pool);if(u<=0||dm<=0)return 0;pool-=u;return t=="p"?u*dly(k)*v/100:u*dm/30};
 return[0,1,2].map(k=>{let b,s;if(e2){b=k?pr:di*dly(0)+pr;s=k?ds(30,k+1):ds(di+30,1)}else{b=k?pr:di*dly(0);s=k?ds(30,k):ds(di,0)}const o=(e2?1:0)+k;return{e:r2(b-s),v:iso(new Date(y,m+o,28)),pz:iso(new Date(y,m+o+1,0))}})}
 /* ---------- CENTRAL · hoja REGISTRO DE VENTAS ---------- */
-const CRM_VER="V17",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
+const CRM_VER="V18",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
 CEAL={asesor_nuevo:"Asesor nuevo",doc_duplicado:"Documento repetido",doc_invalido:"Documento con formato raro",sin_documento:"Venta sin documento",sin_vendedor:"Venta sin vendedor",status_desconocido:"STATUS desconocido",plan_no_reconocido:"Plan no reconocido",precio_distinto:"Precio distinto al oficial",edificio_no_registrado:"Edificio fuera de cobertura",cola_sin_asesores:"Leads en cola sin asesores"};
 function cenSet(k,v){CE[k]=v;if(k=="mes"){CE.est="";CE.ase=""}rd()}
 async function cenRes(id){const{error}=await sb.from("registro_alertas").update({resuelta:true}).eq("id",id);if(error)return alert(error.message);rd()}
@@ -281,19 +281,41 @@ function dbDibujar(){if(!window.Chart||!DB2.data||!document.getElementById("dbDi
 const FX={code:"",as:null,tab:"Leads"};const FXW=["nombre","titular","direccion","condominio","plan","rango"];
 const N=s=>String(s==null?"":s).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/\s+/g," ").trim().toUpperCase();
 const NT=s=>String(s==null?"":s).replace(/\s+/g," ").trim().toUpperCase(); // mayúsculas conservando tildes y Ñ
-const PLANES=[["MONO 1000 MBPS","LIMA","MONO","1000 MBPS",139,69.5],["MONO 850 MBPS","LIMA","MONO","850 MBPS",119,59.5],["MONO 750 MBPS","LIMA","MONO","750 MBPS",109,54.5],["MONO 500 MBPS","LIMA","MONO","500 MBPS",99,null],
-["XGSPON 2.5 GB","LIMA","XGSPON","2.5 GB",199,99.5],["XGSPON 2.0 GB","LIMA","XGSPON","2.0 GB",189,94.5],["XGSPON 1.5 GB","LIMA","XGSPON","1.5 GB",169,139],
-["GAMER 1000 MBPS","LIMA","GAMER","1000 MBPS",159,79.5],["GAMER 600 MBPS","LIMA","GAMER","600 MBPS",129,64.5],
-["HB L1MAX PREMIUM 1000 MBPS","LIMA","L1MAX","1000 MBPS",149.9,74.95],["HB L1MAX PREMIUM 850 MBPS","LIMA","L1MAX","850 MBPS",129.9,64.95],["HB L1MAX PREMIUM 750 MBPS","LIMA","L1MAX","750 MBPS",119.9,59.95],
-["HB WTV 1000 MBPS","LIMA","WTV","1000 MBPS",139.9,null],["HB WTV 850 MBPS","LIMA","WTV","850 MBPS",119.9,null],["HB WTV 750 MBPS","LIMA","WTV","750 MBPS",109.9,null],["HB WTV 500 MBPS","LIMA","WTV","500 MBPS",99.9,null],
-["HB DGO FULL XGSPON 2.5 GB","LIMA","DGO FULL","2.5 GB",199.9,99.9],["HB DGO HOGAR XGSPON 2.0 GB","LIMA","DGO HOGAR","2.0 GB",189.9,94.95],["HB DGO FULL 1000 MBPS","LIMA","DGO FULL","1000 MBPS",179.9,89.95],
-["HB DGO HOGAR 1000 MBPS","LIMA","DGO HOGAR","1000 MBPS",159.9,79.95],["HB DGO HOGAR 850 MBPS","LIMA","DGO HOGAR","850 MBPS",139.9,69.95],
-["RUC 20 1000 MBPS","LIMA","RUC20","1000 MBPS",139,null],["RUC 20 850 MBPS","LIMA","RUC20","850 MBPS",119,null],["RUC 20 750 MBPS","LIMA","RUC20","750 MBPS",109,null],
-["MONO PROV 1000 MBPS","PROV","MONO","1000 MBPS",129,null],["MONO PROV 750 MBPS","PROV","MONO","750 MBPS",99,null],["MONO PROV 550 MBPS","PROV","MONO","550 MBPS",89,null],
-["HB PROV L1MAX PREMIUM 1000 MBPS","PROV","L1MAX","1000 MBPS",129.9,64.95],["HB PROV L1MAX PREMIUM 750 MBPS","PROV","L1MAX","750 MBPS",119.9,59.95],
-["HB PROV WTV 750 MBPS","PROV","WTV","750 MBPS",99.9,49.95],["HB PROV WTV 550 MBPS","PROV","WTV","550 MBPS",89.9,44.95],
-["HB PROV DGO FULL 1000 MBPS","PROV","DGO FULL","1000 MBPS",159.9,79.95],["HB PROV DGO HOGAR 1000 MBPS","PROV","DGO HOGAR","1000 MBPS",129.9,64.95],["HB PROV FONOWIN 350 MBPS","PROV","FONOWIN","350 MBPS",79,39.95],
-["RUC 20 PROV 1000 MBPS","PROV","RUC20","1000 MBPS",129,null],["RUC 20 PROV 750 MBPS","PROV","RUC20","750 MBPS",99,null],["RUC 20 PROV 550 MBPS","PROV","RUC20","550 MBPS",89,null]];
+const PLANES=[
+  ["1000MBPS + DGO FULL", "LIMA", "DGO FULL", "1000 MBPS", 179.9, 89.95],
+  ["1000MBPS + DGO HOGAR", "LIMA", "DGO HOGAR", "1000 MBPS", 159.9, 79.95],
+  ["1000MBPS + WINTV L1MAX PREMIUM", "LIMA", "L1MAX", "1000 MBPS", 149.9, 74.95],
+  ["1000MBPS + WINTV PREMIUM", "LIMA", "WTV", "1000 MBPS", 139.9, null],
+  ["850MBPS + DGO HOGAR", "LIMA", "DGO HOGAR", "850 MBPS", 139.9, 69.95],
+  ["850MBPS + WINTV L1MAX PREMIUM", "LIMA", "L1MAX", "850 MBPS", 129.9, 64.95],
+  ["750MBPS + WINTV L1MAX PREMIUM", "LIMA", "L1MAX", "750 MBPS", 119.9, 59.95],
+  ["MONO 1000MBPS", "LIMA", "MONO", "1000 MBPS", 139, 69.5],
+  ["MONO 850MBPS", "LIMA", "MONO", "850 MBPS", 119, 59.5],
+  ["MONO 750MBPS", "LIMA", "MONO", "750 MBPS", 109, 54.5],
+  ["XGSPON 2.5 GB", "LIMA", "XGSPON", "2.5 GB", 199, 99.5],
+  ["XGSPON 2.0 GB", "LIMA", "XGSPON", "2.0 GB", 189, 94.5],
+  ["XGSPON 1.5 GB", "LIMA", "XGSPON", "1.5 GB", 169, 139],
+  ["GAMER 1000 MBPS", "LIMA", "GAMER", "1000 MBPS", 159, 79.5],
+  ["GAMER 600 MBPS", "LIMA", "GAMER", "600 MBPS", 129, 64.5],
+  ["HB DGO FULL XGSPON 2.5 GB", "LIMA", "DGO FULL", "2.5 GB", 199.9, 99.9],
+  ["HB DGO HOGAR XGSPON 2.0 GB", "LIMA", "DGO HOGAR", "2.0 GB", 189.9, 94.95],
+  ["RUC 20 1000 MBPS", "LIMA", "RUC20", "1000 MBPS", 139, null],
+  ["RUC 20 850 MBPS", "LIMA", "RUC20", "850 MBPS", 119, null],
+  ["RUC 20 750 MBPS", "LIMA", "RUC20", "750 MBPS", 109, null],
+  ["MONO PROV 1000 MBPS", "PROV", "MONO", "1000 MBPS", 129, null],
+  ["MONO PROV 750 MBPS", "PROV", "MONO", "750 MBPS", 99, null],
+  ["MONO PROV 550 MBPS", "PROV", "MONO", "550 MBPS", 89, null],
+  ["HB PROV L1MAX PREMIUM 1000 MBPS", "PROV", "L1MAX", "1000 MBPS", 129.9, 64.95],
+  ["HB PROV L1MAX PREMIUM 750 MBPS", "PROV", "L1MAX", "750 MBPS", 119.9, 59.95],
+  ["HB PROV WTV 750 MBPS", "PROV", "WTV", "750 MBPS", 99.9, 49.95],
+  ["HB PROV WTV 550 MBPS", "PROV", "WTV", "550 MBPS", 89.9, 44.95],
+  ["HB PROV DGO FULL 1000 MBPS", "PROV", "DGO FULL", "1000 MBPS", 159.9, 79.95],
+  ["HB PROV DGO HOGAR 1000 MBPS", "PROV", "DGO HOGAR", "1000 MBPS", 129.9, 64.95],
+  ["HB PROV FONOWIN 350 MBPS", "PROV", "FONOWIN", "350 MBPS", 79, 39.95],
+  ["RUC 20 PROV 1000 MBPS", "PROV", "RUC20", "1000 MBPS", 129, null],
+  ["RUC 20 PROV 750 MBPS", "PROV", "RUC20", "750 MBPS", 99, null],
+  ["RUC 20 PROV 550 MBPS", "PROV", "RUC20", "550 MBPS", 89, null]
+];
 const LIMA_CALLAO=["ANCON","ATE","ATE VITARTE","BARRANCO","BRENA","CARABAYLLO","CHACLACAYO","CHORRILLOS","CIENEGUILLA","COMAS","EL AGUSTINO","INDEPENDENCIA","JESUS MARIA","LA MOLINA","LA VICTORIA","LIMA","CERCADO DE LIMA","LINCE","LOS OLIVOS","LURIGANCHO","CHOSICA","LURIN","MAGDALENA","MAGDALENA DEL MAR","MIRAFLORES","PACHACAMAC","PUCUSANA","PUEBLO LIBRE","PUENTE PIEDRA","PUNTA HERMOSA","PUNTA NEGRA","RIMAC","SAN BARTOLO","SAN BORJA","SAN ISIDRO","SAN JUAN DE LURIGANCHO","SAN JUAN DE MIRAFLORES","SAN LUIS","SAN MARTIN DE PORRES","SAN MIGUEL","SANTA ANITA","SANTA MARIA DEL MAR","SANTA ROSA","SANTIAGO DE SURCO","SURCO","SURQUILLO","VILLA EL SALVADOR","VILLA MARIA DEL TRIUNFO","CALLAO","BELLAVISTA","CARMEN DE LA LEGUA","CARMEN DE LA LEGUA REYNOSO","LA PERLA","LA PUNTA","VENTANILLA","MI PERU"];
 const ALIAS_DIST={"SMP":"SAN MARTIN DE PORRES","S M P":"SAN MARTIN DE PORRES","SJL":"SAN JUAN DE LURIGANCHO","S J L":"SAN JUAN DE LURIGANCHO","SJM":"SAN JUAN DE MIRAFLORES","VMT":"VILLA MARIA DEL TRIUNFO","VES":"VILLA EL SALVADOR","CERCADO":"CERCADO DE LIMA"};
 const dinero=n=>n==null?"":(Math.round(n*100)/100).toFixed(2),numero=s=>{const m=String(s||"").replace(",",".").match(/\d+(\.\d+)?/);return m?Number(m[0]):null};
@@ -302,7 +324,7 @@ function planOficial(raw,dist,tipoDoc,nDoc){const t=N(raw).replace(/\bMPBS\b|\bM
  let tp;if(/DGO/.test(t))tp=/FULL/.test(t)?["DGO FULL"]:/HOGAR/.test(t)?["DGO HOGAR"]:["DGO FULL","DGO HOGAR"];else if(/L1 ?MAX/.test(t))tp=["L1MAX"];else if(/WIN ?TV|\bWTV\b/.test(t))tp=["WTV"];
  else if(/CABLE|\bTV\b|TELEVISION/.test(t))tp=["WTV","L1MAX","DGO FULL","DGO HOGAR"];else if(/FONO ?WIN/.test(t))tp=["FONOWIN"];else if(/GAMER/.test(t))tp=["GAMER"];else if(/XGSPON/.test(t)||/GB$/.test(vel))tp=["XGSPON"];
  else tp=tipoDoc=="RUC"&&/^20/.test(nDoc)?["RUC20"]:["MONO"];
- const d=N(dist),reg=!d||LIMA_CALLAO.includes(d)?"LIMA":"PROV";let c=PLANES.filter(p=>p[1]==reg&&p[3]==vel&&tp.includes(p[2]));if(!c.length)c=PLANES.filter(p=>p[3]==vel&&tp.includes(p[2]));
+ const d=N(dist),reg=!d||LIMA_CALLAO.includes(d)?"LIMA":"PROV";let c=PLANES.filter(p=>p[1]==reg&&p[3]==vel&&tp.includes(p[2]));if(!c.length&&reg=="PROV")c=PLANES.filter(p=>p[3]==vel&&tp.includes(p[2]));
  return c.length==1?{nombre:c[0][0],regular:dinero(c[0][4]),promo:c[0][5]==null?"SIN PROMO":dinero(c[0][5])}:c.length>1?{varios:c.map(p=>p[0])}:null}
 
 // [clave, etiqueta en la plantilla, grupo]
