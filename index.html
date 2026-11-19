@@ -193,7 +193,7 @@ function calc(p,fi){if(!p||!fi)return[0,1,2].map(()=>({e:0,v:"",pz:""}));const p
 const ds=(n,k)=>{const u=Math.min(n,pool);if(u<=0||dm<=0)return 0;pool-=u;return t=="p"?u*dly(k)*v/100:u*dm/30};
 return[0,1,2].map(k=>{let b,s;if(e2){b=k?pr:di*dly(0)+pr;s=k?ds(30,k+1):ds(di+30,1)}else{b=k?pr:di*dly(0);s=k?ds(30,k):ds(di,0)}const o=(e2?1:0)+k;return{e:r2(b-s),v:iso(new Date(y,m+o,28)),pz:iso(new Date(y,m+o+1,0))}})}
 /* ---------- CENTRAL · hoja REGISTRO DE VENTAS ---------- */
-const CRM_VER="V45",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
+const CRM_VER="V46",CE={mes:"",est:"",ase:"",q:"",d:null},CEST={instalada:["Instaladas","ok"],programada:["Programadas","pg"],en_proceso:["En proceso","nc"],caida_recuperable:["Recuperables","nc"],caida:["Caídas","bad"]},
 CEAL={asesor_nuevo:"Asesor nuevo",doc_duplicado:"Documento repetido",doc_invalido:"Documento con formato raro",sin_documento:"Venta sin documento",sin_vendedor:"Venta sin vendedor",status_desconocido:"STATUS desconocido",plan_no_reconocido:"Plan no reconocido",precio_distinto:"Precio distinto al oficial",edificio_no_registrado:"Edificio fuera de cobertura",cola_sin_asesores:"Leads en cola sin asesores"};
 function cenSet(k,v){CE[k]=v;if(k=="mes"){CE.est="";CE.ase=""}rd()}
 async function cenRes(id){const{error}=await sb.from("registro_alertas").update({resuelta:true}).eq("id",id);if(error)return alert(error.message);rd()}
